@@ -1,0 +1,23 @@
+AXIS-VERSION="2006";
+CREATION-DATE="20170526";
+CHARSET="ANSI";
+SUBJECT-AREA="Encuesta de financiación y gastos de la enseñanza privada. Curso 2004-2005";
+SUBJECT-CODE="null";
+MATRIX="01001";
+TITLE="Principales resultados estructurales por Tipo de indicador y Nivel educativo (agregado)";
+CONTENTS="Principales resultados estructurales";
+CODEPAGE="iso-8859-15";
+DESCRIPTION="";
+COPYRIGHT=YES;
+DECIMALS=0;
+SHOWDECIMALS=0;
+STUB="Tipo de indicador";
+HEADING="Nivel educativo (agregado)";
+VALUES("Tipo de indicador")="Número de Centros","Número de Alumnos","Personal remunerado con tareas docentes",
+"Personal remunerado con tareas no docentes","Total de Personal Remunerado",
+"Total de Personal no Remunerado","Total de Personal";
+VALUES("Nivel educativo (agregado)")="TOTAL","Educación no Universitaria","Educación Universitaria";
+UNITS="valores absolutos";
+SOURCE="Instituto Nacional de Estadística";
+DATA=
+".." 6477.0 144.0 2478366.0 2288630.0 189736.0 181347.0 170919.0 10428.0 44702.0 39962.0 4740.0 225724.0 210556.0 15168.0 6790.0 5949.0 841.0 232708.0 216505.0 16203.0;

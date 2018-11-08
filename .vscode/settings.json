@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "env/bin/python",
+    "python.unitTest.unittestEnabled": true,
+    "python.linting.pylintUseMinimalCheckers": false
+}
