@@ -2,21 +2,22 @@
 
 """Pcaxis Parser module
 
-This module obtains a pandas DataFrame of tabular data from a PC-Axis file or URL.
-Reads data and metadata from PC-Axis into a dataframe and dictionary, and returns a
-dictionary containing both structures.
+This module obtains a pandas DataFrame of tabular data from a PC-Axis
+file or URL. Reads data and metadata from PC-Axis into a dataframe and
+dictionary, and returns a dictionary containing both structures.
 
 Example:
-    from etlstat.extractor.pcaxis import *
+    from pyaxis import pyaxis
 
-    dict = from_pc_axis(self.base_path + 'px/2184.px', encoding='ISO-8859-2')
+    px = pyaxis.parse(self.base_path + 'px/2184.px', encoding='ISO-8859-2')
 
 References:
     PX-file format specification AXIS-VERSION 2013:
-        https://www.scb.se/Upload/PC-Axis/Support/Documents/PX-file_format_specification_2013.pdf
+    https://www.scb.se/en/services/statistical-programs-for-px-files/
 
 Todo:
-    meta_split: "NOTE" attribute can be multiple, but only the last one is added to the dictionary
+    meta_split: "NOTE" attribute can be multiple, but only the last one
+    is added to the dictionary
 """
 
 import itertools
@@ -28,6 +29,7 @@ import pandas
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
 
 def uri_type(uri):
     """
@@ -43,21 +45,22 @@ def uri_type(uri):
         https://pythex.org/
     """
 
-    checked_type = 'FILE'
+    uri_type = 'FILE'
 
     # django url validation regex:
-    regex = re.compile(r'^(?:http|ftp)s?://' # http:// or https://
-                       #domain...
+    regex = re.compile(r'^(?:http|ftp)s?://'  # http:// or https://
+                       # domain...
                        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+'
                        r'(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|'
-                       r'localhost|' #localhost...
-                       r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' # ...or ip
-                       r'(?::\d+)?' # optional port
+                       r'localhost|'  # localhost...
+                       r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'  # ...or ip
+                       r'(?::\d+)?'  # optional port
                        r'(?:/?|[/?]\S+)$', re.IGNORECASE)
     if re.match(regex, uri):
-        checked_type = 'URL'
+        uri_type = 'URL'
 
-    return checked_type
+    return uri_type
+
 
 def read(uri, encoding, timeout=10):
     """
@@ -88,7 +91,8 @@ def read(uri, encoding, timeout=10):
             logger.error('ConnectionError = %s', str(connection_error))
             raise
         except requests.exceptions.HTTPError as http_error:
-            logger.error('HTTPError = %s', str(http_error.response.status_code) + ' ' +
+            logger.error('HTTPError = %s',
+                         str(http_error.response.status_code) + ' ' +
                          http_error.response.reason)
             raise
         except requests.exceptions.InvalidURL as url_error:
@@ -99,12 +103,13 @@ def read(uri, encoding, timeout=10):
             import traceback
             logger.error('Generic exception: %s', traceback.format_exc())
             raise
-    else: # file parsing
+    else:  # file parsing
         file_object = open(uri, encoding=encoding)
         raw_pcaxis = file_object.read()
         file_object.close()
 
     return raw_pcaxis
+
 
 def metadata_extract(pc_axis):
     """
@@ -114,7 +119,8 @@ def metadata_extract(pc_axis):
         pc_axis (str): pc_axis file contents.
 
     Returns:
-        meta (list of string): each item conforms to pattern ATTRIBUTE=VALUES
+        metadata_attributes (list of string): each item conforms to an
+                                              ATTRIBUTE=VALUES pattern
         data (string): data values
     """
 
@@ -134,9 +140,11 @@ def metadata_extract(pc_axis):
 
     return metadata_attributes, data
 
+
 def metadata_split_to_dict(metadata_elements):
     """
-    Splits the list of metadata elements into a dictionary of multi-valued keys.
+    Splits the list of metadata elements into a dictionary
+    of multi-valued keys.
 
     Args:
         metadata_elements (list of string): pairs ATTRIBUTE=VALUES
@@ -156,6 +164,7 @@ def metadata_split_to_dict(metadata_elements):
         metadata[name] = re.findall('"[ ]*(.+?)[ ]*"+?', values)
 
     return metadata
+
 
 def get_dimensions(metadata):
     """
@@ -195,6 +204,7 @@ def get_dimensions(metadata):
 
     return dimension_names, dimension_members
 
+
 def build_dataframe(dimension_names, dimension_members, data_values):
     """
     Builds a dataframe by adding the cartesian product of dimension members,
@@ -203,10 +213,10 @@ def build_dataframe(dimension_names, dimension_members, data_values):
     Args:
         dimension_names (list of string)
         dimension_members (list of string)
-        data_list (list of string)
+        data_values (list of string)
 
     Returns:
-        data_frame (pandas data frame)
+        data (pandas dataframe)
     """
 
     # cartesian product of dimension members
@@ -226,6 +236,7 @@ def build_dataframe(dimension_names, dimension_members, data_values):
 
     return data
 
+
 def parse(uri, encoding, timeout=10):
     """
     Extracts metadata and data sections from pc-axis.
@@ -236,9 +247,10 @@ def parse(uri, encoding, timeout=10):
         timeout (int): request timeout in seconds; optional
 
     Returns:
-         pc_axis_dict (dictionary): dictionary of metadata and pandas data frame
+         pc_axis_dict (dictionary): dictionary of metadata
+                                    and pandas dataframe
             METADATA: dictionary of metadata
-            DATA: pandas data frame
+            DATA: pandas dataframe
     """
 
     # get file content or URL stream
@@ -258,13 +270,14 @@ def parse(uri, encoding, timeout=10):
     # explode raw data into a list of float values
     data_values = raw_data.split()
 
-    # extract dimension names and members from 'meta_dict' STUB and HEADING keys
+    # extract dimension names and members from
+    # 'meta_dict' STUB and HEADING keys
     dimension_names, dimension_members = get_dimensions(metadata)
 
-    # build a data frame
+    # build a dataframe
     data = build_dataframe(dimension_names, dimension_members, data_values)
 
-    # dictionary of metadata and data (pandas data frame)
+    # dictionary of metadata and data (pandas dataframe)
     parsed_pc_axis = {
         'METADATA': metadata,
         'DATA': data
