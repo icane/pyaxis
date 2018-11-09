@@ -1,7 +1,6 @@
-pandas
-numpy
-requests
-re
 itertools
+re
 logging
-csv
+requests
+numpy
+pandas
