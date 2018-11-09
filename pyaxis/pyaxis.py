@@ -3,7 +3,7 @@
 """Pcaxis Parser module
 
 This module obtains a pandas DataFrame of tabular data from a PC-Axis
-file or URL. Reads data and metadata from PC-Axis into a dataframe and
+file or URL. Reads data and metadata from PC-Axis [1]_ into a dataframe and
 dictionary, and returns a dictionary containing both structures.
 
 Example:
@@ -11,11 +11,10 @@ Example:
 
     px = pyaxis.parse(self.base_path + 'px/2184.px', encoding='ISO-8859-2')
 
-References:
-    PX-file format specification AXIS-VERSION 2013:
-    https://www.scb.se/en/services/statistical-programs-for-px-files/
+.. [1] https://www.scb.se/en/services/statistical-programs-for-px-files/ 
 
-Todo:
+..todo::
+
     meta_split: "NOTE" attribute can be multiple, but only the last one
     is added to the dictionary
 """
@@ -119,7 +118,7 @@ def metadata_extract(pc_axis):
         pc_axis (str): pc_axis file contents.
 
     Returns:
-        metadata_attributes (list of string): each item conforms to an
+        metadata_attributes (list of string): each item conforms to an\
                                               ATTRIBUTE=VALUES pattern
         data (string): data values
     """
@@ -247,10 +246,9 @@ def parse(uri, encoding, timeout=10):
         timeout (int): request timeout in seconds; optional
 
     Returns:
-         pc_axis_dict (dictionary): dictionary of metadata
-                                    and pandas dataframe
-            METADATA: dictionary of metadata
-            DATA: pandas dataframe
+         pc_axis_dict (dictionary): dictionary of metadata and pandas df.
+                                    METADATA: dictionary of metadata
+                                    DATA: pandas dataframe
     """
 
     # get file content or URL stream
