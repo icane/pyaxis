@@ -13,21 +13,21 @@ setup(
                 'DataFrames.',
     long_description=open('README.rst').read(),
     install_requires=[
-       'pandas', 'numpy', 'requests', 're', 'itertools', 'logging', 'csv'
+        'pandas', 'numpy', 'requests', 're', 'itertools', 'logging', 'csv'
     ],
     test_suite='pyaxis.test',
     keywords=['pcaxis', 'statistics', 'dataframe', 'converter'],
     classifiers=[
-          'Development Status :: 4 - Beta',
-          'Environment :: Console',
-          'Intended Audience :: Developers',
-          'Intended Audience :: Science/Research',
-          'License :: OSI Approved :: Apache Software License',
-          'Operating System :: MacOS :: MacOS X',
-          'Operating System :: Microsoft :: Windows',
-          'Operating System :: POSIX',
-          'Programming Language :: Python',
-          'Topic :: Scientific/Engineering :: Information Analysis',
-          'Topic :: Software Development :: Libraries'
-          ],
+        'Development Status :: 4 - Beta',
+        'Environment :: Console',
+        'Intended Audience :: Developers',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: Apache Software License',
+        'Operating System :: MacOS :: MacOS X',
+        'Operating System :: Microsoft :: Windows',
+        'Operating System :: POSIX',
+        'Programming Language :: Python',
+        'Topic :: Scientific/Engineering :: Information Analysis',
+        'Topic :: Software Development :: Libraries'
+        ],
 )
