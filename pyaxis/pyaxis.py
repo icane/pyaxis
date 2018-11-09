@@ -20,8 +20,6 @@ Todo:
 """
 
 import itertools
-
-
 import re
 import logging
 import requests
@@ -39,12 +37,13 @@ def uri_type(uri):
         uri (str): pc-axis file name or URL
 
     Returns:
-        str_type (str): 'URL' | 'FILE'
+        uri_type (str): 'URL' | 'FILE'
 
     ..  Regex debugging:
         https://pythex.org/
     """
-    str_type = 'FILE'
+
+    checked_type = 'FILE'
 
     # django url validation regex:
     regex = re.compile(r'^(?:http|ftp)s?://' # http:// or https://
@@ -56,11 +55,9 @@ def uri_type(uri):
                        r'(?::\d+)?' # optional port
                        r'(?:/?|[/?]\S+)$', re.IGNORECASE)
     if re.match(regex, uri):
-        str_type = 'URL'
+        checked_type = 'URL'
 
-    return str_type
-
-
+    return checked_type
 
 def read(uri, encoding, timeout=10):
     """
@@ -72,7 +69,7 @@ def read(uri, encoding, timeout=10):
         timeout (int): request timeout; optional
 
     Returns:
-        pc_axis (str): file contents.
+        raw_pcaxis (str): file contents.
     """
 
     raw_pcaxis = ''
@@ -109,7 +106,6 @@ def read(uri, encoding, timeout=10):
 
     return raw_pcaxis
 
-
 def metadata_extract(pc_axis):
     """
     Extracts metadata and data from pc-axis file contents.
@@ -121,20 +117,22 @@ def metadata_extract(pc_axis):
         meta (list of string): each item conforms to pattern ATTRIBUTE=VALUES
         data (string): data values
     """
+
     # replace new line characters with blank
     pc_axis = pc_axis.replace('\n', ' ').replace('\r', ' ')
 
     # split file into metadata and data sections
     metadata, data = pc_axis.split('DATA=')
+
     # meta: list of strings that conforms to pattern ATTRIBUTE=VALUES
     metadata_attributes = re.findall('([^=]+=[^=]+)(?:;|$)', metadata)
+
     # remove trailing blanks and final semicolon
     data = data.strip().rstrip(';')
     for i, item in enumerate(metadata_attributes):
         metadata_attributes[i] = item.strip().rstrip(';')
 
     return metadata_attributes, data
-
 
 def metadata_split_to_dict(metadata_elements):
     """
@@ -146,6 +144,7 @@ def metadata_split_to_dict(metadata_elements):
     Returns:
         metadata (dictionary): {'attribute1': ['value1', 'value2', ... ], ...}
     """
+
     metadata = {}
 
     for element in metadata_elements:
@@ -157,7 +156,6 @@ def metadata_split_to_dict(metadata_elements):
         metadata[name] = re.findall('"[ ]*(.+?)[ ]*"+?', values)
 
     return metadata
-
 
 def get_dimensions(metadata):
     """
@@ -197,11 +195,10 @@ def get_dimensions(metadata):
 
     return dimension_names, dimension_members
 
-
 def build_dataframe(dimension_names, dimension_members, data_values):
     """
-    Builds a data frame by adding the cartesian product of dimension members,
-    plus series of data.
+    Builds a dataframe by adding the cartesian product of dimension members,
+    plus the series of data.
 
     Args:
         dimension_names (list of string)
@@ -229,8 +226,6 @@ def build_dataframe(dimension_names, dimension_members, data_values):
 
     return data
 
-
-
 def parse(uri, encoding, timeout=10):
     """
     Extracts metadata and data sections from pc-axis.
@@ -253,7 +248,6 @@ def parse(uri, encoding, timeout=10):
         import traceback
         logger.error('Generic exception: %s', traceback.format_exc())
         raise
-
 
     # metadata and data extraction and cleaning
     metadata_elements, raw_data = metadata_extract(pc_axis)
