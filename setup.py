@@ -13,7 +13,7 @@ setup(
                 'DataFrames.',
     long_description=open('README.rst').read(),
     install_requires=[
-        'pandas', 'numpy', 'requests', 're', 'itertools', 'logging', 'csv'
+        'numpy', 'requests', 'pandas'
     ],
     test_suite='pyaxis.test',
     keywords=['pcaxis', 'statistics', 'dataframe', 'converter'],
