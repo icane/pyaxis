@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Pcaxis Parser module
+"""Pcaxis Parser module parses px files into dataframes.
 
 This module obtains a pandas DataFrame of tabular data from a PC-Axis
 file or URL. Reads data and metadata from PC-Axis [1]_ into a dataframe and
@@ -11,7 +11,7 @@ Example:
 
     px = pyaxis.parse(self.base_path + 'px/2184.px', encoding='ISO-8859-2')
 
-.. [1] https://www.scb.se/en/services/statistical-programs-for-px-files/ 
+.. [1] https://www.scb.se/en/services/statistical-programs-for-px-files/
 
 ..todo::
 
@@ -23,28 +23,26 @@ import itertools
 import re
 import logging
 import requests
-import numpy
-import pandas
+import numpy as np
+import pandas as pd
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
 def uri_type(uri):
-    """
-    Determines the type of URI.
+    """Determine the type of URI.
 
-    Args:
-        uri (str): pc-axis file name or URL
-
-    Returns:
-        uri_type (str): 'URL' | 'FILE'
+       Args:
+         uri (str): pc-axis file name or URL
+       Returns:
+         uri_type_result (str): 'URL' | 'FILE'
 
     ..  Regex debugging:
         https://pythex.org/
-    """
 
-    uri_type = 'FILE'
+    """
+    uri_type_result = 'FILE'
 
     # django url validation regex:
     regex = re.compile(r'^(?:http|ftp)s?://'  # http:// or https://
@@ -56,14 +54,13 @@ def uri_type(uri):
                        r'(?::\d+)?'  # optional port
                        r'(?:/?|[/?]\S+)$', re.IGNORECASE)
     if re.match(regex, uri):
-        uri_type = 'URL'
+        uri_type_result = 'URL'
 
-    return uri_type
+    return uri_type_result
 
 
 def read(uri, encoding, timeout=10):
-    """
-    Reads a text file from file system or URL.
+    """Read a text file from file system or URL.
 
     Args:
         uri (str): file name or URL
@@ -72,8 +69,8 @@ def read(uri, encoding, timeout=10):
 
     Returns:
         raw_pcaxis (str): file contents.
-    """
 
+    """
     raw_pcaxis = ''
 
     if uri_type(uri) == 'URL':
@@ -111,18 +108,17 @@ def read(uri, encoding, timeout=10):
 
 
 def metadata_extract(pc_axis):
-    """
-    Extracts metadata and data from pc-axis file contents.
+    r"""Extract metadata and data from pc-axis file contents.
 
     Args:
         pc_axis (str): pc_axis file contents.
 
     Returns:
         metadata_attributes (list of string): each item conforms to an\
-                                              ATTRIBUTE=VALUES pattern
-        data (string): data values
-    """
+                                              ATTRIBUTE=VALUES pattern.
+        data (string): data values.
 
+    """
     # replace new line characters with blank
     pc_axis = pc_axis.replace('\n', ' ').replace('\r', ' ')
 
@@ -141,17 +137,15 @@ def metadata_extract(pc_axis):
 
 
 def metadata_split_to_dict(metadata_elements):
-    """
-    Splits the list of metadata elements into a dictionary
-    of multi-valued keys.
+    """Split the list of metadata elements into a multi-valued keys dict.
 
     Args:
         metadata_elements (list of string): pairs ATTRIBUTE=VALUES
 
     Returns:
         metadata (dictionary): {'attribute1': ['value1', 'value2', ... ], ...}
-    """
 
+    """
     metadata = {}
 
     for element in metadata_elements:
@@ -166,8 +160,7 @@ def metadata_split_to_dict(metadata_elements):
 
 
 def get_dimensions(metadata):
-    """
-    Reads STUB and HEADING values from metadata dictionary.
+    """Read STUB and HEADING values from metadata dictionary.
 
     Args:
         metadata: dictionary of metadata
@@ -175,8 +168,8 @@ def get_dimensions(metadata):
     Returns:
         dimension_names (list)
         dimension_members (list)
-    """
 
+    """
     dimension_names = []
     dimension_members = []
 
@@ -204,53 +197,54 @@ def get_dimensions(metadata):
     return dimension_names, dimension_members
 
 
-def build_dataframe(dimension_names, dimension_members, data_values):
-    """
-    Builds a dataframe by adding the cartesian product of dimension members,
-    plus the series of data.
+def build_dataframe(dimension_names, dimension_members, data_values,
+                    null_values, sd_values):
+    """Build a dataframe from dimensions and data.
+
+       Adds the cartesian product of dimension members plus the series of data.
 
     Args:
         dimension_names (list of string)
         dimension_members (list of string)
-        data_values (list of string)
+        data_values(pd.Series): pandas series with the data values column.
 
     Returns:
         data (pandas dataframe)
-    """
 
+    """
     # cartesian product of dimension members
     dim_exploded = list(itertools.product(*dimension_members))
 
-    data = pandas.DataFrame(data=dim_exploded, columns=dimension_names)
-
-    # convert data values from string to float
-    for index, value in enumerate(data_values):
-        try:
-            data_values[index] = float(value)
-        except ValueError:
-            data_values[index] = numpy.nan
+    data = pd.DataFrame(data=dim_exploded, columns=dimension_names)
 
     # column of data values
-    data['DATA'] = pandas.Series(data_values)
+    data['DATA'] = data_values
+    # null values and statistical disclosure treatment
+    data = data.replace({'DATA': {null_values: ''}}, regex=True)
+    data = data.replace({'DATA': {sd_values: np.nan}}, regex=True)
 
     return data
 
 
-def parse(uri, encoding, timeout=10):
-    """
-    Extracts metadata and data sections from pc-axis.
+def parse(uri, encoding, timeout=10, null_values=r'^"\."$',
+          sd_values=r'"\.\."'):
+    """Extract metadata and data sections from pc-axis.
 
     Args:
         uri (str): file name or URL
         encoding (str): charset encoding
         timeout (int): request timeout in seconds; optional
+        null_values(str): regex with the pattern for the null values in the px
+                          file. Defaults to '.'.
+        sd_values(str): regex with the pattern for the statistical disclosured
+                        values in the px file. Defaults to '..'.
 
     Returns:
          pc_axis_dict (dictionary): dictionary of metadata and pandas df.
                                     METADATA: dictionary of metadata
                                     DATA: pandas dataframe
-    """
 
+    """
     # get file content or URL stream
     try:
         pc_axis = read(uri, encoding, timeout)
@@ -265,15 +259,17 @@ def parse(uri, encoding, timeout=10):
     # stores raw metadata into a dictionary
     metadata = metadata_split_to_dict(metadata_elements)
 
-    # explode raw data into a list of float values
-    data_values = raw_data.split()
+    # explode raw data into a Series of values, which can contain nullos or sd
+    # (statistical disclosure)
+    data_values = pd.Series(raw_data.split())
 
     # extract dimension names and members from
     # 'meta_dict' STUB and HEADING keys
     dimension_names, dimension_members = get_dimensions(metadata)
 
     # build a dataframe
-    data = build_dataframe(dimension_names, dimension_members, data_values)
+    data = build_dataframe(dimension_names, dimension_members, data_values,
+                           null_values=null_values, sd_values=sd_values)
 
     # dictionary of metadata and data (pandas dataframe)
     parsed_pc_axis = {

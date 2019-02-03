@@ -41,14 +41,14 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'pyaxis'
-copyright = u'2018, ICANE'
+copyright = u'2019, ICANE'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '0.1'
+version = '0.2'
 # The full version, including alpha/beta/rc tags.
 release = '0'
 

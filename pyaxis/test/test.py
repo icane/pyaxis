@@ -1,25 +1,21 @@
-"""
-Unit tests for pyaxis.
-"""
+"""Unit tests for pyaxis."""
 
 import csv
 import unittest
 import requests
+import numpy as np
 from pyaxis import pyaxis
 
 
 class TestPyaxis(unittest.TestCase):
-    """ Unit tests for pyaxis. """
+    """Unit tests for pyaxis."""
 
     def setUp(self):
-        """ Sets initialization variables. """
-
+        """Set initialization variables."""
         self.base_path = './pyaxis/test/data/'
 
     def test_uri_type(self):
-        """uri_type() should be capable of discriminating between file
-           and URL."""
-
+        """uri_type() should be capable of discriminating files and URLs."""
         self.assertEqual(pyaxis.uri_type('2184.px'), 'FILE',
                          'Uri type differs!')
         self.assertEqual(pyaxis.uri_type('http://www.ine.es/jaxiT3'
@@ -27,9 +23,11 @@ class TestPyaxis(unittest.TestCase):
                          'URL', 'Uri type differs!')
 
     def test_metadata_extract_split(self):
-        """metadata_extract() should extract pcaxis metadata into a list. Also,
-           metadata_split_to_dict() should split those metadata into a dict."""
+        """Should extract pcaxis metadata into a list.
 
+        Also, metadata_split_to_dict() should split those metadata into a
+        dict.
+        """
         pc_axis = """AXIS-VERSION="2006";
         CREATION-DATE="20170913";
         CHARSET="ANSI";
@@ -131,9 +129,7 @@ class TestPyaxis(unittest.TestCase):
                          [4], 'Balears, Illes', 'Metadata differs!')
 
     def test_get_dimensions(self):
-        """get_dimensions() should return two lists with dimension names
-           and members. """
-
+        """Should return two lists (dimension names and members)."""
         pc_axis = """AXIS-VERSION="2006";
         CREATION-DATE="20170526";
         CHARSET="ANSI";
@@ -179,21 +175,28 @@ class TestPyaxis(unittest.TestCase):
                          'Dimension member differs!')
 
     def test_parse(self):
-        """ parse() should parse a pc-axis into a dataframe and a
-            metadata dict."""
-
+        """Should parse a pc-axis into a dataframe and a metadata dict."""
         parsed_pcaxis = pyaxis.parse(self.base_path + '2184.px',
                                      encoding='ISO-8859-2')
-        self.assertEqual(parsed_pcaxis['DATA'].dtypes['DATA'], 'float64')
+        self.assertEqual(parsed_pcaxis['DATA'].dtypes['DATA'], 'object')
         self.assertEqual(parsed_pcaxis['METADATA']
                          ['VALUES(Índices y tasas)'].index('Índice'),
                          0, 'Dictionary index differs!')
         self.assertGreater(len(parsed_pcaxis['DATA']), 9500)
 
-    def test_to_csv(self):
-        """ Data returned by parse() should be able to be converted to
-            CSV format."""
+    def test_statistical_disclosure(self):
+        """Should parse a pc-axis with statistical disclosure into a dataframe.
 
+        Uses convenient Na or NaN representations and a metadata dict.
+        """
+        parsed_pcaxis = pyaxis.parse(self.base_path + '27067.px',
+                                     encoding='ISO-8859-2')
+        self.assertEqual(parsed_pcaxis['DATA'].dtypes['DATA'], 'object')
+        self.assertTrue(np.isnan(parsed_pcaxis['DATA']['DATA'].iloc[0]))
+        self.assertEqual(parsed_pcaxis['DATA']['DATA'].iloc[804], '')
+
+    def test_to_csv(self):
+        """Returned data should be able to be converted to CSV format."""
         # fichero 1
         parsed_pcaxis = pyaxis.parse('http://www.ine.es/jaxiT3/'
                                      'files/es/2184.px',
@@ -234,17 +237,14 @@ class TestPyaxis(unittest.TestCase):
         self.assertEqual(last, '"19 Melilla","Extranjera","1975",""\n')
 
     def test_http_error(self):
-        """ Using parse() with a non-existent URL should return a
-            404 exception."""
-
+        """Using parse() with a non-existent URL should return a 404."""
         # returns status code 404
         url = 'http://www.ine.es/jaxi'
         with self.assertRaises(requests.exceptions.HTTPError):
             pyaxis.parse(url, encoding='windows-1252')
 
     def test_connection_error(self):
-        """ Using parse() with a wrong URL should return a connect timeout."""
-
+        """Using parse() with a wrong URL should return a connect timeout."""
         # raises a timeout error
         url = 'http://www.ine.net/jaxiT3/files/t/es/px/1001.px'
 
