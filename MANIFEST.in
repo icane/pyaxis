@@ -1,4 +1,5 @@
 include *.txt
+include .pylintrc
 recursive-include examples *.py
 recursive-include docs *.bat
 recursive-include docs *.buildinfo
@@ -14,4 +15,6 @@ recursive-include docs *.py
 recursive-include docs *.rst
 recursive-include docs *.txt
 recursive-include docs Makefile
+recursive-include pyaxis *.csv
+recursive-include pyaxis *.px
 

@@ -1,6 +1,4 @@
-itertools
-re
-logging
-requests
-numpy
-pandas
+numpy==1.15.2
+requests==2.20.1
+pandas==0.23.4
+
