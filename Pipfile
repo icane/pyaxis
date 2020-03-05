@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = {index = "pypi",version = "*"}
+bandit = {index = "pypi",version = "*"}
+flake8 = {index = "pypi",version = "*"}
+flake8-import-order = {index = "pypi",version = "*"}
+flake8-blind-except = {index = "pypi",version = "*"}
+flake8-builtins = {index = "pypi",version = "*"}
+flake8-logging-format = {index = "pypi",version = "*"}
+flake8-docstrings = {index = "pypi",version = "*"}
+pydocstyle = {index = "pypi",version = "*"}
+pylint = {index = "pypi",version = "==1.9.4"}
+pep8 = {index = "pypi",version = "*"}
+requests = {index = "pypi",version = "*"}
+
+[packages]
+numpy = "==1.15.2"
+requests = "==2.20.1"
+pandas = "==0.23.4"
+
+[requires]
+python_version = "3.7"

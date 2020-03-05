@@ -20,11 +20,17 @@ Example:
 """
 
 import itertools
-import re
+
 import logging
-import requests
+
 import numpy as np
+
 import pandas as pd
+
+import re
+
+import requests
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
