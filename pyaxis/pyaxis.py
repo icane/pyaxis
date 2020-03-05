@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """Pcaxis Parser module parses px files into dataframes.
 
 This module obtains a pandas DataFrame of tabular data from a PC-Axis
@@ -20,11 +18,17 @@ Example:
 """
 
 import itertools
-import re
+
 import logging
-import requests
-import numpy as np
+
+from numpy import nan
+
 import pandas as pd
+
+import re
+
+import requests
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -221,7 +225,7 @@ def build_dataframe(dimension_names, dimension_members, data_values,
     data['DATA'] = data_values
     # null values and statistical disclosure treatment
     data = data.replace({'DATA': {null_values: ''}}, regex=True)
-    data = data.replace({'DATA': {sd_values: np.nan}}, regex=True)
+    data = data.replace({'DATA': {sd_values: nan}}, regex=True)
 
     return data
 
