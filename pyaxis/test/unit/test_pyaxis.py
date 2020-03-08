@@ -19,14 +19,14 @@ def test_uri_type():
     assert pyaxis.uri_type('2184.px') == 'FILE'
     assert pyaxis.uri_type(data_path + '2184.px') == 'FILE'
     assert pyaxis.uri_type(
-        'http://www.ine.es/jaxiT3/files/t/es/px/2184.px') == 'URL'
+        'http://www.ine.es/jaxiT3/files/es/2184.px') == 'URL'
 
 
 def test_metadata_extract_split():
     """Should extract pcaxis metadata into a list.
 
     Also, metadata_split_to_dict() should split those metadata into a
-    dictionary.
+    dict.
     """
     pc_axis = """AXIS-VERSION="2006";
     CREATION-DATE="20170913";
@@ -119,8 +119,7 @@ def test_metadata_extract_split():
     'STUB="Comunidades y Ciudades Autónomas","Grupos ECOICOP"'
     assert metadata_elements[14] == \
     'HEADING="Tipo de dato","Periodo"'
-    assert metadata_elements[22] == \
-    'UNITS="  Índice,   Tasas"'
+    assert metadata_elements[22] == 'UNITS="  Índice,   Tasas"'
     metadata = pyaxis.metadata_split_to_dict(metadata_elements)
     assert metadata['VALUES(Comunidades y Ciudades Autónomas)'][2] == \
     'Aragón'
@@ -177,15 +176,14 @@ def test_parse():
         data_path + '2184.px',
         encoding='ISO-8859-2')
     assert parsed_pcaxis['DATA'].dtypes['DATA'] == 'object'
-    assert parsed_pcaxis['METADATA']
-    ['VALUES(Índices y tasas)'][0] == 'Índice'
+    assert parsed_pcaxis['METADATA']['VALUES(Índices y tasas)'][0] == 'Índice'
     assert len(parsed_pcaxis['DATA']) > 9500
 
 
 def test_statistical_disclosure():
     """Should parse a pc-axis with statistical disclosure into a dataframe.
 
-    Uses convenient Na or NaN representations and a metadata dictionary.
+    Uses convenient Na or NaN representations and a metadata dict.
     """
     parsed_pcaxis = pyaxis.parse(
         data_path + '27067.px',
@@ -214,8 +212,9 @@ def test_to_csv():
         pass
     last = line
     test_file.close()
-    assert last == '"Melilla","Vivienda segunda mano","Variación en lo que va de año","2007T1",""\n'
+    assert last == \
+    '"Melilla","Vivienda segunda mano","Variación en lo que va de año","2007T1",""\n'
 
 
 if __name__ == '__main__':
-    pytest.main()
+    unittest.main()
