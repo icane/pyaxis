@@ -132,7 +132,7 @@ def metadata_extract(pc_axis):
     # meta: list of strings that conforms to pattern ATTRIBUTE=VALUES
     metadata_attributes = re.findall('([^=]+=[^=]+)(?:;|$)', metadata)
 
-    # remove trailing blanks and final semicolon
+    # remove trailing blanks and final semicolon(s)
     data = data.strip().rstrip(';')
     for i, item in enumerate(metadata_attributes):
         metadata_attributes[i] = item.strip().rstrip(';')
@@ -151,11 +151,13 @@ def metadata_split_to_dict(metadata_elements):
 
     """
     metadata = {}
-
     for element in metadata_elements:
         name, values = element.split('=')
         # remove double quotes from key
         name = name.replace('"', '')
+        # remove leading and trailing blanks from element names
+        name = name.replace('( ', '(')
+        name = name.replace(' )', ')')
         # split values delimited by double quotes into list
         # additionally strip leading and trailing blanks
         metadata[name] = re.findall('"[ ]*(.+?)[ ]*"+?', values)

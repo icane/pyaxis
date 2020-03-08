@@ -177,7 +177,14 @@ def test_parse():
         encoding='ISO-8859-2')
     assert parsed_pcaxis['DATA'].dtypes['DATA'] == 'object'
     assert parsed_pcaxis['METADATA']['VALUES(Índices y tasas)'][0] == 'Índice'
-    assert len(parsed_pcaxis['DATA']) > 9500
+    assert len(parsed_pcaxis['DATA']) == 9600
+
+    parsed_pcaxis = pyaxis.parse(
+        data_path + '14001.px',
+        encoding='ISO-8859-2')
+    assert parsed_pcaxis['DATA'].dtypes['DATA'] == 'object'
+    assert parsed_pcaxis['METADATA']['VALUES(sexo)'][0] == 'Esposos'
+    assert len(parsed_pcaxis['DATA']) == 8064
 
 
 def test_statistical_disclosure():
