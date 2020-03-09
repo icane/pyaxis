@@ -24,7 +24,7 @@ import re
 
 from numpy import nan
 
-import pandas as pd
+from pandas import DataFrame, Series
 
 import requests
 
@@ -211,28 +211,31 @@ def build_dataframe(dimension_names, dimension_members, data_values,
     Args:
         dimension_names (list of string)
         dimension_members (list of string)
-        data_values(pd.Series): pandas series with the data values column.
-
+        data_values(Series): pandas series with the data values column.
+        null_values(str): regex with the pattern for the null values in the px
+                          file. Defaults to '.'.
+        sd_values(str): regex with the pattern for the statistical disclosured
+                        values in the px file. Defaults to '..'.
     Returns:
-        data (pandas dataframe)
+        df (pandas dataframe)
 
     """
     # cartesian product of dimension members
     dim_exploded = list(itertools.product(*dimension_members))
 
-    data = pd.DataFrame(data=dim_exploded, columns=dimension_names)
+    df = DataFrame(data=dim_exploded, columns=dimension_names)
 
     # column of data values
-    data['DATA'] = data_values
+    df['DATA'] = data_values
     # null values and statistical disclosure treatment
-    data = data.replace({'DATA': {null_values: ''}}, regex=True)
-    data = data.replace({'DATA': {sd_values: nan}}, regex=True)
+    df = df.replace({'DATA': {null_values: ''}}, regex=True)
+    df = df.replace({'DATA': {sd_values: nan}}, regex=True)
 
-    return data
+    return df
 
 
-def parse(uri, encoding, timeout=10, null_values=r'^"\."$',
-          sd_values=r'"\.\."'):
+def parse(uri, encoding, timeout=10,
+          null_values=r'^"\."$', sd_values=r'"\.\."'):
     """Extract metadata and data sections from pc-axis.
 
     Args:
@@ -266,19 +269,23 @@ def parse(uri, encoding, timeout=10, null_values=r'^"\."$',
 
     # explode raw data into a Series of values, which can contain nullos or sd
     # (statistical disclosure)
-    data_values = pd.Series(raw_data.split())
+    data_values = Series(raw_data.split())
 
     # extract dimension names and members from
     # 'meta_dict' STUB and HEADING keys
     dimension_names, dimension_members = get_dimensions(metadata)
 
     # build a dataframe
-    data = build_dataframe(dimension_names, dimension_members, data_values,
-                           null_values=null_values, sd_values=sd_values)
+    df = build_dataframe(
+        dimension_names,
+        dimension_members,
+        data_values,
+        null_values=null_values,
+        sd_values=sd_values)
 
     # dictionary of metadata and data (pandas dataframe)
     parsed_pc_axis = {
         'METADATA': metadata,
-        'DATA': data
+        'DATA': df
     }
     return parsed_pc_axis

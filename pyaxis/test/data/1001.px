@@ -4,24 +4,24 @@ CHARSET="ANSI";
 SUBJECT-AREA="Resultados detallados";
 SUBJECT-CODE="13";
 MATRIX="Censo20";
-TITLE="Errores de muestreo relativos, en porcentaje, de los parados por sector económico y sexo";
+TITLE="Errores de muestreo relativos, en porcentaje, de los parados por sector econï¿½mico y sexo";
 CONTENTS="Errores de muestreo relativos, en";
 CODEPAGE="iso-8859-15";
 DESCRIPTION="";
 COPYRIGHT=YES;
 DECIMALS=1;
 SHOWDECIMALS=1;
-STUB="Sector económico";
+STUB="Sector econï¿½mico";
 HEADING="Sexo","Periodo";
-VALUES("Sector económico")="Total","Agricultura","Industria","Construcción","Servicios",
-"Parados que han dejado su último empleo hace más de 1 año",
+VALUES("Sector econï¿½mico")="Total","Agricultura","Industria","Construcciï¿½n","Servicios",
+"Parados que han dejado su ï¿½ltimo empleo hace mï¿½s de 1 aï¿½o",
 "Parados que buscan primer empleo";
 VALUES("Sexo")="Ambos sexos","Hombres","Mujeres";
 VALUES("Periodo")="2013T4","2013T3","2013T2","2013T1","2012T4","2012T3","2012T2","2012T1","2011T4","2011T3",
 "2011T2","2011T1","2010T4","2010T3","2010T2","2010T1","2009T4","2009T3","2009T2","2009T1",
 "2008T4","2008T3","2008T2","2008T1";
 UNITS="  Porcentaje";
-SOURCE="Instituto Nacional de Estadística";
+SOURCE="Instituto Nacional de Estadï¿½stica";
 DATA=
 0.86 0.87 0.93 0.86 1.04 0.94 0.84 1.04 0.92 1.05 0.97 1.07 1.07 1.14 1.09 1.17 1.17 1.12 1.17 1.25 1.47 1.45 1.67 1.64 1.11 1.12 1.31 1.29 1.32 1.12 1.11 1.47 1.28 1.22 1.4 1.39 1.35 1.46 1.68 1.34 1.66 1.59 1.48 1.51 1.74 2.08 1.98 2.12 1.31 1.32
  1.17 1.29 1.38 1.45 1.13 1.15 1.27 1.51 1.38 1.4 1.33 1.42 1.05 1.73 1.37 1.4 1.67 1.77 1.81 1.7 2.35 2.23 4.85 5.16 6.25 6.13 5.54 5.3 6.35 5.77 6.33 5.14 5.58 5.67 5.34 5.93 7.92 8.39 5.84 6.0 5.03 6.13 9.23 8.45 7.89 8.41 5.54 6.17 7.01 6.26
