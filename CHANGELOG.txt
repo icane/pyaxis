@@ -1,4 +1,5 @@
 v0.3.0: implement the following:
+    - fix error parsing dimension values containing comma
     - remove leading and trailing blanks from element names (metadata_split_to_dict)
     - upgrade dependencies version
     - add dev packages

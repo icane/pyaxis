@@ -14,18 +14,17 @@ Example:
 ..todo::
 
     meta_split: "NOTE" attribute can be multiple, but only the last one
-    is added to the dictionary
+    is added to the dictionary.
+
 """
 
 import itertools
-
 import logging
+import re
 
 from numpy import nan
 
 import pandas as pd
-
-import re
 
 import requests
 
