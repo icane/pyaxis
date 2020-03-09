@@ -1,1 +1,6 @@
+v0.3.0: implement the following:
+    - remove leading and trailing blanks from element names (metadata_split_to_dict)
+    - upgrade dependencies version
+    - add dev packages
+    - refactor unit and integration tests
 v0.2.0: added support for null and statistical disclosure representation.

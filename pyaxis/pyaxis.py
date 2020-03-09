@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """Pcaxis Parser module parses px files into dataframes.
 
 This module obtains a pandas DataFrame of tabular data from a PC-Axis
@@ -20,11 +18,17 @@ Example:
 """
 
 import itertools
-import re
+
 import logging
-import requests
-import numpy as np
+
+from numpy import nan
+
 import pandas as pd
+
+import re
+
+import requests
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -128,7 +132,7 @@ def metadata_extract(pc_axis):
     # meta: list of strings that conforms to pattern ATTRIBUTE=VALUES
     metadata_attributes = re.findall('([^=]+=[^=]+)(?:;|$)', metadata)
 
-    # remove trailing blanks and final semicolon
+    # remove trailing blanks and final semicolon(s)
     data = data.strip().rstrip(';')
     for i, item in enumerate(metadata_attributes):
         metadata_attributes[i] = item.strip().rstrip(';')
@@ -147,11 +151,13 @@ def metadata_split_to_dict(metadata_elements):
 
     """
     metadata = {}
-
     for element in metadata_elements:
         name, values = element.split('=')
         # remove double quotes from key
         name = name.replace('"', '')
+        # remove leading and trailing blanks from element names
+        name = name.replace('( ', '(')
+        name = name.replace(' )', ')')
         # split values delimited by double quotes into list
         # additionally strip leading and trailing blanks
         metadata[name] = re.findall('"[ ]*(.+?)[ ]*"+?', values)
@@ -221,7 +227,7 @@ def build_dataframe(dimension_names, dimension_members, data_values,
     data['DATA'] = data_values
     # null values and statistical disclosure treatment
     data = data.replace({'DATA': {null_values: ''}}, regex=True)
-    data = data.replace({'DATA': {sd_values: np.nan}}, regex=True)
+    data = data.replace({'DATA': {sd_values: nan}}, regex=True)
 
     return data
 
