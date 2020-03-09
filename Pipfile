@@ -12,6 +12,7 @@ flake8-blind-except = {index = "pypi",version = "*"}
 flake8-builtins = {index = "pypi",version = "*"}
 flake8-logging-format = {index = "pypi",version = "*"}
 flake8-docstrings = {index = "pypi",version = "*"}
+more-itertools = {index = "pypi",version = "*"}
 pytest = {index = "pypi",version = "*"}
 requests = {index = "pypi",version = "*"}
 twine = {index = "pypi",version = "*"}
