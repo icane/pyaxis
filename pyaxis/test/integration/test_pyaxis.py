@@ -93,6 +93,8 @@ def test_build_dataframe():
         null_values=null_values,
         sd_values=sd_values)
     assert df.shape == (8064, 5)
+    assert df['DATA'][7] == '10624.0'
+    assert df['DATA'][159] == '534.0'
 
 
 def test_parse():

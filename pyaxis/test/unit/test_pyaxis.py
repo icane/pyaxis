@@ -41,7 +41,7 @@ def test_metadata_extract():
     assert type(metadata_elements) == list
     assert len(metadata_elements) == 28
     assert type(raw_data) == str
-    assert len(raw_data) == 30448
+    assert len(raw_data) == 29441
 
 
 def test_metadata_split_to_dict():
@@ -89,6 +89,8 @@ def test_build_dataframe():
         null_values=null_values,
         sd_values=sd_values)
     assert df.shape == (8064, 5)
+    assert df['DATA'][7] == '28138'
+    assert df['DATA'][159] == '422'
 
 
 def test_parse():

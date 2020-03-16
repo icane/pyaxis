@@ -131,8 +131,12 @@ def metadata_extract(pc_axis):
     # meta: list of strings that conforms to pattern ATTRIBUTE=VALUES
     metadata_attributes = re.findall('([^=]+=[^=]+)(?:;|$)', metadata)
 
-    # remove trailing blanks and final semicolon(s)
-    data = data.strip().rstrip(';')
+    # remove all semicolons
+    data = data.replace(';', '')
+    # remove trailing blanks
+    data = data.strip()
+
+    # 
     for i, item in enumerate(metadata_attributes):
         metadata_attributes[i] = item.strip().rstrip(';')
 
