@@ -129,4 +129,4 @@ def test_connection_error():
 
 
 if __name__ == '__main__':
-    unittest.main()
+    pytest.main()

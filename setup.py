@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='pyaxis',
-    version='0.3.1',
+    version='0.4.0',
     author='Instituto Cántabro de Estadística',
     author_email='icane@cantabria.es',
     packages=['pyaxis', 'pyaxis.test'],
@@ -13,10 +13,10 @@ setup(
                 'DataFrames.',
     long_description=open('README.rst').read(),
     install_requires=[
-        'numpy', 'requests', 'pandas'
+        'numpy', 'requests', 'pandas', 'pyjstat'
     ],
     test_suite='pyaxis.test',
-    keywords=['pcaxis', 'statistics', 'dataframe', 'converter'],
+    keywords=['pcaxis', 'json-stat', 'statistics', 'dataframe', 'converter'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',

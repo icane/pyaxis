@@ -107,7 +107,6 @@ def test_parse():
     ['VALUES(Comunidad Autónoma de residencia del matrimonio)'][0][20] == \
         'Extranjero'
 
-
 def test_statistical_disclosure():
     """Should parse a pc-axis with statistical disclosure into a dataframe.
 
