@@ -127,9 +127,9 @@ def metadata_extract(pc_axis):
 
     # split file into metadata and data sections
     metadata, data = pc_axis.split('DATA=')
-
     # meta: list of strings that conforms to pattern ATTRIBUTE=VALUES
-    metadata_attributes = re.findall('([^=]+=[^=]+)(?:;|$)', metadata)
+    metadata_attributes = split_ignore_quotation_marks(metadata,';', final=True)
+    #metadata_attributes = re.findall('([^=]+=[^=]+)(?:;|$)', metadata)
 
     # remove all semicolons
     data = data.replace(';', '')
@@ -143,6 +143,45 @@ def metadata_extract(pc_axis):
     return metadata_attributes, data
 
 
+def split_ignore_quotation_marks(input, separator, final=False):
+    """Split the input into a list avoiding quotation marks.
+
+    Arg: 
+        input (string): metadata element
+        separator (string): character to split ('=')
+        final (bool): if the separator is also the last character  
+
+    Return:
+        list: ['text1', 'text2', ...] 
+    """
+    quotation_mark_start = False
+    quotation_mark_end = False
+    result = []
+    index_from = 0
+
+    for index, element in enumerate(input):
+        if element == '"' and not quotation_mark_start:
+            quotation_mark_start = True
+        elif element == '"' and quotation_mark_start:
+            quotation_mark_end = False
+            quotation_mark_start = False
+        elif element == "'" and not quotation_mark_start:
+            quotation_mark_start = True
+        elif element == "'" and quotation_mark_start:
+            quotation_mark_end = False
+            quotation_mark_start = False
+        if element == separator and not quotation_mark_start:
+            result.append(input[index_from:index])
+            index_from = index + 1 
+    if len(result) > 0:
+        if final:
+            return result
+        else:
+            result.append(input[index_from:index+1])
+        return result
+    return input
+
+
 def metadata_split_to_dict(metadata_elements):
     """Split the list of metadata elements into a multi-valued keys dict.
 
@@ -154,9 +193,9 @@ def metadata_split_to_dict(metadata_elements):
 
     """
     metadata = {}
+
     for element in metadata_elements:
-        name, values = element.split('=')
-        # remove double quotes from key
+        name, values = split_ignore_quotation_marks(element, '=', final=False)
         name = name.replace('"', '')
         # remove leading and trailing blanks from element names
         name = name.replace('( ', '(')
@@ -164,7 +203,6 @@ def metadata_split_to_dict(metadata_elements):
         # split values delimited by double quotes into list
         # additionally strip leading and trailing blanks
         metadata[name] = re.findall('"[ ]*(.+?)[ ]*"+?', values)
-
     return metadata
 
 

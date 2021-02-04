@@ -55,6 +55,15 @@ def test_metadata_split_to_dict():
     assert len(metadata) == 28
 
 
+def test_metadata_split_dict_quotation_marks():
+    """Should ignore character split if it is between quotation marks."""
+    metadata_elements = ['VALUES("estrato de empleo")="Total",">=10 empleados";']
+    metadata = pyaxis.metadata_split_to_dict(metadata_elements)
+    print(metadata)
+    assert type(metadata) == dict
+    assert metadata['VALUES(estrato de empleo)'] == ['Total', '>=10 empleados']
+
+
 def test_get_dimensions():
     """Should return two lists (dimension names and members)."""
     pc_axis = pyaxis.read(
@@ -106,6 +115,7 @@ def test_parse():
     assert parsed_pcaxis['METADATA']
     ['VALUES(Comunidad Autónoma de residencia del matrimonio)'][0][20] == \
         'Extranjero'
+
 
 def test_statistical_disclosure():
     """Should parse a pc-axis with statistical disclosure into a dataframe.
