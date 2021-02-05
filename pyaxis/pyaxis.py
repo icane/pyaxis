@@ -165,11 +165,6 @@ def split_ignore_quotation_marks(input, separator, final=False):
         elif element == '"' and quotation_mark_start:
             quotation_mark_end = False
             quotation_mark_start = False
-        elif element == "'" and not quotation_mark_start:
-            quotation_mark_start = True
-        elif element == "'" and quotation_mark_start:
-            quotation_mark_end = False
-            quotation_mark_start = False
         if element == separator and not quotation_mark_start:
             result.append(input[index_from:index])
             index_from = index + 1 

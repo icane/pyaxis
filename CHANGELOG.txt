@@ -1,3 +1,4 @@
+v0.3.3: fix issue #8
 v0.3.2: fix issue #5
 v0.3.1: fix parsed values with semicolons
 v0.3.0: implement the following:

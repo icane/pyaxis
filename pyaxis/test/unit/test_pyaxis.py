@@ -59,9 +59,24 @@ def test_metadata_split_dict_quotation_marks():
     """Should ignore character split if it is between quotation marks."""
     metadata_elements = ['VALUES("estrato de empleo")="Total",">=10 empleados";']
     metadata = pyaxis.metadata_split_to_dict(metadata_elements)
-    print(metadata)
     assert type(metadata) == dict
     assert metadata['VALUES(estrato de empleo)'] == ['Total', '>=10 empleados']
+
+
+def test_split_ignore_quotation_marks():
+    """Should ignore the separator if it is between doble quotation marks,
+    simple quotation mark is ignored as quotation mark"""
+    text = 'SURVEY[fr]="Statistique du mouvement naturel de la population (BEVNAT), '\
+           +"Statistique de l'état"+'annuel"  " de la population (1981-2010) (ESPOP),\
+            Statistique de la population et des ménages (STATPOP)";  SURVEY[it]="Stat\
+            istica del movimento naturale della popolazione"+"(BEVNAT), Statistica de\
+            llo stato ann"  "uale della popolazione (1981-2010) (ESPOP), Statistica d\
+            ella popolazione e delle economie domestich"  "e (STATPOP);";  SURVEY[en]=\
+            "Vital statistics (BEVNAT), Annual Population Statistics (1981-2010) (ESP\
+            OP), Population "  "and Households Statistics (STATPOP)";'
+    result = pyaxis.split_ignore_quotation_marks(text,';', final=True)
+    assert type(result) == list
+    assert len(result) == 3
 
 
 def test_get_dimensions():
