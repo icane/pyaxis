@@ -238,6 +238,47 @@ def get_dimensions(metadata):
 
     return dimension_names, dimension_members
 
+def get_codes(metadata):
+    """Read dimension codes and their dimension names from metadata dictionary.
+
+    Args:
+        metadata: dictionary of metadata
+
+    Returns:
+        dimension_code_names(list)
+        dimension_codes(list)
+
+    """
+    dimension_code_names = []
+    dimension_codes = []
+
+    # add CODES of STUB and HEADING to a list of dimension codes
+    stubs = metadata['STUB']
+    for stub in stubs:
+        stub_values = []
+        code_key = 'CODES(' + stub + ')'
+        if code_key in metadata:
+            dimension_code_names.append(stub)
+            raw_stub_values = metadata['CODES(' + stub + ')']
+            for value in raw_stub_values:
+                stub_values.append(value)
+            dimension_codes.append(stub_values)
+
+    # add HEADING values to the list of dimension codes
+    headings = metadata['HEADING']
+    for heading in headings:
+        heading_values = []
+        code_key = 'CODES(' + heading + ')'
+        if code_key in metadata:
+            dimension_code_names.append(heading)
+            raw_heading_values = metadata['CODES(' + heading + ')']
+            for value in raw_heading_values:
+                heading_values.append(value)
+            dimension_codes.append(heading_values)
+
+    return dimension_code_names, dimension_codes
+
+
 
 def build_dataframe(dimension_names, dimension_members, data_values,
                     null_values, sd_values):
