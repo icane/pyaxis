@@ -238,6 +238,7 @@ def get_dimensions(metadata):
 
     return dimension_names, dimension_members
 
+
 def get_codes(metadata):
     """Read dimension codes and their dimension names from metadata dictionary.
 
@@ -277,7 +278,6 @@ def get_codes(metadata):
             dimension_codes.append(heading_values)
 
     return dimension_code_names, dimension_codes
-
 
 
 def build_dataframe(dimension_names, dimension_members, data_values,
