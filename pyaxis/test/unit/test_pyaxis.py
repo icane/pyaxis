@@ -94,6 +94,7 @@ def test_get_dimensions():
     assert dimension_members[0][0] == 'Total'
     assert dimension_members[3][3] == 'Divorciados/as'
 
+
 def test_get_codes():
     """Should return two lists (dimension names with codes and codes)."""
     pc_axis = pyaxis.read(
@@ -101,14 +102,14 @@ def test_get_codes():
         'iso-8859-15')
     metadata_elements, raw_data = pyaxis.metadata_extract(pc_axis)
     metadata = pyaxis.metadata_split_to_dict(metadata_elements)
-    dimension_code_names, dimension_codes = pyaxis.get_codes(metadata)
+    dimensions_with_codes, dimension_codes = pyaxis.get_codes(metadata)
     assert len(dimension_codes) == 1
-    assert len(dimension_code_names) == 1
-    assert dimension_code_names[0] == 'Comunidad Autónoma de residencia del matrimonio'
+    assert len(dimensions_with_codes) == 1
+    assert dimensions_with_codes[0] == 'Comunidad Autónoma de residencia del matrimonio'
     assert dimension_codes[0][6] == 'CA06'
     assert dimension_codes[0][11] == 'CA11'
-    
 
+    
 def test_build_dataframe():
     """Should return a dataframe with n+1 columns (dimensions + data)."""
     null_values=r'^"\."$'
