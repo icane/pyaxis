@@ -217,7 +217,7 @@ def get_dimensions(metadata):
 
     # add STUB and HEADING elements to a list of dimension names
     # add VALUES of STUB and HEADING to a list of dimension members
-    stubs = metadata['STUB']
+    stubs = metadata.get('STUB', [])
     for stub in stubs:
         dimension_names.append(stub)
         stub_values = []
@@ -227,7 +227,7 @@ def get_dimensions(metadata):
         dimension_members.append(stub_values)
 
     # add HEADING values to the list of dimension members
-    headings = metadata['HEADING']
+    headings = metadata.get('HEADING', [])
     for heading in headings:
         dimension_names.append(heading)
         heading_values = []
