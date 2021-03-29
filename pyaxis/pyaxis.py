@@ -128,53 +128,51 @@ def metadata_extract(pc_axis):
     # split file into metadata and data sections
     metadata, data = pc_axis.split('DATA=')
     # meta: list of strings that conforms to pattern ATTRIBUTE=VALUES
-    metadata_attributes = split_ignore_quotation_marks(metadata,';', final=True)
-    #metadata_attributes = re.findall('([^=]+=[^=]+)(?:;|$)', metadata)
+    metadata_attributes = split_ignore_quotation_marks(metadata,
+                                                       ';', final=True)
+    # metadata_attributes = re.findall('([^=]+=[^=]+)(?:;|$)', metadata)
 
     # remove all semicolons
     data = data.replace(';', '')
     # remove trailing blanks
     data = data.strip()
 
-    # 
     for i, item in enumerate(metadata_attributes):
         metadata_attributes[i] = item.strip().rstrip(';')
 
     return metadata_attributes, data
 
 
-def split_ignore_quotation_marks(input, separator, final=False):
-    """Split the input into a list avoiding quotation marks.
+def split_ignore_quotation_marks(string_input, separator, final=False):
+    """Split the string_input into a list avoiding quotation marks.
 
-    Arg: 
-        input (string): metadata element
+    Arg:
+        string_input (string): metadata element
         separator (string): character to split ('=')
-        final (bool): if the separator is also the last character  
+        final (bool): if the separator is also the last character
 
     Return:
-        list: ['text1', 'text2', ...] 
+        list: ['text1', 'text2', ...]
     """
     quotation_mark_start = False
-    quotation_mark_end = False
     result = []
     index_from = 0
 
-    for index, element in enumerate(input):
+    for index, element in enumerate(string_input):
         if element == '"' and not quotation_mark_start:
             quotation_mark_start = True
         elif element == '"' and quotation_mark_start:
-            quotation_mark_end = False
             quotation_mark_start = False
         if element == separator and not quotation_mark_start:
-            result.append(input[index_from:index])
-            index_from = index + 1 
+            result.append(string_input[index_from:index])
+            index_from = index + 1
     if len(result) > 0:
         if final:
             return result
         else:
-            result.append(input[index_from:index+1])
+            result.append(string_input[index_from:index+1])
         return result
-    return input
+    return string_input
 
 
 def metadata_split_to_dict(metadata_elements):
