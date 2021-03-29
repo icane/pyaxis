@@ -237,6 +237,49 @@ def get_dimensions(metadata):
     return dimension_names, dimension_members
 
 
+def get_codes(metadata):
+    """Read dimension codes and their dimension names from metadata dictionary.
+
+    Args:
+        metadata: dictionary of metadata
+
+    Returns:
+        dimensions_with_codes(list)
+        dimension_codes(list)
+
+    """
+    dimensions_with_codes = []
+    dimension_codes = []
+
+    # add CODES of STUB to a list of dimension codes
+    stubs = metadata.get('STUB', [])
+    for stub in stubs:
+        stub_values = []
+        code_key = 'CODES(' + stub + ')'
+        # Not all stubs necessarily have CODES
+        if code_key in metadata:
+            dimensions_with_codes.append(stub)
+            raw_stub_values = metadata['CODES(' + stub + ')']
+            for value in raw_stub_values:
+                stub_values.append(value)
+            dimension_codes.append(stub_values)
+
+    # add HEADING values to the list of dimension codes
+    headings = metadata.get('HEADING', [])
+    for heading in headings:
+        heading_values = []
+        code_key = 'CODES(' + heading + ')'
+        # Not all headings necessarily have CODES
+        if code_key in metadata:
+            dimensions_with_codes.append(heading)
+            raw_heading_values = metadata['CODES(' + heading + ')']
+            for value in raw_heading_values:
+                heading_values.append(value)
+            dimension_codes.append(heading_values)
+
+    return dimensions_with_codes, dimension_codes
+
+
 def build_dataframe(dimension_names, dimension_members, data_values,
                     null_values, sd_values):
     """Build a dataframe from dimensions and data.
