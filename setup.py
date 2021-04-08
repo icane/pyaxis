@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='pyaxis',
-    version='0.3.3',
+    version='0.3.4',
     author='Instituto Cántabro de Estadística',
     author_email='icane@cantabria.es',
     packages=['pyaxis', 'pyaxis.test'],
