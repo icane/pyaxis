@@ -124,7 +124,7 @@ def test_connection_error():
     """Using parse() with a wrong URL should return a 404."""
     url = 'https://www.ine.net/jaxiT3/files/t/es/px/1001.px'
 
-    with pytest.raises(requests.exceptions.HTTPError):
+    with pytest.raises(requests.exceptions.ConnectionError):
         pyaxis.parse(url, encoding='windows-1252')
 
 
