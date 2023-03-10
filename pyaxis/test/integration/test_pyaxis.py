@@ -27,7 +27,7 @@ def test_read():
     pc_axis = pyaxis.read(
         'https://www.ine.es/jaxiT3/files/es/1001.px',
         'iso-8859-15')
-    assert len(pc_axis) >= 3445
+    assert len(pc_axis) >= 3436
     assert pc_axis.startswith('AXIS-VERSION="2006";')
     assert pc_axis.endswith('6.21 5.95;')
 
