@@ -13,7 +13,7 @@ in a tabular and pythonic manner.
 **pyaxis** is provided under the Apache License 2.0.
 
 .. [1] https://www.scb.se/px-en for PC-Axis information  
-.. [2] http://pandas.pydata.org for Python Data Analysis Library information   
+.. [2] https://pandas.pydata.org for Python Data Analysis Library information   
 
 Installation
 ============
@@ -32,7 +32,7 @@ Typical usage often looks like this::
 
     from pyaxis import pyaxis
 
-    EXAMPLE_URL = 'http://www.ine.es/jaxiT3/files/t/es/px/2184.px'
+    EXAMPLE_URL = 'https://www.ine.es/jaxiT3/files/t/es/px/2184.px'
     
     px = pyaxis.parse(EXAMPLE_URL, encoding=encoding='ISO-8859-2')
     print px['DATA']
