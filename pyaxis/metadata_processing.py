@@ -53,6 +53,9 @@ def metadata_split_to_dict(metadata_elements):
 
     for element in metadata_elements:
         name, values = split_ignore_quotation_marks(element, '=', final=False)
+
+        # avoid unexpected trailing blanks
+        name = name.strip()
         name = name.replace('"', '')
         # remove leading and trailing blanks from element names
         name = name.replace('( ', '(')
