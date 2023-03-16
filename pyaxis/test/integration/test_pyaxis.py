@@ -19,15 +19,15 @@ data_path = resource_filename('pyaxis', 'test/data/')
 def test_uri_type():
     """uri_type() should be capable of discriminating files and URLs."""
     assert pyaxis.uri_type(
-        'http://www.ine.es/jaxiT3/files/es/2184.px') == 'URL'
+        'https://www.ine.es/jaxiT3/files/es/2184.px') == 'URL'
 
 
 def test_read():
     """Check if a URL is loaded into a string variable."""
     pc_axis = pyaxis.read(
-        'http://www.ine.es/jaxiT3/files/es/1001.px',
+        'https://www.ine.es/jaxiT3/files/es/1001.px',
         'iso-8859-15')
-    #assert len(pc_axis) >= 3445
+    assert len(pc_axis) >= 3436
     assert pc_axis.startswith('AXIS-VERSION="2006";')
     assert pc_axis.endswith('6.21 5.95;')
 
@@ -76,8 +76,8 @@ def test_get_dimensions():
 
 def test_build_dataframe():
     """Should return a dataframe with n+1 columns (dimensions + data)."""
-    null_values=r'^"\."$'
-    sd_values=r'"\.\."'
+    null_values = r'^"\."$'
+    sd_values = r'"\.\."'
     pc_axis = pyaxis.read(
         'https://www.ine.es/jaxi/files/_px/es/px/t20/e301/matri/a2000/l0/'
         '14001.px?nocab=1',
@@ -115,7 +115,7 @@ def test_parse():
 
 def test_http_error():
     """Using parse() with a non-existent URL should return a 404."""
-    url = 'http://www.ine.es/jaxi'
+    url = 'https://www.ine.es/jaxi'
     with pytest.raises(requests.exceptions.HTTPError):
         pyaxis.parse(url, encoding='windows-1252')
 
@@ -124,7 +124,7 @@ def test_connection_error():
     """Using parse() with a wrong URL should return a 404."""
     url = 'http://www.ine.es/jaxiT3/files/t/es/px/22284.px'
 
-    with pytest.raises(requests.exceptions.HTTPError):
+    with pytest.raises(requests.exceptions.ConnectionError):
         pyaxis.parse(url, encoding='windows-1252')
 
 
