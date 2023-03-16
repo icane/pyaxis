@@ -9,7 +9,7 @@ PX is a standard format for statistical files used by a large number of
 statistical offices (Spain, Switzerland, Sweden). A package of software has been developed for this format: 
 PX-Win, PX-Web and PX-Edit. **pyaxis** eases reading and parsing of PX files data 
 and metadata into a pandas Dataframe and a dict structure, allowing their manipulation
-in a tabular and pythonic manner. It supports both monolingual and multilingual PX files. The package was initially developped by the [Instituto Nacional de Estadistica](https://www.ine.es) and is now jointly maintained by INE and the [Swiss Data Science Center](https://datascience.ch).  
+in a tabular and pythonic manner. It supports both monolingual and multilingual PX files. The package was initially developped by the [Instituto Cántabro de Estadistica](https://www.icane.es) and is now jointly maintained by ICANE and the [Swiss Data Science Center](https://datascience.ch).  
 **pyaxis** is provided under the Apache License 2.0.
 
 .. [1] https://www.scb.se/px-en for PC-Axis information  
