@@ -121,7 +121,7 @@ def test_http_error():
 
 
 def test_connection_error():
-    """Using parse() with a wrong URL should return a 404."""
+    """Using parse() with a wrong URL should return a connection error."""
     url = 'https://www.ine.net/jaxiT3/files/t/es/px/1001.px'
 
     with pytest.raises(requests.exceptions.ConnectionError):

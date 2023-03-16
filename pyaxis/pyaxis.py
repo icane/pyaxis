@@ -2,7 +2,9 @@
 
 This module obtains a pandas DataFrame of tabular data from a PC-Axis
 file or URL. Reads data and metadata from PC-Axis [1]_ into a dataframe and
-dictionary, and returns a dictionary containing both structures.
+dictionary. It handles multilingual PX files by letting the user input a language prerequisite. 
+Else the process runs on the default language of the PX file. 
+The output is a dictionary containing three structures: a dictionary of metadata, a dataframe, and a translation dictionary for the metadata fields (which is empty is the PX file is only in 1 language).
 
 Example:
     from pyaxis import pyaxis
@@ -18,15 +20,18 @@ Example:
 
 """
 
-import itertools
 import logging
 import re
 
 from numpy import nan
 
-from pandas import DataFrame, Series
+from pandas import Series
 
 import requests
+
+from pyaxis.metadata_processing import metadata_extract, metadata_split_to_dict, multilingual_parse
+
+from pyaxis.data_processing import get_dimensions, build_dataframe
 
 
 logging.basicConfig(level=logging.INFO)
@@ -110,210 +115,9 @@ def read(uri, encoding, timeout=10):
     return raw_pcaxis
 
 
-def metadata_extract(pc_axis):
-    r"""Extract metadata and data from pc-axis file contents.
-
-    Args:
-        pc_axis (str): pc_axis file contents.
-
-    Returns:
-        metadata_attributes (list of string): each item conforms to an\
-                                              ATTRIBUTE=VALUES pattern.
-        data (string): data values.
-
-    """
-    # replace new line characters with blank
-    pc_axis = pc_axis.replace('\n', ' ').replace('\r', ' ')
-
-    # split file into metadata and data sections
-    metadata, data = pc_axis.split('DATA=')
-    # meta: list of strings that conforms to pattern ATTRIBUTE=VALUES
-    metadata_attributes = split_ignore_quotation_marks(metadata,
-                                                       ';', final=True)
-    # metadata_attributes = re.findall('([^=]+=[^=]+)(?:;|$)', metadata)
-
-    # remove all semicolons
-    data = data.replace(';', '')
-    # remove trailing blanks
-    data = data.strip()
-
-    for i, item in enumerate(metadata_attributes):
-        metadata_attributes[i] = item.strip().rstrip(';')
-
-    return metadata_attributes, data
-
-
-def split_ignore_quotation_marks(string_input, separator, final=False):
-    """Split the string_input into a list avoiding quotation marks.
-
-    Arg:
-        string_input (string): metadata element
-        separator (string): character to split ('=')
-        final (bool): if the separator is also the last character
-
-    Return:
-        list: ['text1', 'text2', ...]
-    """
-    quotation_mark_start = False
-    result = []
-    index_from = 0
-
-    for index, element in enumerate(string_input):
-        if element == '"' and not quotation_mark_start:
-            quotation_mark_start = True
-        elif element == '"' and quotation_mark_start:
-            quotation_mark_start = False
-        if element == separator and not quotation_mark_start:
-            result.append(string_input[index_from:index])
-            index_from = index + 1
-    if len(result) > 0:
-        if final:
-            return result
-        else:
-            result.append(string_input[index_from:index+1])
-        return result
-    return string_input
-
-
-def metadata_split_to_dict(metadata_elements):
-    """Split the list of metadata elements into a multi-valued keys dict.
-
-    Args:
-        metadata_elements (list of string): pairs ATTRIBUTE=VALUES
-
-    Returns:
-        metadata (dictionary): {'attribute1': ['value1', 'value2', ... ], ...}
-
-    """
-    metadata = {}
-
-    for element in metadata_elements:
-        name, values = split_ignore_quotation_marks(element, '=', final=False)
-        name = name.replace('"', '')
-        # remove leading and trailing blanks from element names
-        name = name.replace('( ', '(')
-        name = name.replace(' )', ')')
-        # split values delimited by double quotes into list
-        # additionally strip leading and trailing blanks
-        metadata[name] = re.findall('"[ ]*(.+?)[ ]*"+?', values)
-    return metadata
-
-
-def get_dimensions(metadata):
-    """Read STUB and HEADING values from metadata dictionary.
-
-    Args:
-        metadata: dictionary of metadata
-
-    Returns:
-        dimension_names (list)
-        dimension_members (list)
-
-    """
-    dimension_names = []
-    dimension_members = []
-
-    # add STUB and HEADING elements to a list of dimension names
-    # add VALUES of STUB and HEADING to a list of dimension members
-    stubs = metadata.get('STUB', [])
-    for stub in stubs:
-        dimension_names.append(stub)
-        stub_values = []
-        raw_stub_values = metadata['VALUES(' + stub + ')']
-        for value in raw_stub_values:
-            stub_values.append(value)
-        dimension_members.append(stub_values)
-
-    # add HEADING values to the list of dimension members
-    headings = metadata.get('HEADING', [])
-    for heading in headings:
-        dimension_names.append(heading)
-        heading_values = []
-        raw_heading_values = metadata['VALUES(' + heading + ')']
-        for value in raw_heading_values:
-            heading_values.append(value)
-        dimension_members.append(heading_values)
-
-    return dimension_names, dimension_members
-
-
-def get_codes(metadata):
-    """Read dimension codes and their dimension names from metadata dictionary.
-
-    Args:
-        metadata: dictionary of metadata
-
-    Returns:
-        dimensions_with_codes(list)
-        dimension_codes(list)
-
-    """
-    dimensions_with_codes = []
-    dimension_codes = []
-
-    # add CODES of STUB to a list of dimension codes
-    stubs = metadata.get('STUB', [])
-    for stub in stubs:
-        stub_values = []
-        code_key = 'CODES(' + stub + ')'
-        # Not all stubs necessarily have CODES
-        if code_key in metadata:
-            dimensions_with_codes.append(stub)
-            raw_stub_values = metadata['CODES(' + stub + ')']
-            for value in raw_stub_values:
-                stub_values.append(value)
-            dimension_codes.append(stub_values)
-
-    # add HEADING values to the list of dimension codes
-    headings = metadata.get('HEADING', [])
-    for heading in headings:
-        heading_values = []
-        code_key = 'CODES(' + heading + ')'
-        # Not all headings necessarily have CODES
-        if code_key in metadata:
-            dimensions_with_codes.append(heading)
-            raw_heading_values = metadata['CODES(' + heading + ')']
-            for value in raw_heading_values:
-                heading_values.append(value)
-            dimension_codes.append(heading_values)
-
-    return dimensions_with_codes, dimension_codes
-
-
-def build_dataframe(dimension_names, dimension_members, data_values,
-                    null_values, sd_values):
-    """Build a dataframe from dimensions and data.
-
-       Adds the cartesian product of dimension members plus the series of data.
-
-    Args:
-        dimension_names (list of string)
-        dimension_members (list of string)
-        data_values(Series): pandas series with the data values column.
-        null_values(str): regex with the pattern for the null values in the px
-                          file. Defaults to '.'.
-        sd_values(str): regex with the pattern for the statistical disclosured
-                        values in the px file. Defaults to '..'.
-    Returns:
-        df (pandas dataframe)
-
-    """
-    # cartesian product of dimension members
-    dim_exploded = list(itertools.product(*dimension_members))
-
-    df = DataFrame(data=dim_exploded, columns=dimension_names)
-
-    # column of data values
-    df['DATA'] = data_values
-    # null values and statistical disclosure treatment
-    df = df.replace({'DATA': {null_values: ''}}, regex=True)
-    df = df.replace({'DATA': {sd_values: nan}}, regex=True)
-
-    return df
-
-
 def parse(uri, encoding, timeout=10,
-          null_values=r'^"\."$', sd_values=r'"\.\."'):
+          null_values=r'^"\."$', sd_values=r'"\.\."',
+          lang=None):
     """Extract metadata and data sections from pc-axis.
 
     Args:
@@ -324,11 +128,13 @@ def parse(uri, encoding, timeout=10,
                           file. Defaults to '.'.
         sd_values(str): regex with the pattern for the statistical disclosured
                         values in the px file. Defaults to '..'.
+        lang: language desired for the metadata and the column names of the dataframe
 
     Returns:
          pc_axis_dict (dictionary): dictionary of metadata and pandas df.
                                     METADATA: dictionary of metadata
                                     DATA: pandas dataframe
+                                    TRANSLATION: dictionary of translations of the metadata (empty if the px file is monolingual)
 
     """
     # get file content or URL stream
@@ -344,6 +150,9 @@ def parse(uri, encoding, timeout=10,
 
     # stores raw metadata into a dictionary
     metadata = metadata_split_to_dict(metadata_elements)
+
+    # handles the languages of the px file
+    metadata, translation_dict = multilingual_parse(metadata, lang)
 
     # explode raw data into a Series of values, which can contain nullos or sd
     # (statistical disclosure)
@@ -364,6 +173,7 @@ def parse(uri, encoding, timeout=10,
     # dictionary of metadata and data (pandas dataframe)
     parsed_pc_axis = {
         'METADATA': metadata,
-        'DATA': df
+        'DATA': df,
+        'TRANSLATION' : translation_dict
     }
     return parsed_pc_axis
