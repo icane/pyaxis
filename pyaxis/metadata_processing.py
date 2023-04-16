@@ -139,10 +139,23 @@ def metadata_dict_maker(metadata_dict, languages, lang):
             if "["+lang+"]" in key:
                 # remove the default language that has just been added
                 del lang_dict[previous_key]
+                # new:
+                #del lang_dict[parenthesis_extractor(previous_key, extract_in=False)]
                 # remove language info from key
                 key = brackets_stripper(key)
                 # Add the value only the language requested
                 lang_dict[key] = value
+                # new: how to handle? 
+                # if key==parenthesis_extractor(key):
+                #     lang_dict[key] = value
+                # else: 
+                #     intermediate_dict = {parenthesis_extractor(key): value}
+                #     #make into function ? 
+                #     name_key = parenthesis_extractor(key, extract_in=False)
+                #     if name_key in lang_dict.keys():
+                #         lang_dict[name_key+ str(np.random.randint(1234, 12789))] = intermediate_dict
+                #     else: 
+                #         lang_dict[name_key] = intermediate_dict        
             else: 
                 # condition ensures we skip the keys tied to other languages
                 if not any("["+l+"]" in key for l in languages):

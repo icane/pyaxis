@@ -219,7 +219,7 @@
                            ]
                   }
          },
-         "VALUES12775": {
+         "VALUES9103": {
                   "de": "Ausbildungsniveau",
                   "fr": "Niveau de formation",
                   "it": "Livello di formazione",
@@ -251,7 +251,7 @@
                            ]
                   }
          },
-         "VALUES10469": {
+         "VALUES11312": {
                   "de": "Schwierigkeiten",
                   "fr": "Niveau de difficult\u00e9s",
                   "it": "Difficolt\u0155 di reclutamento",
@@ -287,7 +287,7 @@
                            ]
                   }
          },
-         "VALUES9272": {
+         "VALUES4967": {
                   "de": "Gewichtung",
                   "fr": "Pond\u00e9ration",
                   "it": "Ponderazione",
@@ -311,7 +311,7 @@
                            ]
                   }
          },
-         "VALUES2963": {
+         "VALUES8400": {
                   "de": "Quartal",
                   "fr": "Trimestre",
                   "it": "Trimestre",
@@ -329,25 +329,25 @@
                   "it": "Divisione economica",
                   "en": "Economic division"
          },
-         "CODES9438": {
+         "CODES2825": {
                   "de": "Ausbildungsniveau",
                   "fr": "Niveau de formation",
                   "it": "Livello di formazione",
                   "en": "Education level"
          },
-         "CODES12020": {
+         "CODES3207": {
                   "de": "Schwierigkeiten",
                   "fr": "Niveau de difficult\u00e9s",
                   "it": "Difficolt\u0155 di reclutamento",
                   "en": "Difficulties"
          },
-         "CODES11570": {
+         "CODES7133": {
                   "de": "Gewichtung",
                   "fr": "Pond\u00e9ration",
                   "it": "Ponderazione",
                   "en": "Weight"
          },
-         "CODES2959": {
+         "CODES5509": {
                   "de": "Quartal",
                   "fr": "Trimestre",
                   "it": "Trimestre",

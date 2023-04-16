@@ -1,0 +1,408 @@
+{
+         "CHARSET": [
+                  "ANSI"
+         ],
+         "AXIS-VERSION": [
+                  "2010"
+         ],
+         "CODEPAGE": [
+                  "iso-8859-15"
+         ],
+         "LANGUAGE": [
+                  "it"
+         ],
+         "LANGUAGES": [
+                  "de",
+                  "fr",
+                  "it",
+                  "en"
+         ],
+         "CREATION-DATE": [
+                  "20160713 09:00"
+         ],
+         "DECIMALS": [],
+         "SHOWDECIMALS": [],
+         "MATRIX": [
+                  "px-x-0602000000_107"
+         ],
+         "SUBJECT-CODE": [
+                  "06"
+         ],
+         "SUBJECT-AREA": [
+                  "06 - Industria e servizi"
+         ],
+         "DESCRIPTION": [
+                  "Stabilimenti secondo la difficolt\u0155 di reclutamento di personale in alcune divisioni economiche e il livello di formazione (in %)"
+         ],
+         "TITLE": [
+                  "Stabilimenti secondo la difficolt\u0155 di reclutamento di personale in alcune divisioni economiche e il livello di formazione (in %)"
+         ],
+         "DESCRIPTIONDEFAULT": [],
+         "CONTENTS": [
+                  "Stabilimenti secondo la difficolt\u0155 di reclutamento di personale in alcune divisioni economiche e il livello di formazione (in %)"
+         ],
+         "UNITS": [
+                  "Percento"
+         ],
+         "STUB": [
+                  "Divisione economica",
+                  "Livello di formazione",
+                  "Difficolt\u0155 di reclutamento",
+                  "Ponderazione"
+         ],
+         "HEADING": [
+                  "Trimestre"
+         ],
+         "VALUES(Divisione economica)": [
+                  "5-96 Totale",
+                  "5-43 SETTORE II",
+                  "10-33 Attivit\u0155 manifatturiere",
+                  "24-25 Fabbricazione di prodotti in metallo",
+                  "26 Fabbricazione di prodotti di elettronica, orologeria",
+                  "28 Fabbricazione di macchinari e app. n.c.a",
+                  "41-43 Costruzioni",
+                  "45-96 SETTORE III",
+                  "45-47 Commercio e riparazione di autoveicoli e motocicli",
+                  "49-53 Trasporto e magazzinaggio",
+                  "55-56 Servizi di alloggio e di ristorazione",
+                  "58-63 Servizi di informazione e comunicazione",
+                  "62-63 Attivit\u0155 informatiche e altri servizi informativi",
+                  "64-66 Attivit\u0155 finanziarie e assicurative",
+                  "68-75 Attivit\u0155 immob., prof., scientifiche e tecniche",
+                  "77-82 Attivit\u0155 amministrative e di servizi di supporto",
+                  "84 Amministrazione pubblica",
+                  "85 Istruzione",
+                  "86-88 Sanit\u0155 e assistenza sociale",
+                  "90-96 Att. artist., di divertim. e Altre att. di serv."
+         ],
+         "VALUES(Livello di formazione)": [
+                  "Scuola Universitaria",
+                  "Professionale Superiore",
+                  "Apprendistato",
+                  "Scuola dell'obligo"
+         ],
+         "VALUES(Difficolt\u0155 di reclutamento)": [
+                  "Personale trovato senza difficolt\u0155",
+                  "Personale trovato con difficolt\u0155",
+                  "Personale non trovato",
+                  "Personale non \u010d stato cercato / reclutamento non terminato / non sa",
+                  "Non risponde"
+         ],
+         "VALUES(Ponderazione)": [
+                  "Ponderazione secondo il numero di impieghi",
+                  "Ponderazione secondo il numero di stabilimenti"
+         ],
+         "VALUES(Trimestre)": [
+                  "2004Q1",
+                  "2004Q2",
+                  "2004Q3",
+                  "2004Q4",
+                  "2005Q1",
+                  "2005Q2",
+                  "2005Q3",
+                  "2005Q4",
+                  "2006Q1",
+                  "2006Q2",
+                  "2006Q3",
+                  "2006Q4",
+                  "2007Q1",
+                  "2007Q2",
+                  "2007Q3",
+                  "2007Q4",
+                  "2008Q1",
+                  "2008Q2",
+                  "2008Q3",
+                  "2008Q4",
+                  "2009Q1",
+                  "2009Q2",
+                  "2009Q3",
+                  "2009Q4",
+                  "2010Q1",
+                  "2010Q2",
+                  "2010Q3",
+                  "2010Q4",
+                  "2011Q1",
+                  "2011Q2",
+                  "2011Q3",
+                  "2011Q4",
+                  "2012Q1",
+                  "2012Q2",
+                  "2012Q3",
+                  "2012Q4",
+                  "2013Q1",
+                  "2013Q2",
+                  "2013Q3",
+                  "2013Q4",
+                  "2014Q1",
+                  "2014Q2",
+                  "2014Q3",
+                  "2014Q4",
+                  "2015Q1",
+                  "2015Q2",
+                  "2015Q3",
+                  "2015Q4",
+                  "2016Q1",
+                  "2016Q2",
+                  "2016Q3",
+                  "2016Q4",
+                  "2017Q1",
+                  "2017Q2",
+                  "2017Q3",
+                  "2017Q4",
+                  "2018Q1",
+                  "2018Q2",
+                  "2018Q3",
+                  "2018Q4",
+                  "2019Q1",
+                  "2019Q2",
+                  "2019Q3",
+                  "2019Q4",
+                  "2020Q1",
+                  "2020Q2",
+                  "2020Q3",
+                  "2020Q4",
+                  "2021Q1",
+                  "2021Q2",
+                  "2021Q3",
+                  "2021Q4",
+                  "2022Q1",
+                  "2022Q2",
+                  "2022Q3",
+                  "2022Q4"
+         ],
+         "TIMEVAL(Trimestre)": [
+                  "20041",
+                  "20042",
+                  "20043",
+                  "20044",
+                  "20051",
+                  "20052",
+                  "20053",
+                  "20054",
+                  "20061",
+                  "20062",
+                  "20063",
+                  "20064",
+                  "20071",
+                  "20072",
+                  "20073",
+                  "20074",
+                  "20081",
+                  "20082",
+                  "20083",
+                  "20084",
+                  "20091",
+                  "20092",
+                  "20093",
+                  "20094",
+                  "20101",
+                  "20102",
+                  "20103",
+                  "20104",
+                  "20111",
+                  "20112",
+                  "20113",
+                  "20114",
+                  "20121",
+                  "20122",
+                  "20123",
+                  "20124",
+                  "20131",
+                  "20132",
+                  "20133",
+                  "20134",
+                  "20141",
+                  "20142",
+                  "20143",
+                  "20144",
+                  "20151",
+                  "20152",
+                  "20153",
+                  "20154",
+                  "20161",
+                  "20162",
+                  "20163",
+                  "20164",
+                  "20171",
+                  "20172",
+                  "20173",
+                  "20174",
+                  "20181",
+                  "20182",
+                  "20183",
+                  "20184",
+                  "20191",
+                  "20192",
+                  "20193",
+                  "20194",
+                  "20201",
+                  "20202",
+                  "20203",
+                  "20204",
+                  "20211",
+                  "20212",
+                  "20213",
+                  "20214",
+                  "20221",
+                  "20222",
+                  "20223",
+                  "20224"
+         ],
+         "CODES(Divisione economica)": [
+                  "5-96",
+                  "5-43",
+                  "10-33",
+                  "24-25",
+                  "26",
+                  "28",
+                  "41-43",
+                  "45-96",
+                  "45-47",
+                  "49-53",
+                  "55-56",
+                  "58-63",
+                  "62-63",
+                  "64-66",
+                  "68-75",
+                  "77-82",
+                  "84",
+                  "85",
+                  "86-88",
+                  "90-96"
+         ],
+         "CODES(Livello di formazione)": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+         ],
+         "CODES(Difficolt\u0155 di reclutamento)": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+         ],
+         "CODES(Ponderazione)": [
+                  "2",
+                  "1"
+         ],
+         "CODES(Trimestre)": [
+                  "2004Q1",
+                  "2004Q2",
+                  "2004Q3",
+                  "2004Q4",
+                  "2005Q1",
+                  "2005Q2",
+                  "2005Q3",
+                  "2005Q4",
+                  "2006Q1",
+                  "2006Q2",
+                  "2006Q3",
+                  "2006Q4",
+                  "2007Q1",
+                  "2007Q2",
+                  "2007Q3",
+                  "2007Q4",
+                  "2008Q1",
+                  "2008Q2",
+                  "2008Q3",
+                  "2008Q4",
+                  "2009Q1",
+                  "2009Q2",
+                  "2009Q3",
+                  "2009Q4",
+                  "2010Q1",
+                  "2010Q2",
+                  "2010Q3",
+                  "2010Q4",
+                  "2011Q1",
+                  "2011Q2",
+                  "2011Q3",
+                  "2011Q4",
+                  "2012Q1",
+                  "2012Q2",
+                  "2012Q3",
+                  "2012Q4",
+                  "2013Q1",
+                  "2013Q2",
+                  "2013Q3",
+                  "2013Q4",
+                  "2014Q1",
+                  "2014Q2",
+                  "2014Q3",
+                  "2014Q4",
+                  "2015Q1",
+                  "2015Q2",
+                  "2015Q3",
+                  "2015Q4",
+                  "2016Q1",
+                  "2016Q2",
+                  "2016Q3",
+                  "2016Q4",
+                  "2017Q1",
+                  "2017Q2",
+                  "2017Q3",
+                  "2017Q4",
+                  "2018Q1",
+                  "2018Q2",
+                  "2018Q3",
+                  "2018Q4",
+                  "2019Q1",
+                  "2019Q2",
+                  "2019Q3",
+                  "2019Q4",
+                  "2020Q1",
+                  "2020Q2",
+                  "2020Q3",
+                  "2020Q4",
+                  "2021Q1",
+                  "2021Q2",
+                  "2021Q3",
+                  "2021Q4",
+                  "2022Q1",
+                  "2022Q2",
+                  "2022Q3",
+                  "2022Q4"
+         ],
+         "ELIMINATION(Divisione economica)": [
+                  "5-96 Totale"
+         ],
+         "LAST-UPDATED": [
+                  "20230224 08:30"
+         ],
+         "CONTACT": [
+                  "Sezione Indagini congiunturali, +41 58 467 23 70, e-mail: diffusion.besta@bfs.admin.ch"
+         ],
+         "REFPERIOD": [
+                  "2022,2021,2020,2019,2018,2017,2016,2015,2014,2013,2012,2011,2010,2009,2008,2007,2006,2005,2004"
+         ],
+         "DATABASE": [
+                  "UST - STAT-TAB / Ufficio federale di statistica, 2010 Neuch\u00e2tel / Svizzera / \u0160 Ufficio federale di statistica"
+         ],
+         "SOURCE": [
+                  "UST - Statistica dell'impiego - \u0160 UST"
+         ],
+         "SURVEY": [
+                  "Statistica dell'impiego (STATIMP)"
+         ],
+         "LINK": [
+                  "https://www.bfs.admin.ch/asset/it/px-x-0602000000_107"
+         ],
+         "NOTE": [
+                  "<B>Metainformazione:</B>#Ultima modifica: nuovo trimestre#Stato della base di dati: 24.02.2023#Data dell'indagine: ultimo mese del trimestre (marzo, giugno, settembre e dicembre)#Georeferenza: Svizzera#Rilevazione: Statistica dell'impiego",
+                  "STATIMP##<B>Simboli utilizzati</B> :#'...' : Dato non noto, non (ancora) rilevato o non (ancora) calcolato##<B>Commento</B> :#Le serie della STATIMP sono state revisionate per i trimestri dal 2020-II al 2022-I (Agosto 2022)#"
+         ],
+         "DATASYMBOL1": [
+                  "-"
+         ],
+         "DATASYMBOL4": [
+                  "*"
+         ],
+         "DATASYMBOL5": [
+                  "( )"
+         ],
+         "DATASYMBOL6": [
+                  "X"
+         ]
+}
