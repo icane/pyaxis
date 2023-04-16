@@ -70,6 +70,7 @@ def brackets_stripper(expression):
 
 def parenthesis_checker(input_string):
     """Checks if there are parenthesis in the string and returns the substring within parenthesis.
+    If there are no parenthesis, the string is returned unchanged.
     Parameters: 
     input_string: the string being checked for parenthesis
     Returns:
@@ -78,13 +79,17 @@ def parenthesis_checker(input_string):
     #keep second chunk which was in the parenthesis
     #and keep from first character of the string to before last 
     #because the last character is the 2nd parenthesis
-    output_string = input_string.split("(")[-1][0:-1]
+    if "(" in input_string:
+        output_string = input_string.split("(")[-1][0:-1]
+    else: 
+        output_string = input_string
     return output_string
 
 # For DICTIONARIES
 
 def check_same_dict_value(dictionary): 
     """Checks if all the values in a dictionary are the same. 
+    The check is also performed when the values of the dictionary are lists (list comparaison).
     This is done by checking if the length of unique values in the dictionary (its set) has a length equal to 1. 
     Parameters:
     dictionary: a dictionary where the values may all be the same

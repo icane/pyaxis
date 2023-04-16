@@ -1,12 +1,10 @@
 """Unit tests for pyaxis module."""
 
 from csv import QUOTE_NONNUMERIC
-
 from numpy import isnan
-
 from pandas import Series
-
 from pkg_resources import resource_filename
+import json
 
 from pyaxis import pyaxis
 from pyaxis import helpers_string
@@ -146,6 +144,24 @@ def test_brackets_stripper():
     mystring = helpers_string.brackets_stripper(mystring)
     assert mystring == "This is a string "
 
+def test_parenthesis_checker():
+    """parenthesis_checker should extract the substring within the parenthesis of a string or leave the string unchanged"""
+    test_string = helpers_string.parenthesis_checker("VALUES(Jahr)")
+    test_string_2 = helpers_string.parenthesis_checker("Jahr")
+    assert not "(" in test_string
+    assert test_string_2=="Jahr"
+
+TEST_DICT = [
+    {"1":["a"],"2":["a"], "3":["a"]}, 
+    {"1":"a", "2":"a", "3":"a"} 
+    ]
+
+@pytest.mark.parametrize("test_dict", TEST_DICT)
+def test_check_same_dict_value(test_dict):
+    """check_same_dict_value verifies if the values of a dictionary are all identical. Whether these values be lists or strings."""
+    test_dict = helpers_string.check_same_dict_value(test_dict)
+    assert test_dict
+
 def test_multilingual_checker():
     """multilingual_checker should return a tuple with a boolean for translation and a list of languages"""
     px= data_path + "px-x-0602000000_107.px"
@@ -188,19 +204,44 @@ def test_translation_dict_maker():
     metadata, raw_data = pyaxis.metadata_extract(pc_axis)
     metadata_dict = pyaxis.metadata_split_to_dict(metadata)
     languages = metadata_dict['LANGUAGES']
-    print(metadata_dict['VALUES(Wirtschaftsabteilung)'])
     lang = "it"
     default_language = metadata_dict['LANGUAGE'][0]
     _, default_multilingual_fields = metadata_processing.metadata_dict_maker(metadata_dict, languages, lang)
     translation_dict = metadata_processing.translation_dict_maker(metadata_dict, default_multilingual_fields, languages, default_language, lang)
     assert type(translation_dict) == dict
     assert 'VALUES(Livello di formazione)' in translation_dict
-    assert translation_dict['VALUES(Livello di formazione)'] == {
-                                                                 'de': ['Hochschulabsolventen', 'Höhere Berufsbildung', 'Berufslehre', 'Obligatorische Schulbildung'],
-                                                                 'fr': ['Haute école', 'Professionnelle supérieure', 'Apprentissage', 'Ecole obligatoire'],
-                                                                 'it': ['Scuola Universitaria', 'Professionale Superiore', 'Apprendistato', "Scuola dell'obligo"], 
-                                                                 'en': ['University degree', 'Higher professional education', 'Apprenticeship', 'Compulsory education']}
-
+    assert translation_dict["VALUES(Livello di formazione)"] == {
+                                                            "de": "Ausbildungsniveau",
+                                                            "fr": "Niveau de formation",
+                                                            "it": "Livello di formazione",
+                                                            "en": "Education level",
+                                                            "isDefinedAs": {
+                                                                    "de": [
+                                                                                "Hochschulabsolventen",
+                                                                                "H\u00f6here Berufsbildung",
+                                                                                "Berufslehre",
+                                                                                "Obligatorische Schulbildung"
+                                                                    ],
+                                                                    "fr": [
+                                                                                "Haute \u00e9cole",
+                                                                                "Professionnelle sup\u00e9rieure",
+                                                                                "Apprentissage",
+                                                                                "Ecole obligatoire"
+                                                                    ],
+                                                                    "it": [
+                                                                                "Scuola Universitaria",
+                                                                                "Professionale Superiore",
+                                                                                "Apprendistato",
+                                                                                "Scuola dell'obligo"
+                                                                    ],
+                                                                    "en": [
+                                                                                "University degree",
+                                                                                "Higher professional education",
+                                                                                "Apprenticeship",
+                                                                                "Compulsory education"
+                                                                    ]
+                                                            }
+                                                    }
 
 
 def test_multilingual_parse():
@@ -229,6 +270,24 @@ def test_parse():
     assert parsed_pcaxis['METADATA']
     ['VALUES(Comunidad Autónoma de residencia del matrimonio)'][0][20] == \
         'Extranjero'
+    
+
+TEST_PX_FILES = [
+    data_path + '14001.px',
+    data_path + '27067.px',
+    data_path + '1001.px',
+    data_path + 'px-x-0602000000_107.px'
+    ]
+
+@pytest.mark.parametrize("test_px", TEST_PX_FILES)
+def test_pyaxis(test_px):
+    """test_pyaxis runs through different px files and saves their output translation dictionary as an example for a user"""
+    encoding = 'ISO-8859-2'
+    parsed_px = pyaxis.parse(test_px, encoding)
+    #generate an example translation output
+    with open(data_path+"example_output_translation.json", "w") as outfile:
+        json.dump(parsed_px["TRANSLATION"], outfile, indent=9)
+
 
 
 def test_statistical_disclosure():

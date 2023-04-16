@@ -1,0 +1,476 @@
+{
+         "SUBJECT-AREA": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "06 - Industrie, Dienstleistungen"
+                           ],
+                           "fr": [
+                                    "06 - Industrie, services"
+                           ],
+                           "it": [
+                                    "06 - Industria e servizi"
+                           ],
+                           "en": [
+                                    "06 - Industry and services"
+                           ]
+                  }
+         },
+         "DESCRIPTION": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "Betriebe nach Schwierigkeiten bei der Personalrekrutierung, ausgew\u00e4hlten Wirtschaftsabteilungen und Ausbildungsniveau (in %)"
+                           ],
+                           "fr": [
+                                    "Etablissements selon le niveau de difficult\u00e9s de recrutement de personnel, certaines divisions \u00e9conomiques et le niveau de formation (en %)"
+                           ],
+                           "it": [
+                                    "Stabilimenti secondo la difficolt\u0155 di reclutamento di personale in alcune divisioni economiche e il livello di formazione (in %)"
+                           ],
+                           "en": [
+                                    "Businesses by difficulties in recruiting staff, economic divisions (selection) and education level (in %)"
+                           ]
+                  }
+         },
+         "TITLE": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "Betriebe nach Schwierigkeiten bei der Personalrekrutierung, ausgew\u00e4hlten Wirtschaftsabteilungen und Ausbildungsniveau (in %)"
+                           ],
+                           "fr": [
+                                    "Etablissements selon le niveau de difficult\u00e9s de recrutement de personnel, certaines divisions \u00e9conomiques et le niveau de formation (en %)"
+                           ],
+                           "it": [
+                                    "Stabilimenti secondo la difficolt\u0155 di reclutamento di personale in alcune divisioni economiche e il livello di formazione (in %)"
+                           ],
+                           "en": [
+                                    "Businesses by difficulties in recruiting staff, economic divisions (selection) and education level (in %)"
+                           ]
+                  }
+         },
+         "CONTENTS": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "Betriebe nach Schwierigkeiten bei der Personalrekrutierung, ausgew\u00e4hlten Wirtschaftsabteilungen und Ausbildungsniveau (in %)"
+                           ],
+                           "fr": [
+                                    "Etablissements selon le niveau de difficult\u00e9s de recrutement de personnel, certaines divisions \u00e9conomiques et le niveau de formation (en %)"
+                           ],
+                           "it": [
+                                    "Stabilimenti secondo la difficolt\u0155 di reclutamento di personale in alcune divisioni economiche e il livello di formazione (in %)"
+                           ],
+                           "en": [
+                                    "Businesses by difficulties in recruiting staff, economic divisions (selection) and education level (in %)"
+                           ]
+                  }
+         },
+         "UNITS": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "Prozent"
+                           ],
+                           "fr": [
+                                    "Pourcent"
+                           ],
+                           "it": [
+                                    "Percento"
+                           ],
+                           "en": [
+                                    "Percent"
+                           ]
+                  }
+         },
+         "STUB": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "Wirtschaftsabteilung",
+                                    "Ausbildungsniveau",
+                                    "Schwierigkeiten",
+                                    "Gewichtung"
+                           ],
+                           "fr": [
+                                    "Division \u00e9conomique",
+                                    "Niveau de formation",
+                                    "Niveau de difficult\u00e9s",
+                                    "Pond\u00e9ration"
+                           ],
+                           "it": [
+                                    "Divisione economica",
+                                    "Livello di formazione",
+                                    "Difficolt\u0155 di reclutamento",
+                                    "Ponderazione"
+                           ],
+                           "en": [
+                                    "Economic division",
+                                    "Education level",
+                                    "Difficulties",
+                                    "Weight"
+                           ]
+                  }
+         },
+         "HEADING": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "Quartal"
+                           ],
+                           "fr": [
+                                    "Trimestre"
+                           ],
+                           "it": [
+                                    "Trimestre"
+                           ],
+                           "en": [
+                                    "Quarter"
+                           ]
+                  }
+         },
+         "VALUES(Wirtschaftsabteilung)": {
+                  "de": "Wirtschaftsabteilung",
+                  "fr": "Division \u00e9conomique",
+                  "it": "Divisione economica",
+                  "en": "Economic division",
+                  "isDefinedAs": {
+                           "de": [
+                                    "5-96 Total",
+                                    "5-43 SEKTOR II",
+                                    "10-33 Verarbeitendes Gewerbe/Herstellung von Waren",
+                                    "24-25 Herstellung von Metallerzeugnissen",
+                                    "26 Herstellung von Datenverarbeitungsger\u00e4ten und Uhren",
+                                    "28 Maschinenbau",
+                                    "41-43 Baugewerbe/Bau",
+                                    "45-96 SEKTOR III",
+                                    "45-47 Handel, Instandhaltung und Rep. von Kraftfahrzeugen",
+                                    "49-53 Verkehr und Lagerei",
+                                    "55-56 Gastgewerbe/Beherbergung und Gastronomie",
+                                    "58-63 Information und Kommunikation",
+                                    "62-63 Informationstechnologische und Informationsdienstl.",
+                                    "64-66 Erbringung von Finanz- und Versicherungsdienstl.",
+                                    "68-75 Grundstk- u. Wohn.wesen, freiberufl., wiss., techn. Dienstl.",
+                                    "77-82 Erbringung von sonstigen wirtschaftlichen Dienstl.",
+                                    "84 \u00d6ffentliche Verwaltung",
+                                    "85 Erziehung und Unterricht",
+                                    "86-88 Gesundheits- und Sozialwesen",
+                                    "90-96 Kunst, Unterhaltung u. Erholung, sonstige Dienstl."
+                           ],
+                           "fr": [
+                                    "5-96 Total",
+                                    "5-43 SECTEUR II",
+                                    "10-33 Industrie manufacturi\u010dre",
+                                    "24-25 Fabrication de produits m\u00e9talliques",
+                                    "26 Fabrication de produits \u00e9lectroniques, horlogerie",
+                                    "28 Fabrication de machines et \u00e9quipements n.c.a",
+                                    "41-43 Construction",
+                                    "45-96 SECTEUR III",
+                                    "45-47 Commerce, r\u00e9paration d\u0092automobiles et de motocycles",
+                                    "49-53 Transport et entreposage",
+                                    "55-56 H\u00e9bergement et restauration",
+                                    "58-63 Information et communication",
+                                    "62-63 Activit\u00e9s informatiques et services d\u0092information",
+                                    "64-66 Activit\u00e9s financi\u010dres et d\u0092assurance",
+                                    "68-75 Act. Immobili\u010dres et act. sp\u00e9cialis\u00e9es",
+                                    "77-82 Activit\u00e9s de services administratifs et de soutien",
+                                    "84 Administration publique",
+                                    "85 Enseignement",
+                                    "86-88 Sant\u00e9 humaine et action sociale",
+                                    "90-96 Arts, spectacles..., autres act. de services"
+                           ],
+                           "it": [
+                                    "5-96 Totale",
+                                    "5-43 SETTORE II",
+                                    "10-33 Attivit\u0155 manifatturiere",
+                                    "24-25 Fabbricazione di prodotti in metallo",
+                                    "26 Fabbricazione di prodotti di elettronica, orologeria",
+                                    "28 Fabbricazione di macchinari e app. n.c.a",
+                                    "41-43 Costruzioni",
+                                    "45-96 SETTORE III",
+                                    "45-47 Commercio e riparazione di autoveicoli e motocicli",
+                                    "49-53 Trasporto e magazzinaggio",
+                                    "55-56 Servizi di alloggio e di ristorazione",
+                                    "58-63 Servizi di informazione e comunicazione",
+                                    "62-63 Attivit\u0155 informatiche e altri servizi informativi",
+                                    "64-66 Attivit\u0155 finanziarie e assicurative",
+                                    "68-75 Attivit\u0155 immob., prof., scientifiche e tecniche",
+                                    "77-82 Attivit\u0155 amministrative e di servizi di supporto",
+                                    "84 Amministrazione pubblica",
+                                    "85 Istruzione",
+                                    "86-88 Sanit\u0155 e assistenza sociale",
+                                    "90-96 Att. artist., di divertim. e Altre att. di serv."
+                           ],
+                           "en": [
+                                    "5-96 Total",
+                                    "5-43 SECTOR II",
+                                    "10-33 Manufactury",
+                                    "24-25 Manufacture of metal products",
+                                    "26 Manufacture of computer, electronic and optical products, watches and clocks",
+                                    "28 Manufacture of machinery and equipment n.e.c.",
+                                    "41-43 Construction",
+                                    "45-96 SECTOR III",
+                                    "45-47 Trade and repair of motor vehicles and motorcycles",
+                                    "49-53 Transport and stockage",
+                                    "55-56 Hotels and gastronomy",
+                                    "58-63 IT and communications",
+                                    "62-63 IT and other information services",
+                                    "64-66 Finance and assurance",
+                                    "68-75 Real estate and scientific service activities",
+                                    "77-82 Administrative and support service activities",
+                                    "84 Public administration",
+                                    "85 Education",
+                                    "86-88 Health and social work activities",
+                                    "90-96 Arts and amusement"
+                           ]
+                  }
+         },
+         "VALUES(Ausbildungsniveau)": {
+                  "de": "Ausbildungsniveau",
+                  "fr": "Niveau de formation",
+                  "it": "Livello di formazione",
+                  "en": "Education level",
+                  "isDefinedAs": {
+                           "de": [
+                                    "Hochschulabsolventen",
+                                    "H\u00f6here Berufsbildung",
+                                    "Berufslehre",
+                                    "Obligatorische Schulbildung"
+                           ],
+                           "fr": [
+                                    "Haute \u00e9cole",
+                                    "Professionnelle sup\u00e9rieure",
+                                    "Apprentissage",
+                                    "Ecole obligatoire"
+                           ],
+                           "it": [
+                                    "Scuola Universitaria",
+                                    "Professionale Superiore",
+                                    "Apprendistato",
+                                    "Scuola dell'obligo"
+                           ],
+                           "en": [
+                                    "University degree",
+                                    "Higher professional education",
+                                    "Apprenticeship",
+                                    "Compulsory education"
+                           ]
+                  }
+         },
+         "VALUES(Schwierigkeiten)": {
+                  "de": "Schwierigkeiten",
+                  "fr": "Niveau de difficult\u00e9s",
+                  "it": "Difficolt\u0155 di reclutamento",
+                  "en": "Difficulties",
+                  "isDefinedAs": {
+                           "de": [
+                                    "Personal leicht gefunden",
+                                    "Personal schwer gefunden",
+                                    "Personal nicht gefunden",
+                                    "Personal nicht gesucht/Suchprozess noch nicht abgeschlossen/weiss nicht",
+                                    "Keine Antwort"
+                           ],
+                           "fr": [
+                                    "Personnel trouv\u00e9 sans difficult\u00e9",
+                                    "Personnel trouv\u00e9 avec difficult\u00e9",
+                                    "Personnel pas trouv\u00e9",
+                                    "Personnel n'a pas \u00e9t\u00e9 cherch\u00e9/recrutement pas encore termin\u00e9/ne sait pas",
+                                    "Pas de r\u00e9ponse"
+                           ],
+                           "it": [
+                                    "Personale trovato senza difficolt\u0155",
+                                    "Personale trovato con difficolt\u0155",
+                                    "Personale non trovato",
+                                    "Personale non \u010d stato cercato / reclutamento non terminato / non sa",
+                                    "Non risponde"
+                           ],
+                           "en": [
+                                    "Staff found without difficulties",
+                                    "Staff found with difficulties",
+                                    "Staff not found",
+                                    "Staff not looked for / recruitment not ended / do not know",
+                                    "Non response"
+                           ]
+                  }
+         },
+         "VALUES(Gewichtung)": {
+                  "de": "Gewichtung",
+                  "fr": "Pond\u00e9ration",
+                  "it": "Ponderazione",
+                  "en": "Weight",
+                  "isDefinedAs": {
+                           "de": [
+                                    "Gewichtung nach Anzahl der Besch\u00e4ftigten",
+                                    "Gewichtung nach Anzahl der Betriebe"
+                           ],
+                           "fr": [
+                                    "Pond\u00e9ration selon le nombre d'emplois",
+                                    "Pond\u00e9ration selon le nombre d'\u00e9tablissements"
+                           ],
+                           "it": [
+                                    "Ponderazione secondo il numero di impieghi",
+                                    "Ponderazione secondo il numero di stabilimenti"
+                           ],
+                           "en": [
+                                    "Weighted according to the number of jobs",
+                                    "Weighted according to the number of businesses"
+                           ]
+                  }
+         },
+         "VALUES(Quartal)": {
+                  "de": "Quartal",
+                  "fr": "Trimestre",
+                  "it": "Trimestre",
+                  "en": "Quarter"
+         },
+         "TIMEVAL(Quartal)": {
+                  "de": "Quartal",
+                  "fr": "Trimestre",
+                  "it": "Trimestre",
+                  "en": "Quarter"
+         },
+         "CODES(Wirtschaftsabteilung)": {
+                  "de": "Wirtschaftsabteilung",
+                  "fr": "Division \u00e9conomique",
+                  "it": "Divisione economica",
+                  "en": "Economic division"
+         },
+         "CODES(Ausbildungsniveau)": {
+                  "de": "Ausbildungsniveau",
+                  "fr": "Niveau de formation",
+                  "it": "Livello di formazione",
+                  "en": "Education level"
+         },
+         "CODES(Schwierigkeiten)": {
+                  "de": "Schwierigkeiten",
+                  "fr": "Niveau de difficult\u00e9s",
+                  "it": "Difficolt\u0155 di reclutamento",
+                  "en": "Difficulties"
+         },
+         "CODES(Gewichtung)": {
+                  "de": "Gewichtung",
+                  "fr": "Pond\u00e9ration",
+                  "it": "Ponderazione",
+                  "en": "Weight"
+         },
+         "CODES(Quartal)": {
+                  "de": "Quartal",
+                  "fr": "Trimestre",
+                  "it": "Trimestre",
+                  "en": "Quarter"
+         },
+         "ELIMINATION(Wirtschaftsabteilung)": {
+                  "de": "Wirtschaftsabteilung",
+                  "fr": "Division \u00e9conomique",
+                  "it": "Divisione economica",
+                  "en": "Economic division",
+                  "isDefinedAs": {
+                           "de": [
+                                    "5-96 Total"
+                           ],
+                           "fr": [
+                                    "5-96 Total"
+                           ],
+                           "it": [
+                                    "5-96 Totale"
+                           ],
+                           "en": [
+                                    "5-96 Total"
+                           ]
+                  }
+         },
+         "CONTACT": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "Sektion Konjunkturerhebungen, +41 58 467 23 70, E-Mail: diffusion.besta@bfs.admin.ch"
+                           ],
+                           "fr": [
+                                    "Section Enqu\u0119tes conjoncturelles, +41 58 467 23 70, e-mail: diffusion.besta@bfs.admin.ch"
+                           ],
+                           "it": [
+                                    "Sezione Indagini congiunturali, +41 58 467 23 70, e-mail: diffusion.besta@bfs.admin.ch"
+                           ],
+                           "en": [
+                                    "Section Economic Surveys, +41 58 467 23 70, email: diffusion.besta@bfs.admin.ch"
+                           ]
+                  }
+         },
+         "DATABASE": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "BFS - STAT-TAB / Bundesamt f\u00fcr Statistik, 2010 Neuch\u00e2tel / Schweiz / \u0160 Bundesamt f\u00fcr Statistik"
+                           ],
+                           "fr": [
+                                    "OFS - STAT-TAB / Office f\u00e9d\u00e9ral de la statistique, 2010 Neuch\u00e2tel / Suisse / \u0160 Office f\u00e9d\u00e9ral de la statistique"
+                           ],
+                           "it": [
+                                    "UST - STAT-TAB / Ufficio federale di statistica, 2010 Neuch\u00e2tel / Svizzera / \u0160 Ufficio federale di statistica"
+                           ],
+                           "en": [
+                                    "FSO - STAT-TAB / Federal Statistical Office, 2010 Neuch\u00e2tel / Switzerland / \u0160 Federal Statistical Office"
+                           ]
+                  }
+         },
+         "SOURCE": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "BFS - Besch\u00e4ftigungsstatistik - \u0160 BFS"
+                           ],
+                           "fr": [
+                                    "OFS - Statistique de l'emploi - \u0160 OFS"
+                           ],
+                           "it": [
+                                    "UST - Statistica dell'impiego - \u0160 UST"
+                           ],
+                           "en": [
+                                    "FSO - Job Statistics - \u0160 FSO"
+                           ]
+                  }
+         },
+         "SURVEY": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "Besch\u00e4ftigungsstatistik (BESTA)"
+                           ],
+                           "fr": [
+                                    "Statistique de l'emploi (STATEM)"
+                           ],
+                           "it": [
+                                    "Statistica dell'impiego (STATIMP)"
+                           ],
+                           "en": [
+                                    "Job Statistics (JOBSTAT)"
+                           ]
+                  }
+         },
+         "LINK": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "https://www.bfs.admin.ch/asset/de/px-x-0602000000_107"
+                           ],
+                           "fr": [
+                                    "https://www.bfs.admin.ch/asset/fr/px-x-0602000000_107"
+                           ],
+                           "it": [
+                                    "https://www.bfs.admin.ch/asset/it/px-x-0602000000_107"
+                           ],
+                           "en": [
+                                    "https://www.bfs.admin.ch/asset/en/px-x-0602000000_107"
+                           ]
+                  }
+         },
+         "NOTE": {
+                  "isDefinedAs": {
+                           "de": [
+                                    "<B>Metainformation:</B>#Letzte \u00c4nderungen: neues Quartal#Stand der Datenbank: 24.02.2023#Erhebungsstichtag: Letzter Monat des jeweiligen Quartals (M\u00e4rz, Juni, September & Dezember)#Raumbezug: Schweiz#Erhebung: Besch\u00e4ftigungsstatistik BESTA##",
+                                    "<B>Verwendete Zeichen</B> :#'...' : Zahl unbekannt, weil (noch) nicht erhoben oder (noch) nicht berechnet##<B>Bemerkung</B> :#Die BESTA-Ergebnisse wurden f\u00fcr die Quartale 2020-II bis 2022-I revidiert (August 2022)#"
+                           ],
+                           "fr": [
+                                    "<B>M\u00e9tainformation:</B>#Derni\u010dre modification: nouveau trimestre#Etat de la base de donn\u00e9es: 24.02.2023#Date de l'enqu\u0119te: dernier mois du trimestre (mars, juin, septembre & d\u00e9cembre)#R\u00e9f\u00e9rence spatiale: Suisse#Enqu\u0119te: Statistique de l'emploi",
+                                    "STATEM##<B>Signes utilis\u00e9s</B> :#'...' : Chiffre inconnu, pas (encore) relev\u00e9 ou pas (encore) calcul\u00e9##<B>Remarque</B> :#Les s\u00e9ries de la STATEM ont \u00e9t\u00e9 r\u00e9vis\u00e9es pour les trimestres 2020-II \u0155 2022-I (ao\u0171t 2022)#"
+                           ],
+                           "it": [
+                                    "<B>Metainformazione:</B>#Ultima modifica: nuovo trimestre#Stato della base di dati: 24.02.2023#Data dell'indagine: ultimo mese del trimestre (marzo, giugno, settembre e dicembre)#Georeferenza: Svizzera#Rilevazione: Statistica dell'impiego",
+                                    "STATIMP##<B>Simboli utilizzati</B> :#'...' : Dato non noto, non (ancora) rilevato o non (ancora) calcolato##<B>Commento</B> :#Le serie della STATIMP sono state revisionate per i trimestri dal 2020-II al 2022-I (Agosto 2022)#"
+                           ],
+                           "en": [
+                                    "<B>Meta information:</B>#Last modified: new quarter#State of the database: 24.02.2023#Survey reference day: last month of each quarter (March, June, September & December)#Spatial reference: Switzerland#Survey: Job Statistics JOBSTAT##<B>Symbols",
+                                    "used</B> :#' ... ' : Number unknown because not (yet) surveyed or not (yet) calculated##<B>Comment</B> :#The series of JOBSTAT have been revised for the quarters from 2020-II to 2022-I (August 2022)#"
+                           ]
+                  }
+         }
+}
