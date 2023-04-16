@@ -4,6 +4,7 @@ This module contains all the necessary helper functions for processing the textu
 
 """
 import re 
+import itertools
 
 def split_ignore_quotation_marks(string_input, separator, final=False):
     """Split the string_input into a list avoiding quotation marks.
@@ -65,3 +66,37 @@ def brackets_stripper(expression):
     pattern = r'\[.*?\]'
     expression = re.sub(pattern, '', expression)
     return(expression)
+
+
+def parenthesis_checker(input_string):
+    """Checks if there are parenthesis in the string and returns the substring within parenthesis.
+    Parameters: 
+    input_string: the string being checked for parenthesis
+    Returns:
+    output_string: the string extracted or the initial string
+    """
+    #keep second chunk which was in the parenthesis
+    #and keep from first character of the string to before last 
+    #because the last character is the 2nd parenthesis
+    output_string = input_string.split("(")[-1][0:-1]
+    return output_string
+
+# For DICTIONARIES
+
+def check_same_dict_value(dictionary): 
+    """Checks if all the values in a dictionary are the same. 
+    This is done by checking if the length of unique values in the dictionary (its set) has a length equal to 1. 
+    Parameters:
+    dictionary: a dictionary where the values may all be the same
+    Returns:
+    bool_check_same: a boolean (True means all the values in the dictionary are the same. False meaning they are different.)
+    """
+    vals = list(dictionary.values())
+    if isinstance(vals[1], list):
+        #then we are dealing with a list of lists
+        vals.sort()
+        bool_check_same = len(list(item for item,_ in itertools.groupby(vals)))==1
+    else:
+        #then we are dealing with a list of strings
+        bool_check_same = len(list(set(vals))) == 1
+    return bool_check_same

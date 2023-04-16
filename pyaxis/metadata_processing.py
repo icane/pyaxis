@@ -194,8 +194,25 @@ def translation_dict_maker(metadata_dict, default_multilingual_fields, languages
         # name the global field in the language requested by the user
          # remove language info from key
         key = brackets_stripper(lang_keys[lang])
-        translation_dict[key] = field_dict
+        #old version:
+        #translation_dict[key] = field_dict
+        #new version:
+        #detect () and if present take what is in between () 
+        lang_dict = {l:parenthesis_checker(brackets_stripper(v)) for l, v in lang_keys.items()}
+        #if all language keys are the same then remove them and only isDefinedAs remains
+        if check_same_dict_value(lang_dict):
+            lang_dict.clear()
+        #sometimes, the definition is translated while the key is the same for all languages
+        #ensure that each 
+        lang_dict['isDefinedAs']= field_dict
+        #if the fields are the same, remove isDefinedAs
+        if check_same_dict_value(lang_dict['isDefinedAs']):
+            lang_dict.pop('isDefinedAs')
+        #check that the cleaned key dictionary isn't empty before adding it
+        if bool(lang_dict):
+            translation_dict[key] = lang_dict
     return(translation_dict)
+
 
 def multilingual_parse(metadata_dict, lang):
     """PX file parser for multilingual PX files
