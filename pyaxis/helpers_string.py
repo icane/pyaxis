@@ -68,11 +68,12 @@ def brackets_stripper(expression):
     return(expression)
 
 
-def parenthesis_checker(input_string):
+def parenthesis_extractor(input_string, extract_in=True):
     """Checks if there are parenthesis in the string and returns the substring within parenthesis.
     If there are no parenthesis, the string is returned unchanged.
     Parameters: 
     input_string: the string being checked for parenthesis
+    extract_in: a boolean indicating if the extractor should return the content of the parenthesis or the name in front. The default is to return the name within parenthesis. 
     Returns:
     output_string: the string extracted or the initial string
     """
@@ -80,7 +81,10 @@ def parenthesis_checker(input_string):
     #and keep from first character of the string to before last 
     #because the last character is the 2nd parenthesis
     if "(" in input_string:
-        output_string = input_string.split("(")[-1][0:-1]
+        if extract_in:
+            output_string = input_string.split("(")[-1][0:-1]
+        else: 
+            output_string = input_string.split("(")[0]
     else: 
         output_string = input_string
     return output_string

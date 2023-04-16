@@ -144,10 +144,10 @@ def test_brackets_stripper():
     mystring = helpers_string.brackets_stripper(mystring)
     assert mystring == "This is a string "
 
-def test_parenthesis_checker():
-    """parenthesis_checker should extract the substring within the parenthesis of a string or leave the string unchanged"""
-    test_string = helpers_string.parenthesis_checker("VALUES(Jahr)")
-    test_string_2 = helpers_string.parenthesis_checker("Jahr")
+def test_parenthesis_extractor():
+    """parenthesis_extractor should extract the substring within the parenthesis of a string or leave the string unchanged"""
+    test_string = helpers_string.parenthesis_extractor("VALUES(Jahr)")
+    test_string_2 = helpers_string.parenthesis_extractor("Jahr")
     assert not "(" in test_string
     assert test_string_2=="Jahr"
 
@@ -209,39 +209,22 @@ def test_translation_dict_maker():
     _, default_multilingual_fields = metadata_processing.metadata_dict_maker(metadata_dict, languages, lang)
     translation_dict = metadata_processing.translation_dict_maker(metadata_dict, default_multilingual_fields, languages, default_language, lang)
     assert type(translation_dict) == dict
-    assert 'VALUES(Livello di formazione)' in translation_dict
-    assert translation_dict["VALUES(Livello di formazione)"] == {
-                                                            "de": "Ausbildungsniveau",
-                                                            "fr": "Niveau de formation",
-                                                            "it": "Livello di formazione",
-                                                            "en": "Education level",
-                                                            "isDefinedAs": {
-                                                                    "de": [
-                                                                                "Hochschulabsolventen",
-                                                                                "H\u00f6here Berufsbildung",
-                                                                                "Berufslehre",
-                                                                                "Obligatorische Schulbildung"
-                                                                    ],
-                                                                    "fr": [
-                                                                                "Haute \u00e9cole",
-                                                                                "Professionnelle sup\u00e9rieure",
-                                                                                "Apprentissage",
-                                                                                "Ecole obligatoire"
-                                                                    ],
-                                                                    "it": [
-                                                                                "Scuola Universitaria",
-                                                                                "Professionale Superiore",
-                                                                                "Apprendistato",
-                                                                                "Scuola dell'obligo"
-                                                                    ],
-                                                                    "en": [
-                                                                                "University degree",
-                                                                                "Higher professional education",
-                                                                                "Apprenticeship",
-                                                                                "Compulsory education"
-                                                                    ]
-                                                            }
-                                                    }
+    assert translation_dict["SUBJECT-AREA"] == {
+                  "isDefinedAs": {
+                           "de": [
+                                    "06 - Industrie, Dienstleistungen"
+                           ],
+                           "fr": [
+                                    "06 - Industrie, services"
+                           ],
+                           "it": [
+                                    "06 - Industria e servizi"
+                           ],
+                           "en": [
+                                    "06 - Industry and services"
+                           ]
+                  }
+         }
 
 
 def test_multilingual_parse():

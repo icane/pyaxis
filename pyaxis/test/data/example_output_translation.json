@@ -123,7 +123,7 @@
                            ]
                   }
          },
-         "VALUES(Wirtschaftsabteilung)": {
+         "VALUES": {
                   "de": "Wirtschaftsabteilung",
                   "fr": "Division \u00e9conomique",
                   "it": "Divisione economica",
@@ -219,7 +219,7 @@
                            ]
                   }
          },
-         "VALUES(Ausbildungsniveau)": {
+         "VALUES12775": {
                   "de": "Ausbildungsniveau",
                   "fr": "Niveau de formation",
                   "it": "Livello di formazione",
@@ -251,7 +251,7 @@
                            ]
                   }
          },
-         "VALUES(Schwierigkeiten)": {
+         "VALUES10469": {
                   "de": "Schwierigkeiten",
                   "fr": "Niveau de difficult\u00e9s",
                   "it": "Difficolt\u0155 di reclutamento",
@@ -287,7 +287,7 @@
                            ]
                   }
          },
-         "VALUES(Gewichtung)": {
+         "VALUES9272": {
                   "de": "Gewichtung",
                   "fr": "Pond\u00e9ration",
                   "it": "Ponderazione",
@@ -311,49 +311,49 @@
                            ]
                   }
          },
-         "VALUES(Quartal)": {
+         "VALUES2963": {
                   "de": "Quartal",
                   "fr": "Trimestre",
                   "it": "Trimestre",
                   "en": "Quarter"
          },
-         "TIMEVAL(Quartal)": {
+         "TIMEVAL": {
                   "de": "Quartal",
                   "fr": "Trimestre",
                   "it": "Trimestre",
                   "en": "Quarter"
          },
-         "CODES(Wirtschaftsabteilung)": {
+         "CODES": {
                   "de": "Wirtschaftsabteilung",
                   "fr": "Division \u00e9conomique",
                   "it": "Divisione economica",
                   "en": "Economic division"
          },
-         "CODES(Ausbildungsniveau)": {
+         "CODES9438": {
                   "de": "Ausbildungsniveau",
                   "fr": "Niveau de formation",
                   "it": "Livello di formazione",
                   "en": "Education level"
          },
-         "CODES(Schwierigkeiten)": {
+         "CODES12020": {
                   "de": "Schwierigkeiten",
                   "fr": "Niveau de difficult\u00e9s",
                   "it": "Difficolt\u0155 di reclutamento",
                   "en": "Difficulties"
          },
-         "CODES(Gewichtung)": {
+         "CODES11570": {
                   "de": "Gewichtung",
                   "fr": "Pond\u00e9ration",
                   "it": "Ponderazione",
                   "en": "Weight"
          },
-         "CODES(Quartal)": {
+         "CODES2959": {
                   "de": "Quartal",
                   "fr": "Trimestre",
                   "it": "Trimestre",
                   "en": "Quarter"
          },
-         "ELIMINATION(Wirtschaftsabteilung)": {
+         "ELIMINATION": {
                   "de": "Wirtschaftsabteilung",
                   "fr": "Division \u00e9conomique",
                   "it": "Divisione economica",

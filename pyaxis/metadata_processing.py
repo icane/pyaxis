@@ -4,6 +4,7 @@ This module contains all the necessary functions to extract the metadata, format
 """
 
 import re
+import numpy as np
 from pyaxis.helpers_string import *
 
 def metadata_extract(pc_axis):
@@ -198,7 +199,7 @@ def translation_dict_maker(metadata_dict, default_multilingual_fields, languages
         #translation_dict[key] = field_dict
         #new version:
         #detect () and if present take what is in between () 
-        lang_dict = {l:parenthesis_checker(brackets_stripper(v)) for l, v in lang_keys.items()}
+        lang_dict = {l:parenthesis_extractor(brackets_stripper(v)) for l, v in lang_keys.items()}
         #if all language keys are the same then remove them and only isDefinedAs remains
         if check_same_dict_value(lang_dict):
             lang_dict.clear()
@@ -210,7 +211,11 @@ def translation_dict_maker(metadata_dict, default_multilingual_fields, languages
             lang_dict.pop('isDefinedAs')
         #check that the cleaned key dictionary isn't empty before adding it
         if bool(lang_dict):
-            translation_dict[key] = lang_dict
+            name_key = parenthesis_extractor(key, extract_in=False)
+            if name_key in translation_dict.keys():
+                translation_dict[name_key + str(np.random.randint(1234, 12789))] = lang_dict
+            else: 
+                translation_dict[name_key] = lang_dict
     return(translation_dict)
 
 
