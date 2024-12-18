@@ -1,3 +1,4 @@
+v0.3.5: fix issue #26
 v0.3.4: implement the following:
     - fix issue #4
     - add 'get_codes' function
