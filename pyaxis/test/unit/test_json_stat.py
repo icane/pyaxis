@@ -1,7 +1,5 @@
 """Unit tests for json_stat module."""
 
-import json
-
 from pkg_resources import resource_filename
 
 from pyaxis import pyaxis, json_stat

@@ -1,7 +1,5 @@
 """Unit tests for pyaxis module."""
 
-from csv import QUOTE_NONNUMERIC
-
 from numpy import isnan
 
 from pandas import Series
@@ -41,9 +39,9 @@ def test_metadata_extract():
         data_path + '14001.px',
         'iso-8859-15')
     metadata_elements, raw_data = metadata_processing.metadata_extract(pc_axis)
-    assert type(metadata_elements) == list
+    assert isinstance(metadata_elements, list)
     assert len(metadata_elements) == 28
-    assert type(raw_data) == str
+    assert isinstance(raw_data, str)
     assert len(raw_data) == 29441
 
 
@@ -54,7 +52,7 @@ def test_metadata_split_to_dict():
         'iso-8859-15')
     metadata_elements, raw_data = metadata_processing.metadata_extract(pc_axis)
     metadata = metadata_processing.metadata_split_to_dict(metadata_elements)
-    assert type(metadata) == dict
+    assert isinstance(metadata, dict)
     assert len(metadata) == 28
 
 
@@ -62,7 +60,7 @@ def test_metadata_split_dict_quotation_marks():
     """Should ignore character split if it is between quotation marks."""
     metadata_elements = ['VALUES("estrato de empleo")="Total",">=10 empleados";']
     metadata = metadata_processing.metadata_split_to_dict(metadata_elements)
-    assert type(metadata) == dict
+    assert isinstance(metadata, dict)
     assert metadata['VALUES(estrato de empleo)'] == ['Total', '>=10 empleados']
 
 
@@ -78,7 +76,7 @@ def test_split_ignore_quotation_marks():
             "Vital statistics (BEVNAT), Annual Population Statistics (1981-2010) (ESP\
             OP), Population "  "and Households Statistics (STATPOP)";'
     result = helpers_string.split_ignore_quotation_marks(text,';', final=True)
-    assert type(result) == list
+    assert isinstance(result, list)
     assert len(result) == 3
 
 
@@ -165,7 +163,7 @@ def test_get_default_lang():
     languages = metadata_dict['LANGUAGES']
     lang_dict, default_multilingual_fields = metadata_processing.get_default_lang(metadata_dict, languages)
     assert lang_dict['LANGUAGE'] == ['de']
-    assert type(default_multilingual_fields) == list
+    assert isinstance(default_multilingual_fields, list)
     assert 'VALUES(Ausbildungsniveau)' in default_multilingual_fields
 
 def test_metadata_dict_maker():
@@ -178,7 +176,7 @@ def test_metadata_dict_maker():
     lang = "it"
     lang_dict, default_multilingual_fields = metadata_processing.metadata_dict_maker(metadata_dict, languages, lang)
     assert lang_dict['LANGUAGE'] == ['it']
-    assert type(default_multilingual_fields) == list
+    assert isinstance(default_multilingual_fields, list)
     assert 'VALUES(Ausbildungsniveau)' in default_multilingual_fields
 
 def test_translation_dict_maker(): 
@@ -193,7 +191,7 @@ def test_translation_dict_maker():
     default_language = metadata_dict['LANGUAGE'][0]
     _, default_multilingual_fields = metadata_processing.metadata_dict_maker(metadata_dict, languages, lang)
     translation_dict = metadata_processing.translation_dict_maker(metadata_dict, default_multilingual_fields, languages, default_language, lang)
-    assert type(translation_dict) == dict
+    assert isinstance(translation_dict, dict)
     assert 'VALUES(Livello di formazione)' in translation_dict
     assert translation_dict['VALUES(Livello di formazione)'] == {
                                                                  'de': ['Hochschulabsolventen', 'Höhere Berufsbildung', 'Berufslehre', 'Obligatorische Schulbildung'],
@@ -212,8 +210,8 @@ def test_multilingual_parse():
     metadata_dict = metadata_processing.metadata_split_to_dict(metadata)
     lang = "it"
     lang_dict, translation_dict = metadata_processing.multilingual_parse(metadata_dict, lang)
-    assert type(translation_dict) == dict
-    assert type(lang_dict) == dict
+    assert isinstance(translation_dict, dict)
+    assert isinstance(lang_dict, dict)
 
 
 def test_parse():
