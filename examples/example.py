@@ -1,4 +1,5 @@
 """Example use case of pyaxis."""
+
 from pyaxis import pyaxis
 
 EXAMPLE_URL = 'http://www.ine.es/jaxiT3/files/t/es/px/2184.px'

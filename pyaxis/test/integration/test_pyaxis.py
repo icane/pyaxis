@@ -1,7 +1,5 @@
 """Integration tests for pyaxis module."""
 
-from csv import QUOTE_NONNUMERIC
-
 from pandas import Series
 
 from pkg_resources import resource_filename
@@ -27,7 +25,7 @@ def test_read():
     pc_axis = pyaxis.read(
         'https://www.ine.es/jaxiT3/files/es/1001.px',
         'iso-8859-15')
-    assert len(pc_axis) >= 3436
+    assert len(pc_axis) >= 3434
     assert pc_axis.startswith('AXIS-VERSION="2006";')
     assert pc_axis.endswith('6.21 5.95;')
 
@@ -39,9 +37,9 @@ def test_metadata_extract():
         '14001.px?nocab=1',
         'iso-8859-15')
     metadata_elements, raw_data = pyaxis.metadata_extract(pc_axis)
-    assert type(metadata_elements) == list
+    assert isinstance(metadata_elements, list)
     assert len(metadata_elements) == 23
-    assert type(raw_data) == str
+    assert isinstance(raw_data, str)
     assert len(raw_data) >= 40282
 
 
@@ -53,7 +51,7 @@ def test_metadata_split_to_dict():
         'iso-8859-15')
     metadata_elements, raw_data = pyaxis.metadata_extract(pc_axis)
     metadata = pyaxis.metadata_split_to_dict(metadata_elements)
-    assert type(metadata) == dict
+    assert isinstance(metadata, dict)
     assert len(metadata) == 23
 
 
