@@ -1,6 +1,7 @@
 v0.4.0: implement the following:
-    - parsing of multilingual metadata
+    - Python 3.9
     - fix issue #26
+    - parsing of multilingual metadata
 v0.3.4: implement the following:
     - fix issue #4
     - add 'get_codes' function
