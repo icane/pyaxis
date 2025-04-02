@@ -3,7 +3,7 @@
 This module contains all the necessary functions to extract the DATA field of the PX file and build the structure of the dataframe based on the metadata.
 """
 import itertools
-from numpy import nan
+from numpy import nan, where
 from pandas import DataFrame
 
 def get_dimensions(metadata):
@@ -107,12 +107,15 @@ def build_dataframe(dimension_names, dimension_members, data_values,
     # cartesian product of dimension members
     dim_exploded = list(itertools.product(*dimension_members))
 
+    # Create DataFrame from the exploded dimensions
     df = DataFrame(data=dim_exploded, columns=dimension_names)
 
-    # column of data values
-    df['DATA'] = data_values
-    # null values and statistical disclosure treatment
-    df = df.replace({'DATA': {null_values: ''}}, regex=True)
-    df = df.replace({'DATA': {sd_values: nan}}, regex=True)
+    # Create a boolean mask for null and statistical disclosure values
+    null_mask = data_values.str.match(null_values)
+    sd_mask = data_values.str.match(sd_values)
+
+    # Use np.where for efficient conditional assignment
+    df['DATA'] = where(null_mask, '', data_values)
+    df['DATA'] = where(sd_mask, nan, df['DATA'])
 
     return df
