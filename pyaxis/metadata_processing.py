@@ -145,7 +145,8 @@ def metadata_dict_maker(metadata_dict, languages, lang):
             #check if multilingual key
             if "["+lang+"]" in key:
                 # remove the default language that has just been added
-                del lang_dict[previous_key]
+                if 'previous_key' in locals() and previous_key in lang_dict:
+                    del lang_dict[previous_key]
                 # remove language info from key
                 key = brackets_stripper(key)
                 # Add the value only the language requested
