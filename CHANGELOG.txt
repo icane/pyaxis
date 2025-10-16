@@ -1,3 +1,5 @@
+v0.4.2: implement the following:
+    - fix issue #32
 v0.4.1: implement the following:
     - use numpy.where to replace null_values and sd_values #30
 v0.4.0: implement the following:
