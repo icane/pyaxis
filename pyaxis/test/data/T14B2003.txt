@@ -1,0 +1,1441 @@
+Comunidad autónoma	Indicador	Periodo	DATA
+TOTAL	Número de bibliotecas	2024	5552.0
+TOTAL	Número de bibliotecas	2022	5654.0
+TOTAL	Número de bibliotecas	2020	5747.0
+TOTAL	Número de bibliotecas	2018	6458.0
+TOTAL	Número medio de puntos de servicio por biblioteca	2024	1.3
+TOTAL	Número medio de puntos de servicio por biblioteca	2022	1.3
+TOTAL	Número medio de puntos de servicio por biblioteca	2020	1.3
+TOTAL	Número medio de puntos de servicio por biblioteca	2018	1.3
+TOTAL	Titularidad pública %	2024	83.4
+TOTAL	Titularidad pública %	2022	83.3
+TOTAL	Titularidad pública %	2020	83.5
+TOTAL	Titularidad pública %	2018	83.0
+TOTAL	Titularidad privada %	2024	13.7
+TOTAL	Titularidad privada %	2022	13.9
+TOTAL	Titularidad privada %	2020	12.1
+TOTAL	Titularidad privada %	2018	12.2
+TOTAL	Otra titularidad %	2024	2.8
+TOTAL	Otra titularidad %	2022	2.8
+TOTAL	Otra titularidad %	2020	4.4
+TOTAL	Otra titularidad %	2018	4.9
+TOTAL	Usuarios inscritos por biblioteca	2024	5140.0
+TOTAL	Usuarios inscritos por biblioteca	2022	4890.0
+TOTAL	Usuarios inscritos por biblioteca	2020	4547.0
+TOTAL	Usuarios inscritos por biblioteca	2018	3380.0
+TOTAL	Visitas en sala por biblioteca	2024	26008.0
+TOTAL	Visitas en sala por biblioteca	2022	20390.0
+TOTAL	Visitas en sala por biblioteca	2020	11509.0
+TOTAL	Visitas en sala por biblioteca	2018	30623.0
+TOTAL	Libros y folletos impresos por biblioteca	2024	32106.0
+TOTAL	Libros y folletos impresos por biblioteca	2022	32781.0
+TOTAL	Libros y folletos impresos por biblioteca	2020	31690.0
+TOTAL	Libros y folletos impresos por biblioteca	2018	27884.0
+TOTAL	Préstamos domiciliarios de libros impresos por biblioteca	2024	8312.0
+TOTAL	Préstamos domiciliarios de libros impresos por biblioteca	2022	7006.0
+TOTAL	Préstamos domiciliarios de libros impresos por biblioteca	2020	4454.0
+TOTAL	Préstamos domiciliarios de libros impresos por biblioteca	2018	6942.0
+TOTAL	Número medio de dias de cierre provisional por COVID-19	2024	
+TOTAL	Número medio de dias de cierre provisional por COVID-19	2022	
+TOTAL	Número medio de dias de cierre provisional por COVID-19	2020	85.0
+TOTAL	Número medio de dias de cierre provisional por COVID-19	2018	
+TOTAL	Personal en plantilla por biblioteca	2024	4.1
+TOTAL	Personal en plantilla por biblioteca	2022	4.1
+TOTAL	Personal en plantilla por biblioteca	2020	4.0
+TOTAL	Personal en plantilla por biblioteca	2018	3.9
+TOTAL	Bibliotecas que disponen de ordenador %	2024	98.0
+TOTAL	Bibliotecas que disponen de ordenador %	2022	97.4
+TOTAL	Bibliotecas que disponen de ordenador %	2020	96.5
+TOTAL	Bibliotecas que disponen de ordenador %	2018	93.5
+TOTAL	Bibliotecas con acceso a internet en sala %	2024	94.4
+TOTAL	Bibliotecas con acceso a internet en sala %	2022	93.3
+TOTAL	Bibliotecas con acceso a internet en sala %	2020	91.2
+TOTAL	Bibliotecas con acceso a internet en sala %	2018	91.8
+TOTAL	Bibliotecas que ofrecen zona wifi %	2024	82.4
+TOTAL	Bibliotecas que ofrecen zona wifi %	2022	80.0
+TOTAL	Bibliotecas que ofrecen zona wifi %	2020	76.4
+TOTAL	Bibliotecas que ofrecen zona wifi %	2018	75.7
+TOTAL	Bibliotecas con acceso libre %	2024	88.3
+TOTAL	Bibliotecas con acceso libre %	2022	87.5
+TOTAL	Bibliotecas con acceso libre %	2020	86.7
+TOTAL	Bibliotecas con acceso libre %	2018	86.1
+TOTAL	Bibliotecas con acceso libre en sala %	2024	81.4
+TOTAL	Bibliotecas con acceso libre en sala %	2022	81.0
+TOTAL	Bibliotecas con acceso libre en sala %	2020	80.0
+TOTAL	Bibliotecas con acceso libre en sala %	2018	79.7
+TOTAL	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	67.0
+TOTAL	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	65.2
+TOTAL	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	65.3
+TOTAL	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	59.9
+TOTAL	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	72.4
+TOTAL	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	69.6
+TOTAL	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	69.8
+TOTAL	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	64.6
+Andalucía	Número de bibliotecas	2024	821.0
+Andalucía	Número de bibliotecas	2022	833.0
+Andalucía	Número de bibliotecas	2020	819.0
+Andalucía	Número de bibliotecas	2018	968.0
+Andalucía	Número medio de puntos de servicio por biblioteca	2024	1.3
+Andalucía	Número medio de puntos de servicio por biblioteca	2022	1.3
+Andalucía	Número medio de puntos de servicio por biblioteca	2020	1.3
+Andalucía	Número medio de puntos de servicio por biblioteca	2018	1.3
+Andalucía	Titularidad pública %	2024	86.8
+Andalucía	Titularidad pública %	2022	87.2
+Andalucía	Titularidad pública %	2020	88.5
+Andalucía	Titularidad pública %	2018	87.1
+Andalucía	Titularidad privada %	2024	10.2
+Andalucía	Titularidad privada %	2022	9.8
+Andalucía	Titularidad privada %	2020	7.4
+Andalucía	Titularidad privada %	2018	9.1
+Andalucía	Otra titularidad %	2024	2.9
+Andalucía	Otra titularidad %	2022	3.0
+Andalucía	Otra titularidad %	2020	4.0
+Andalucía	Otra titularidad %	2018	3.8
+Andalucía	Usuarios inscritos por biblioteca	2024	7002.0
+Andalucía	Usuarios inscritos por biblioteca	2022	7017.0
+Andalucía	Usuarios inscritos por biblioteca	2020	6453.0
+Andalucía	Usuarios inscritos por biblioteca	2018	2976.0
+Andalucía	Visitas en sala por biblioteca	2024	28179.0
+Andalucía	Visitas en sala por biblioteca	2022	23206.0
+Andalucía	Visitas en sala por biblioteca	2020	12237.0
+Andalucía	Visitas en sala por biblioteca	2018	29577.0
+Andalucía	Libros y folletos impresos por biblioteca	2024	25493.0
+Andalucía	Libros y folletos impresos por biblioteca	2022	25115.0
+Andalucía	Libros y folletos impresos por biblioteca	2020	24169.0
+Andalucía	Libros y folletos impresos por biblioteca	2018	21415.0
+Andalucía	Préstamos domiciliarios de libros impresos por biblioteca	2024	5021.0
+Andalucía	Préstamos domiciliarios de libros impresos por biblioteca	2022	4499.0
+Andalucía	Préstamos domiciliarios de libros impresos por biblioteca	2020	2846.0
+Andalucía	Préstamos domiciliarios de libros impresos por biblioteca	2018	4773.0
+Andalucía	Número medio de dias de cierre provisional por COVID-19	2024	
+Andalucía	Número medio de dias de cierre provisional por COVID-19	2022	
+Andalucía	Número medio de dias de cierre provisional por COVID-19	2020	85.0
+Andalucía	Número medio de dias de cierre provisional por COVID-19	2018	
+Andalucía	Personal en plantilla por biblioteca	2024	4.0
+Andalucía	Personal en plantilla por biblioteca	2022	3.9
+Andalucía	Personal en plantilla por biblioteca	2020	3.9
+Andalucía	Personal en plantilla por biblioteca	2018	3.5
+Andalucía	Bibliotecas que disponen de ordenador %	2024	97.3
+Andalucía	Bibliotecas que disponen de ordenador %	2022	96.5
+Andalucía	Bibliotecas que disponen de ordenador %	2020	95.4
+Andalucía	Bibliotecas que disponen de ordenador %	2018	89.6
+Andalucía	Bibliotecas con acceso a internet en sala %	2024	91.7
+Andalucía	Bibliotecas con acceso a internet en sala %	2022	90.0
+Andalucía	Bibliotecas con acceso a internet en sala %	2020	90.1
+Andalucía	Bibliotecas con acceso a internet en sala %	2018	88.9
+Andalucía	Bibliotecas que ofrecen zona wifi %	2024	83.1
+Andalucía	Bibliotecas que ofrecen zona wifi %	2022	78.5
+Andalucía	Bibliotecas que ofrecen zona wifi %	2020	77.8
+Andalucía	Bibliotecas que ofrecen zona wifi %	2018	73.1
+Andalucía	Bibliotecas con acceso libre %	2024	91.6
+Andalucía	Bibliotecas con acceso libre %	2022	91.0
+Andalucía	Bibliotecas con acceso libre %	2020	92.2
+Andalucía	Bibliotecas con acceso libre %	2018	90.8
+Andalucía	Bibliotecas con acceso libre en sala %	2024	84.9
+Andalucía	Bibliotecas con acceso libre en sala %	2022	84.3
+Andalucía	Bibliotecas con acceso libre en sala %	2020	85.6
+Andalucía	Bibliotecas con acceso libre en sala %	2018	85.0
+Andalucía	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	62.5
+Andalucía	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	61.8
+Andalucía	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	73.7
+Andalucía	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	64.5
+Andalucía	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	65.3
+Andalucía	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	63.7
+Andalucía	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	76.6
+Andalucía	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	66.5
+Aragón	Número de bibliotecas	2024	293.0
+Aragón	Número de bibliotecas	2022	294.0
+Aragón	Número de bibliotecas	2020	311.0
+Aragón	Número de bibliotecas	2018	320.0
+Aragón	Número medio de puntos de servicio por biblioteca	2024	1.2
+Aragón	Número medio de puntos de servicio por biblioteca	2022	1.2
+Aragón	Número medio de puntos de servicio por biblioteca	2020	1.2
+Aragón	Número medio de puntos de servicio por biblioteca	2018	1.2
+Aragón	Titularidad pública %	2024	86.0
+Aragón	Titularidad pública %	2022	88.1
+Aragón	Titularidad pública %	2020	84.6
+Aragón	Titularidad pública %	2018	85.9
+Aragón	Titularidad privada %	2024	11.9
+Aragón	Titularidad privada %	2022	10.2
+Aragón	Titularidad privada %	2020	12.2
+Aragón	Titularidad privada %	2018	11.6
+Aragón	Otra titularidad %	2024	2.0
+Aragón	Otra titularidad %	2022	1.7
+Aragón	Otra titularidad %	2020	3.2
+Aragón	Otra titularidad %	2018	2.5
+Aragón	Usuarios inscritos por biblioteca	2024	1354.0
+Aragón	Usuarios inscritos por biblioteca	2022	1419.0
+Aragón	Usuarios inscritos por biblioteca	2020	1774.0
+Aragón	Usuarios inscritos por biblioteca	2018	2025.0
+Aragón	Visitas en sala por biblioteca	2024	14801.0
+Aragón	Visitas en sala por biblioteca	2022	15105.0
+Aragón	Visitas en sala por biblioteca	2020	8005.0
+Aragón	Visitas en sala por biblioteca	2018	16262.0
+Aragón	Libros y folletos impresos por biblioteca	2024	19274.0
+Aragón	Libros y folletos impresos por biblioteca	2022	18549.0
+Aragón	Libros y folletos impresos por biblioteca	2020	16809.0
+Aragón	Libros y folletos impresos por biblioteca	2018	17024.0
+Aragón	Préstamos domiciliarios de libros impresos por biblioteca	2024	5140.0
+Aragón	Préstamos domiciliarios de libros impresos por biblioteca	2022	4814.0
+Aragón	Préstamos domiciliarios de libros impresos por biblioteca	2020	2780.0
+Aragón	Préstamos domiciliarios de libros impresos por biblioteca	2018	5260.0
+Aragón	Número medio de dias de cierre provisional por COVID-19	2024	
+Aragón	Número medio de dias de cierre provisional por COVID-19	2022	
+Aragón	Número medio de dias de cierre provisional por COVID-19	2020	72.0
+Aragón	Número medio de dias de cierre provisional por COVID-19	2018	
+Aragón	Personal en plantilla por biblioteca	2024	2.7
+Aragón	Personal en plantilla por biblioteca	2022	2.8
+Aragón	Personal en plantilla por biblioteca	2020	2.3
+Aragón	Personal en plantilla por biblioteca	2018	2.6
+Aragón	Bibliotecas que disponen de ordenador %	2024	98.6
+Aragón	Bibliotecas que disponen de ordenador %	2022	98.6
+Aragón	Bibliotecas que disponen de ordenador %	2020	97.7
+Aragón	Bibliotecas que disponen de ordenador %	2018	95.6
+Aragón	Bibliotecas con acceso a internet en sala %	2024	96.2
+Aragón	Bibliotecas con acceso a internet en sala %	2022	93.5
+Aragón	Bibliotecas con acceso a internet en sala %	2020	90.7
+Aragón	Bibliotecas con acceso a internet en sala %	2018	92.2
+Aragón	Bibliotecas que ofrecen zona wifi %	2024	81.9
+Aragón	Bibliotecas que ofrecen zona wifi %	2022	78.9
+Aragón	Bibliotecas que ofrecen zona wifi %	2020	75.9
+Aragón	Bibliotecas que ofrecen zona wifi %	2018	72.2
+Aragón	Bibliotecas con acceso libre %	2024	87.7
+Aragón	Bibliotecas con acceso libre %	2022	88.1
+Aragón	Bibliotecas con acceso libre %	2020	85.5
+Aragón	Bibliotecas con acceso libre %	2018	85.0
+Aragón	Bibliotecas con acceso libre en sala %	2024	84.6
+Aragón	Bibliotecas con acceso libre en sala %	2022	86.1
+Aragón	Bibliotecas con acceso libre en sala %	2020	82.6
+Aragón	Bibliotecas con acceso libre en sala %	2018	82.2
+Aragón	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	49.8
+Aragón	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	48.6
+Aragón	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	44.1
+Aragón	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	43.8
+Aragón	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	55.6
+Aragón	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	52.7
+Aragón	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	46.9
+Aragón	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	47.8
+Asturias (Principado de)	Número de bibliotecas	2024	125.0
+Asturias (Principado de)	Número de bibliotecas	2022	130.0
+Asturias (Principado de)	Número de bibliotecas	2020	130.0
+Asturias (Principado de)	Número de bibliotecas	2018	134.0
+Asturias (Principado de)	Número medio de puntos de servicio por biblioteca	2024	1.4
+Asturias (Principado de)	Número medio de puntos de servicio por biblioteca	2022	1.4
+Asturias (Principado de)	Número medio de puntos de servicio por biblioteca	2020	1.5
+Asturias (Principado de)	Número medio de puntos de servicio por biblioteca	2018	1.5
+Asturias (Principado de)	Titularidad pública %	2024	90.4
+Asturias (Principado de)	Titularidad pública %	2022	90.0
+Asturias (Principado de)	Titularidad pública %	2020	88.5
+Asturias (Principado de)	Titularidad pública %	2018	86.6
+Asturias (Principado de)	Titularidad privada %	2024	8.0
+Asturias (Principado de)	Titularidad privada %	2022	7.7
+Asturias (Principado de)	Titularidad privada %	2020	6.9
+Asturias (Principado de)	Titularidad privada %	2018	9.7
+Asturias (Principado de)	Otra titularidad %	2024	1.6
+Asturias (Principado de)	Otra titularidad %	2022	2.3
+Asturias (Principado de)	Otra titularidad %	2020	4.6
+Asturias (Principado de)	Otra titularidad %	2018	3.7
+Asturias (Principado de)	Usuarios inscritos por biblioteca	2024	5979.0
+Asturias (Principado de)	Usuarios inscritos por biblioteca	2022	5579.0
+Asturias (Principado de)	Usuarios inscritos por biblioteca	2020	5399.0
+Asturias (Principado de)	Usuarios inscritos por biblioteca	2018	4740.0
+Asturias (Principado de)	Visitas en sala por biblioteca	2024	18708.0
+Asturias (Principado de)	Visitas en sala por biblioteca	2022	15971.0
+Asturias (Principado de)	Visitas en sala por biblioteca	2020	7720.0
+Asturias (Principado de)	Visitas en sala por biblioteca	2018	27547.0
+Asturias (Principado de)	Libros y folletos impresos por biblioteca	2024	32057.0
+Asturias (Principado de)	Libros y folletos impresos por biblioteca	2022	30216.0
+Asturias (Principado de)	Libros y folletos impresos por biblioteca	2020	29578.0
+Asturias (Principado de)	Libros y folletos impresos por biblioteca	2018	28215.0
+Asturias (Principado de)	Préstamos domiciliarios de libros impresos por biblioteca	2024	7187.0
+Asturias (Principado de)	Préstamos domiciliarios de libros impresos por biblioteca	2022	5992.0
+Asturias (Principado de)	Préstamos domiciliarios de libros impresos por biblioteca	2020	3565.0
+Asturias (Principado de)	Préstamos domiciliarios de libros impresos por biblioteca	2018	6826.0
+Asturias (Principado de)	Número medio de dias de cierre provisional por COVID-19	2024	
+Asturias (Principado de)	Número medio de dias de cierre provisional por COVID-19	2022	
+Asturias (Principado de)	Número medio de dias de cierre provisional por COVID-19	2020	82.0
+Asturias (Principado de)	Número medio de dias de cierre provisional por COVID-19	2018	
+Asturias (Principado de)	Personal en plantilla por biblioteca	2024	3.7
+Asturias (Principado de)	Personal en plantilla por biblioteca	2022	3.7
+Asturias (Principado de)	Personal en plantilla por biblioteca	2020	3.8
+Asturias (Principado de)	Personal en plantilla por biblioteca	2018	3.7
+Asturias (Principado de)	Bibliotecas que disponen de ordenador %	2024	96.8
+Asturias (Principado de)	Bibliotecas que disponen de ordenador %	2022	96.2
+Asturias (Principado de)	Bibliotecas que disponen de ordenador %	2020	96.9
+Asturias (Principado de)	Bibliotecas que disponen de ordenador %	2018	85.8
+Asturias (Principado de)	Bibliotecas con acceso a internet en sala %	2024	96.8
+Asturias (Principado de)	Bibliotecas con acceso a internet en sala %	2022	90.8
+Asturias (Principado de)	Bibliotecas con acceso a internet en sala %	2020	90.8
+Asturias (Principado de)	Bibliotecas con acceso a internet en sala %	2018	93.3
+Asturias (Principado de)	Bibliotecas que ofrecen zona wifi %	2024	61.6
+Asturias (Principado de)	Bibliotecas que ofrecen zona wifi %	2022	63.8
+Asturias (Principado de)	Bibliotecas que ofrecen zona wifi %	2020	57.7
+Asturias (Principado de)	Bibliotecas que ofrecen zona wifi %	2018	59.7
+Asturias (Principado de)	Bibliotecas con acceso libre %	2024	86.4
+Asturias (Principado de)	Bibliotecas con acceso libre %	2022	86.9
+Asturias (Principado de)	Bibliotecas con acceso libre %	2020	86.9
+Asturias (Principado de)	Bibliotecas con acceso libre %	2018	86.6
+Asturias (Principado de)	Bibliotecas con acceso libre en sala %	2024	81.6
+Asturias (Principado de)	Bibliotecas con acceso libre en sala %	2022	80.8
+Asturias (Principado de)	Bibliotecas con acceso libre en sala %	2020	80.0
+Asturias (Principado de)	Bibliotecas con acceso libre en sala %	2018	81.3
+Asturias (Principado de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	83.2
+Asturias (Principado de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	85.4
+Asturias (Principado de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	83.1
+Asturias (Principado de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	75.4
+Asturias (Principado de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	89.6
+Asturias (Principado de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	90.0
+Asturias (Principado de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	88.5
+Asturias (Principado de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	82.1
+Balears (Illes)	Número de bibliotecas	2024	115.0
+Balears (Illes)	Número de bibliotecas	2022	120.0
+Balears (Illes)	Número de bibliotecas	2020	130.0
+Balears (Illes)	Número de bibliotecas	2018	133.0
+Balears (Illes)	Número medio de puntos de servicio por biblioteca	2024	1.5
+Balears (Illes)	Número medio de puntos de servicio por biblioteca	2022	1.4
+Balears (Illes)	Número medio de puntos de servicio por biblioteca	2020	1.5
+Balears (Illes)	Número medio de puntos de servicio por biblioteca	2018	1.4
+Balears (Illes)	Titularidad pública %	2024	80.9
+Balears (Illes)	Titularidad pública %	2022	81.7
+Balears (Illes)	Titularidad pública %	2020	80.0
+Balears (Illes)	Titularidad pública %	2018	79.7
+Balears (Illes)	Titularidad privada %	2024	17.4
+Balears (Illes)	Titularidad privada %	2022	16.7
+Balears (Illes)	Titularidad privada %	2020	17.7
+Balears (Illes)	Titularidad privada %	2018	16.5
+Balears (Illes)	Otra titularidad %	2024	1.7
+Balears (Illes)	Otra titularidad %	2022	1.7
+Balears (Illes)	Otra titularidad %	2020	2.3
+Balears (Illes)	Otra titularidad %	2018	3.8
+Balears (Illes)	Usuarios inscritos por biblioteca	2024	3963.0
+Balears (Illes)	Usuarios inscritos por biblioteca	2022	2727.0
+Balears (Illes)	Usuarios inscritos por biblioteca	2020	2531.0
+Balears (Illes)	Usuarios inscritos por biblioteca	2018	3495.0
+Balears (Illes)	Visitas en sala por biblioteca	2024	13198.0
+Balears (Illes)	Visitas en sala por biblioteca	2022	10828.0
+Balears (Illes)	Visitas en sala por biblioteca	2020	7917.0
+Balears (Illes)	Visitas en sala por biblioteca	2018	21989.0
+Balears (Illes)	Libros y folletos impresos por biblioteca	2024	30752.0
+Balears (Illes)	Libros y folletos impresos por biblioteca	2022	29265.0
+Balears (Illes)	Libros y folletos impresos por biblioteca	2020	25615.0
+Balears (Illes)	Libros y folletos impresos por biblioteca	2018	22343.0
+Balears (Illes)	Préstamos domiciliarios de libros impresos por biblioteca	2024	6192.0
+Balears (Illes)	Préstamos domiciliarios de libros impresos por biblioteca	2022	5830.0
+Balears (Illes)	Préstamos domiciliarios de libros impresos por biblioteca	2020	4351.0
+Balears (Illes)	Préstamos domiciliarios de libros impresos por biblioteca	2018	5465.0
+Balears (Illes)	Número medio de dias de cierre provisional por COVID-19	2024	
+Balears (Illes)	Número medio de dias de cierre provisional por COVID-19	2022	
+Balears (Illes)	Número medio de dias de cierre provisional por COVID-19	2020	78.0
+Balears (Illes)	Número medio de dias de cierre provisional por COVID-19	2018	
+Balears (Illes)	Personal en plantilla por biblioteca	2024	3.5
+Balears (Illes)	Personal en plantilla por biblioteca	2022	3.4
+Balears (Illes)	Personal en plantilla por biblioteca	2020	3.3
+Balears (Illes)	Personal en plantilla por biblioteca	2018	3.2
+Balears (Illes)	Bibliotecas que disponen de ordenador %	2024	99.1
+Balears (Illes)	Bibliotecas que disponen de ordenador %	2022	97.5
+Balears (Illes)	Bibliotecas que disponen de ordenador %	2020	96.2
+Balears (Illes)	Bibliotecas que disponen de ordenador %	2018	96.2
+Balears (Illes)	Bibliotecas con acceso a internet en sala %	2024	95.7
+Balears (Illes)	Bibliotecas con acceso a internet en sala %	2022	95.0
+Balears (Illes)	Bibliotecas con acceso a internet en sala %	2020	91.5
+Balears (Illes)	Bibliotecas con acceso a internet en sala %	2018	94.7
+Balears (Illes)	Bibliotecas que ofrecen zona wifi %	2024	85.2
+Balears (Illes)	Bibliotecas que ofrecen zona wifi %	2022	88.3
+Balears (Illes)	Bibliotecas que ofrecen zona wifi %	2020	83.8
+Balears (Illes)	Bibliotecas que ofrecen zona wifi %	2018	83.5
+Balears (Illes)	Bibliotecas con acceso libre %	2024	84.3
+Balears (Illes)	Bibliotecas con acceso libre %	2022	85.8
+Balears (Illes)	Bibliotecas con acceso libre %	2020	86.2
+Balears (Illes)	Bibliotecas con acceso libre %	2018	85.7
+Balears (Illes)	Bibliotecas con acceso libre en sala %	2024	78.3
+Balears (Illes)	Bibliotecas con acceso libre en sala %	2022	80.0
+Balears (Illes)	Bibliotecas con acceso libre en sala %	2020	76.9
+Balears (Illes)	Bibliotecas con acceso libre en sala %	2018	80.5
+Balears (Illes)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	64.3
+Balears (Illes)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	60.8
+Balears (Illes)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	58.5
+Balears (Illes)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	69.9
+Balears (Illes)	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	71.3
+Balears (Illes)	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	67.5
+Balears (Illes)	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	63.1
+Balears (Illes)	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	75.2
+Canarias	Número de bibliotecas	2024	143.0
+Canarias	Número de bibliotecas	2022	137.0
+Canarias	Número de bibliotecas	2020	146.0
+Canarias	Número de bibliotecas	2018	169.0
+Canarias	Número medio de puntos de servicio por biblioteca	2024	1.5
+Canarias	Número medio de puntos de servicio por biblioteca	2022	1.5
+Canarias	Número medio de puntos de servicio por biblioteca	2020	1.6
+Canarias	Número medio de puntos de servicio por biblioteca	2018	1.4
+Canarias	Titularidad pública %	2024	81.1
+Canarias	Titularidad pública %	2022	79.6
+Canarias	Titularidad pública %	2020	80.1
+Canarias	Titularidad pública %	2018	83.4
+Canarias	Titularidad privada %	2024	12.6
+Canarias	Titularidad privada %	2022	13.9
+Canarias	Titularidad privada %	2020	11.0
+Canarias	Titularidad privada %	2018	9.5
+Canarias	Otra titularidad %	2024	6.3
+Canarias	Otra titularidad %	2022	6.6
+Canarias	Otra titularidad %	2020	8.9
+Canarias	Otra titularidad %	2018	7.1
+Canarias	Usuarios inscritos por biblioteca	2024	4186.0
+Canarias	Usuarios inscritos por biblioteca	2022	4095.0
+Canarias	Usuarios inscritos por biblioteca	2020	3573.0
+Canarias	Usuarios inscritos por biblioteca	2018	2742.0
+Canarias	Visitas en sala por biblioteca	2024	28076.0
+Canarias	Visitas en sala por biblioteca	2022	22007.0
+Canarias	Visitas en sala por biblioteca	2020	12694.0
+Canarias	Visitas en sala por biblioteca	2018	36124.0
+Canarias	Libros y folletos impresos por biblioteca	2024	36386.0
+Canarias	Libros y folletos impresos por biblioteca	2022	37092.0
+Canarias	Libros y folletos impresos por biblioteca	2020	33806.0
+Canarias	Libros y folletos impresos por biblioteca	2018	27521.0
+Canarias	Préstamos domiciliarios de libros impresos por biblioteca	2024	5229.0
+Canarias	Préstamos domiciliarios de libros impresos por biblioteca	2022	5262.0
+Canarias	Préstamos domiciliarios de libros impresos por biblioteca	2020	3220.0
+Canarias	Préstamos domiciliarios de libros impresos por biblioteca	2018	5595.0
+Canarias	Número medio de dias de cierre provisional por COVID-19	2024	
+Canarias	Número medio de dias de cierre provisional por COVID-19	2022	
+Canarias	Número medio de dias de cierre provisional por COVID-19	2020	92.0
+Canarias	Número medio de dias de cierre provisional por COVID-19	2018	
+Canarias	Personal en plantilla por biblioteca	2024	4.9
+Canarias	Personal en plantilla por biblioteca	2022	5.2
+Canarias	Personal en plantilla por biblioteca	2020	4.9
+Canarias	Personal en plantilla por biblioteca	2018	4.3
+Canarias	Bibliotecas que disponen de ordenador %	2024	96.5
+Canarias	Bibliotecas que disponen de ordenador %	2022	94.9
+Canarias	Bibliotecas que disponen de ordenador %	2020	91.8
+Canarias	Bibliotecas que disponen de ordenador %	2018	93.5
+Canarias	Bibliotecas con acceso a internet en sala %	2024	93.7
+Canarias	Bibliotecas con acceso a internet en sala %	2022	90.5
+Canarias	Bibliotecas con acceso a internet en sala %	2020	87.0
+Canarias	Bibliotecas con acceso a internet en sala %	2018	92.3
+Canarias	Bibliotecas que ofrecen zona wifi %	2024	89.5
+Canarias	Bibliotecas que ofrecen zona wifi %	2022	89.8
+Canarias	Bibliotecas que ofrecen zona wifi %	2020	81.5
+Canarias	Bibliotecas que ofrecen zona wifi %	2018	85.2
+Canarias	Bibliotecas con acceso libre %	2024	90.2
+Canarias	Bibliotecas con acceso libre %	2022	87.6
+Canarias	Bibliotecas con acceso libre %	2020	85.6
+Canarias	Bibliotecas con acceso libre %	2018	91.1
+Canarias	Bibliotecas con acceso libre en sala %	2024	83.2
+Canarias	Bibliotecas con acceso libre en sala %	2022	82.5
+Canarias	Bibliotecas con acceso libre en sala %	2020	78.8
+Canarias	Bibliotecas con acceso libre en sala %	2018	85.8
+Canarias	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	65.7
+Canarias	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	62.0
+Canarias	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	56.2
+Canarias	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	70.4
+Canarias	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	69.9
+Canarias	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	65.7
+Canarias	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	58.9
+Canarias	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	76.9
+Cantabria	Número de bibliotecas	2024	76.0
+Cantabria	Número de bibliotecas	2022	78.0
+Cantabria	Número de bibliotecas	2020	78.0
+Cantabria	Número de bibliotecas	2018	99.0
+Cantabria	Número medio de puntos de servicio por biblioteca	2024	1.2
+Cantabria	Número medio de puntos de servicio por biblioteca	2022	1.2
+Cantabria	Número medio de puntos de servicio por biblioteca	2020	1.3
+Cantabria	Número medio de puntos de servicio por biblioteca	2018	1.2
+Cantabria	Titularidad pública %	2024	82.9
+Cantabria	Titularidad pública %	2022	84.6
+Cantabria	Titularidad pública %	2020	85.9
+Cantabria	Titularidad pública %	2018	80.8
+Cantabria	Titularidad privada %	2024	14.5
+Cantabria	Titularidad privada %	2022	12.8
+Cantabria	Titularidad privada %	2020	7.7
+Cantabria	Titularidad privada %	2018	14.1
+Cantabria	Otra titularidad %	2024	2.6
+Cantabria	Otra titularidad %	2022	2.6
+Cantabria	Otra titularidad %	2020	6.4
+Cantabria	Otra titularidad %	2018	5.1
+Cantabria	Usuarios inscritos por biblioteca	2024	2660.0
+Cantabria	Usuarios inscritos por biblioteca	2022	2405.0
+Cantabria	Usuarios inscritos por biblioteca	2020	2469.0
+Cantabria	Usuarios inscritos por biblioteca	2018	1803.0
+Cantabria	Visitas en sala por biblioteca	2024	29951.0
+Cantabria	Visitas en sala por biblioteca	2022	24286.0
+Cantabria	Visitas en sala por biblioteca	2020	16160.0
+Cantabria	Visitas en sala por biblioteca	2018	27933.0
+Cantabria	Libros y folletos impresos por biblioteca	2024	22443.0
+Cantabria	Libros y folletos impresos por biblioteca	2022	23303.0
+Cantabria	Libros y folletos impresos por biblioteca	2020	22673.0
+Cantabria	Libros y folletos impresos por biblioteca	2018	18388.0
+Cantabria	Préstamos domiciliarios de libros impresos por biblioteca	2024	9347.0
+Cantabria	Préstamos domiciliarios de libros impresos por biblioteca	2022	6493.0
+Cantabria	Préstamos domiciliarios de libros impresos por biblioteca	2020	3869.0
+Cantabria	Préstamos domiciliarios de libros impresos por biblioteca	2018	5287.0
+Cantabria	Número medio de dias de cierre provisional por COVID-19	2024	
+Cantabria	Número medio de dias de cierre provisional por COVID-19	2022	
+Cantabria	Número medio de dias de cierre provisional por COVID-19	2020	82.0
+Cantabria	Número medio de dias de cierre provisional por COVID-19	2018	
+Cantabria	Personal en plantilla por biblioteca	2024	3.1
+Cantabria	Personal en plantilla por biblioteca	2022	3.0
+Cantabria	Personal en plantilla por biblioteca	2020	3.6
+Cantabria	Personal en plantilla por biblioteca	2018	3.1
+Cantabria	Bibliotecas que disponen de ordenador %	2024	100.0
+Cantabria	Bibliotecas que disponen de ordenador %	2022	98.7
+Cantabria	Bibliotecas que disponen de ordenador %	2020	97.4
+Cantabria	Bibliotecas que disponen de ordenador %	2018	90.9
+Cantabria	Bibliotecas con acceso a internet en sala %	2024	96.1
+Cantabria	Bibliotecas con acceso a internet en sala %	2022	98.7
+Cantabria	Bibliotecas con acceso a internet en sala %	2020	98.7
+Cantabria	Bibliotecas con acceso a internet en sala %	2018	88.9
+Cantabria	Bibliotecas que ofrecen zona wifi %	2024	82.9
+Cantabria	Bibliotecas que ofrecen zona wifi %	2022	79.5
+Cantabria	Bibliotecas que ofrecen zona wifi %	2020	76.9
+Cantabria	Bibliotecas que ofrecen zona wifi %	2018	72.7
+Cantabria	Bibliotecas con acceso libre %	2024	92.1
+Cantabria	Bibliotecas con acceso libre %	2022	94.9
+Cantabria	Bibliotecas con acceso libre %	2020	92.3
+Cantabria	Bibliotecas con acceso libre %	2018	84.8
+Cantabria	Bibliotecas con acceso libre en sala %	2024	81.6
+Cantabria	Bibliotecas con acceso libre en sala %	2022	83.3
+Cantabria	Bibliotecas con acceso libre en sala %	2020	82.1
+Cantabria	Bibliotecas con acceso libre en sala %	2018	76.8
+Cantabria	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	75.0
+Cantabria	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	78.2
+Cantabria	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	70.5
+Cantabria	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	53.5
+Cantabria	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	81.6
+Cantabria	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	83.3
+Cantabria	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	78.2
+Cantabria	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	59.6
+Castilla y León	Número de bibliotecas	2024	462.0
+Castilla y León	Número de bibliotecas	2022	469.0
+Castilla y León	Número de bibliotecas	2020	490.0
+Castilla y León	Número de bibliotecas	2018	517.0
+Castilla y León	Número medio de puntos de servicio por biblioteca	2024	1.3
+Castilla y León	Número medio de puntos de servicio por biblioteca	2022	1.2
+Castilla y León	Número medio de puntos de servicio por biblioteca	2020	1.3
+Castilla y León	Número medio de puntos de servicio por biblioteca	2018	1.3
+Castilla y León	Titularidad pública %	2024	80.1
+Castilla y León	Titularidad pública %	2022	80.2
+Castilla y León	Titularidad pública %	2020	80.8
+Castilla y León	Titularidad pública %	2018	80.7
+Castilla y León	Titularidad privada %	2024	16.5
+Castilla y León	Titularidad privada %	2022	16.2
+Castilla y León	Titularidad privada %	2020	15.1
+Castilla y León	Titularidad privada %	2018	15.1
+Castilla y León	Otra titularidad %	2024	3.5
+Castilla y León	Otra titularidad %	2022	3.6
+Castilla y León	Otra titularidad %	2020	4.1
+Castilla y León	Otra titularidad %	2018	4.3
+Castilla y León	Usuarios inscritos por biblioteca	2024	3105.0
+Castilla y León	Usuarios inscritos por biblioteca	2022	2659.0
+Castilla y León	Usuarios inscritos por biblioteca	2020	2380.0
+Castilla y León	Usuarios inscritos por biblioteca	2018	2535.0
+Castilla y León	Visitas en sala por biblioteca	2024	25139.0
+Castilla y León	Visitas en sala por biblioteca	2022	19934.0
+Castilla y León	Visitas en sala por biblioteca	2020	9792.0
+Castilla y León	Visitas en sala por biblioteca	2018	26555.0
+Castilla y León	Libros y folletos impresos por biblioteca	2024	29528.0
+Castilla y León	Libros y folletos impresos por biblioteca	2022	29263.0
+Castilla y León	Libros y folletos impresos por biblioteca	2020	27334.0
+Castilla y León	Libros y folletos impresos por biblioteca	2018	26452.0
+Castilla y León	Préstamos domiciliarios de libros impresos por biblioteca	2024	6800.0
+Castilla y León	Préstamos domiciliarios de libros impresos por biblioteca	2022	6202.0
+Castilla y León	Préstamos domiciliarios de libros impresos por biblioteca	2020	3611.0
+Castilla y León	Préstamos domiciliarios de libros impresos por biblioteca	2018	6598.0
+Castilla y León	Número medio de dias de cierre provisional por COVID-19	2024	
+Castilla y León	Número medio de dias de cierre provisional por COVID-19	2022	
+Castilla y León	Número medio de dias de cierre provisional por COVID-19	2020	86.0
+Castilla y León	Número medio de dias de cierre provisional por COVID-19	2018	
+Castilla y León	Personal en plantilla por biblioteca	2024	3.6
+Castilla y León	Personal en plantilla por biblioteca	2022	3.5
+Castilla y León	Personal en plantilla por biblioteca	2020	3.5
+Castilla y León	Personal en plantilla por biblioteca	2018	3.5
+Castilla y León	Bibliotecas que disponen de ordenador %	2024	98.1
+Castilla y León	Bibliotecas que disponen de ordenador %	2022	96.6
+Castilla y León	Bibliotecas que disponen de ordenador %	2020	95.1
+Castilla y León	Bibliotecas que disponen de ordenador %	2018	90.3
+Castilla y León	Bibliotecas con acceso a internet en sala %	2024	90.7
+Castilla y León	Bibliotecas con acceso a internet en sala %	2022	88.5
+Castilla y León	Bibliotecas con acceso a internet en sala %	2020	83.9
+Castilla y León	Bibliotecas con acceso a internet en sala %	2018	88.6
+Castilla y León	Bibliotecas que ofrecen zona wifi %	2024	66.7
+Castilla y León	Bibliotecas que ofrecen zona wifi %	2022	66.7
+Castilla y León	Bibliotecas que ofrecen zona wifi %	2020	68.0
+Castilla y León	Bibliotecas que ofrecen zona wifi %	2018	66.5
+Castilla y León	Bibliotecas con acceso libre %	2024	83.3
+Castilla y León	Bibliotecas con acceso libre %	2022	84.0
+Castilla y León	Bibliotecas con acceso libre %	2020	81.0
+Castilla y León	Bibliotecas con acceso libre %	2018	79.9
+Castilla y León	Bibliotecas con acceso libre en sala %	2024	77.3
+Castilla y León	Bibliotecas con acceso libre en sala %	2022	78.5
+Castilla y León	Bibliotecas con acceso libre en sala %	2020	76.3
+Castilla y León	Bibliotecas con acceso libre en sala %	2018	75.0
+Castilla y León	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	68.2
+Castilla y León	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	69.7
+Castilla y León	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	67.6
+Castilla y León	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	56.7
+Castilla y León	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	73.2
+Castilla y León	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	73.8
+Castilla y León	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	73.1
+Castilla y León	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	61.3
+Castilla-La Mancha	Número de bibliotecas	2024	487.0
+Castilla-La Mancha	Número de bibliotecas	2022	503.0
+Castilla-La Mancha	Número de bibliotecas	2020	512.0
+Castilla-La Mancha	Número de bibliotecas	2018	561.0
+Castilla-La Mancha	Número medio de puntos de servicio por biblioteca	2024	1.1
+Castilla-La Mancha	Número medio de puntos de servicio por biblioteca	2022	1.1
+Castilla-La Mancha	Número medio de puntos de servicio por biblioteca	2020	1.1
+Castilla-La Mancha	Número medio de puntos de servicio por biblioteca	2018	1.1
+Castilla-La Mancha	Titularidad pública %	2024	94.0
+Castilla-La Mancha	Titularidad pública %	2022	93.8
+Castilla-La Mancha	Titularidad pública %	2020	94.1
+Castilla-La Mancha	Titularidad pública %	2018	92.7
+Castilla-La Mancha	Titularidad privada %	2024	4.7
+Castilla-La Mancha	Titularidad privada %	2022	5.0
+Castilla-La Mancha	Titularidad privada %	2020	4.3
+Castilla-La Mancha	Titularidad privada %	2018	5.5
+Castilla-La Mancha	Otra titularidad %	2024	1.2
+Castilla-La Mancha	Otra titularidad %	2022	1.2
+Castilla-La Mancha	Otra titularidad %	2020	1.6
+Castilla-La Mancha	Otra titularidad %	2018	1.8
+Castilla-La Mancha	Usuarios inscritos por biblioteca	2024	2362.0
+Castilla-La Mancha	Usuarios inscritos por biblioteca	2022	1725.0
+Castilla-La Mancha	Usuarios inscritos por biblioteca	2020	1976.0
+Castilla-La Mancha	Usuarios inscritos por biblioteca	2018	1898.0
+Castilla-La Mancha	Visitas en sala por biblioteca	2024	10771.0
+Castilla-La Mancha	Visitas en sala por biblioteca	2022	7891.0
+Castilla-La Mancha	Visitas en sala por biblioteca	2020	5147.0
+Castilla-La Mancha	Visitas en sala por biblioteca	2018	13568.0
+Castilla-La Mancha	Libros y folletos impresos por biblioteca	2024	17095.0
+Castilla-La Mancha	Libros y folletos impresos por biblioteca	2022	16353.0
+Castilla-La Mancha	Libros y folletos impresos por biblioteca	2020	15224.0
+Castilla-La Mancha	Libros y folletos impresos por biblioteca	2018	13688.0
+Castilla-La Mancha	Préstamos domiciliarios de libros impresos por biblioteca	2024	4059.0
+Castilla-La Mancha	Préstamos domiciliarios de libros impresos por biblioteca	2022	3484.0
+Castilla-La Mancha	Préstamos domiciliarios de libros impresos por biblioteca	2020	2304.0
+Castilla-La Mancha	Préstamos domiciliarios de libros impresos por biblioteca	2018	3744.0
+Castilla-La Mancha	Número medio de dias de cierre provisional por COVID-19	2024	
+Castilla-La Mancha	Número medio de dias de cierre provisional por COVID-19	2022	
+Castilla-La Mancha	Número medio de dias de cierre provisional por COVID-19	2020	81.0
+Castilla-La Mancha	Número medio de dias de cierre provisional por COVID-19	2018	
+Castilla-La Mancha	Personal en plantilla por biblioteca	2024	2.3
+Castilla-La Mancha	Personal en plantilla por biblioteca	2022	2.3
+Castilla-La Mancha	Personal en plantilla por biblioteca	2020	2.3
+Castilla-La Mancha	Personal en plantilla por biblioteca	2018	2.4
+Castilla-La Mancha	Bibliotecas que disponen de ordenador %	2024	98.6
+Castilla-La Mancha	Bibliotecas que disponen de ordenador %	2022	98.6
+Castilla-La Mancha	Bibliotecas que disponen de ordenador %	2020	98.6
+Castilla-La Mancha	Bibliotecas que disponen de ordenador %	2018	95.0
+Castilla-La Mancha	Bibliotecas con acceso a internet en sala %	2024	96.5
+Castilla-La Mancha	Bibliotecas con acceso a internet en sala %	2022	94.6
+Castilla-La Mancha	Bibliotecas con acceso a internet en sala %	2020	95.5
+Castilla-La Mancha	Bibliotecas con acceso a internet en sala %	2018	93.4
+Castilla-La Mancha	Bibliotecas que ofrecen zona wifi %	2024	84.0
+Castilla-La Mancha	Bibliotecas que ofrecen zona wifi %	2022	82.5
+Castilla-La Mancha	Bibliotecas que ofrecen zona wifi %	2020	77.9
+Castilla-La Mancha	Bibliotecas que ofrecen zona wifi %	2018	81.1
+Castilla-La Mancha	Bibliotecas con acceso libre %	2024	92.8
+Castilla-La Mancha	Bibliotecas con acceso libre %	2022	92.0
+Castilla-La Mancha	Bibliotecas con acceso libre %	2020	92.4
+Castilla-La Mancha	Bibliotecas con acceso libre %	2018	89.8
+Castilla-La Mancha	Bibliotecas con acceso libre en sala %	2024	90.8
+Castilla-La Mancha	Bibliotecas con acceso libre en sala %	2022	90.9
+Castilla-La Mancha	Bibliotecas con acceso libre en sala %	2020	90.6
+Castilla-La Mancha	Bibliotecas con acceso libre en sala %	2018	88.4
+Castilla-La Mancha	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	81.1
+Castilla-La Mancha	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	72.6
+Castilla-La Mancha	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	77.3
+Castilla-La Mancha	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	67.7
+Castilla-La Mancha	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	85.4
+Castilla-La Mancha	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	75.3
+Castilla-La Mancha	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	81.4
+Castilla-La Mancha	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	71.1
+Cataluña	Número de bibliotecas	2024	701.0
+Cataluña	Número de bibliotecas	2022	737.0
+Cataluña	Número de bibliotecas	2020	750.0
+Cataluña	Número de bibliotecas	2018	850.0
+Cataluña	Número medio de puntos de servicio por biblioteca	2024	1.1
+Cataluña	Número medio de puntos de servicio por biblioteca	2022	1.1
+Cataluña	Número medio de puntos de servicio por biblioteca	2020	1.2
+Cataluña	Número medio de puntos de servicio por biblioteca	2018	1.1
+Cataluña	Titularidad pública %	2024	86.0
+Cataluña	Titularidad pública %	2022	84.3
+Cataluña	Titularidad pública %	2020	86.0
+Cataluña	Titularidad pública %	2018	80.6
+Cataluña	Titularidad privada %	2024	12.1
+Cataluña	Titularidad privada %	2022	13.8
+Cataluña	Titularidad privada %	2020	10.3
+Cataluña	Titularidad privada %	2018	12.4
+Cataluña	Otra titularidad %	2024	1.9
+Cataluña	Otra titularidad %	2022	1.9
+Cataluña	Otra titularidad %	2020	3.7
+Cataluña	Otra titularidad %	2018	7.1
+Cataluña	Usuarios inscritos por biblioteca	2024	11121.0
+Cataluña	Usuarios inscritos por biblioteca	2022	11111.0
+Cataluña	Usuarios inscritos por biblioteca	2020	10372.0
+Cataluña	Usuarios inscritos por biblioteca	2018	6358.0
+Cataluña	Visitas en sala por biblioteca	2024	47011.0
+Cataluña	Visitas en sala por biblioteca	2022	30539.0
+Cataluña	Visitas en sala por biblioteca	2020	17489.0
+Cataluña	Visitas en sala por biblioteca	2018	45378.0
+Cataluña	Libros y folletos impresos por biblioteca	2024	37077.0
+Cataluña	Libros y folletos impresos por biblioteca	2022	36956.0
+Cataluña	Libros y folletos impresos por biblioteca	2020	35392.0
+Cataluña	Libros y folletos impresos por biblioteca	2018	30834.0
+Cataluña	Préstamos domiciliarios de libros impresos por biblioteca	2024	19554.0
+Cataluña	Préstamos domiciliarios de libros impresos por biblioteca	2022	14094.0
+Cataluña	Préstamos domiciliarios de libros impresos por biblioteca	2020	8699.0
+Cataluña	Préstamos domiciliarios de libros impresos por biblioteca	2018	13472.0
+Cataluña	Número medio de dias de cierre provisional por COVID-19	2024	
+Cataluña	Número medio de dias de cierre provisional por COVID-19	2022	
+Cataluña	Número medio de dias de cierre provisional por COVID-19	2020	72.0
+Cataluña	Número medio de dias de cierre provisional por COVID-19	2018	
+Cataluña	Personal en plantilla por biblioteca	2024	5.2
+Cataluña	Personal en plantilla por biblioteca	2022	5.2
+Cataluña	Personal en plantilla por biblioteca	2020	5.1
+Cataluña	Personal en plantilla por biblioteca	2018	4.7
+Cataluña	Bibliotecas que disponen de ordenador %	2024	99.0
+Cataluña	Bibliotecas que disponen de ordenador %	2022	99.1
+Cataluña	Bibliotecas que disponen de ordenador %	2020	98.7
+Cataluña	Bibliotecas que disponen de ordenador %	2018	99.2
+Cataluña	Bibliotecas con acceso a internet en sala %	2024	98.4
+Cataluña	Bibliotecas con acceso a internet en sala %	2022	97.3
+Cataluña	Bibliotecas con acceso a internet en sala %	2020	96.8
+Cataluña	Bibliotecas con acceso a internet en sala %	2018	96.7
+Cataluña	Bibliotecas que ofrecen zona wifi %	2024	90.6
+Cataluña	Bibliotecas que ofrecen zona wifi %	2022	91.5
+Cataluña	Bibliotecas que ofrecen zona wifi %	2020	85.7
+Cataluña	Bibliotecas que ofrecen zona wifi %	2018	83.2
+Cataluña	Bibliotecas con acceso libre %	2024	92.7
+Cataluña	Bibliotecas con acceso libre %	2022	90.9
+Cataluña	Bibliotecas con acceso libre %	2020	90.1
+Cataluña	Bibliotecas con acceso libre %	2018	87.8
+Cataluña	Bibliotecas con acceso libre en sala %	2024	82.5
+Cataluña	Bibliotecas con acceso libre en sala %	2022	81.3
+Cataluña	Bibliotecas con acceso libre en sala %	2020	79.6
+Cataluña	Bibliotecas con acceso libre en sala %	2018	78.1
+Cataluña	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	89.3
+Cataluña	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	85.6
+Cataluña	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	84.7
+Cataluña	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	73.1
+Cataluña	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	93.7
+Cataluña	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	88.7
+Cataluña	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	88.3
+Cataluña	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	79.8
+Comunitat Valenciana	Número de bibliotecas	2024	446.0
+Comunitat Valenciana	Número de bibliotecas	2022	435.0
+Comunitat Valenciana	Número de bibliotecas	2020	443.0
+Comunitat Valenciana	Número de bibliotecas	2018	594.0
+Comunitat Valenciana	Número medio de puntos de servicio por biblioteca	2024	1.3
+Comunitat Valenciana	Número medio de puntos de servicio por biblioteca	2022	1.4
+Comunitat Valenciana	Número medio de puntos de servicio por biblioteca	2020	1.4
+Comunitat Valenciana	Número medio de puntos de servicio por biblioteca	2018	1.3
+Comunitat Valenciana	Titularidad pública %	2024	83.6
+Comunitat Valenciana	Titularidad pública %	2022	83.9
+Comunitat Valenciana	Titularidad pública %	2020	83.7
+Comunitat Valenciana	Titularidad pública %	2018	86.5
+Comunitat Valenciana	Titularidad privada %	2024	13.7
+Comunitat Valenciana	Titularidad privada %	2022	13.8
+Comunitat Valenciana	Titularidad privada %	2020	11.7
+Comunitat Valenciana	Titularidad privada %	2018	10.3
+Comunitat Valenciana	Otra titularidad %	2024	2.7
+Comunitat Valenciana	Otra titularidad %	2022	2.3
+Comunitat Valenciana	Otra titularidad %	2020	4.5
+Comunitat Valenciana	Otra titularidad %	2018	3.2
+Comunitat Valenciana	Usuarios inscritos por biblioteca	2024	6346.0
+Comunitat Valenciana	Usuarios inscritos por biblioteca	2022	5081.0
+Comunitat Valenciana	Usuarios inscritos por biblioteca	2020	4366.0
+Comunitat Valenciana	Usuarios inscritos por biblioteca	2018	3692.0
+Comunitat Valenciana	Visitas en sala por biblioteca	2024	29353.0
+Comunitat Valenciana	Visitas en sala por biblioteca	2022	25921.0
+Comunitat Valenciana	Visitas en sala por biblioteca	2020	15545.0
+Comunitat Valenciana	Visitas en sala por biblioteca	2018	27685.0
+Comunitat Valenciana	Libros y folletos impresos por biblioteca	2024	31531.0
+Comunitat Valenciana	Libros y folletos impresos por biblioteca	2022	32017.0
+Comunitat Valenciana	Libros y folletos impresos por biblioteca	2020	29734.0
+Comunitat Valenciana	Libros y folletos impresos por biblioteca	2018	22268.0
+Comunitat Valenciana	Préstamos domiciliarios de libros impresos por biblioteca	2024	9001.0
+Comunitat Valenciana	Préstamos domiciliarios de libros impresos por biblioteca	2022	8442.0
+Comunitat Valenciana	Préstamos domiciliarios de libros impresos por biblioteca	2020	4860.0
+Comunitat Valenciana	Préstamos domiciliarios de libros impresos por biblioteca	2018	6654.0
+Comunitat Valenciana	Número medio de dias de cierre provisional por COVID-19	2024	
+Comunitat Valenciana	Número medio de dias de cierre provisional por COVID-19	2022	
+Comunitat Valenciana	Número medio de dias de cierre provisional por COVID-19	2020	82.0
+Comunitat Valenciana	Número medio de dias de cierre provisional por COVID-19	2018	
+Comunitat Valenciana	Personal en plantilla por biblioteca	2024	4.4
+Comunitat Valenciana	Personal en plantilla por biblioteca	2022	4.6
+Comunitat Valenciana	Personal en plantilla por biblioteca	2020	4.4
+Comunitat Valenciana	Personal en plantilla por biblioteca	2018	3.5
+Comunitat Valenciana	Bibliotecas que disponen de ordenador %	2024	98.2
+Comunitat Valenciana	Bibliotecas que disponen de ordenador %	2022	98.4
+Comunitat Valenciana	Bibliotecas que disponen de ordenador %	2020	97.1
+Comunitat Valenciana	Bibliotecas que disponen de ordenador %	2018	96.3
+Comunitat Valenciana	Bibliotecas con acceso a internet en sala %	2024	95.3
+Comunitat Valenciana	Bibliotecas con acceso a internet en sala %	2022	94.5
+Comunitat Valenciana	Bibliotecas con acceso a internet en sala %	2020	91.9
+Comunitat Valenciana	Bibliotecas con acceso a internet en sala %	2018	92.1
+Comunitat Valenciana	Bibliotecas que ofrecen zona wifi %	2024	88.6
+Comunitat Valenciana	Bibliotecas que ofrecen zona wifi %	2022	81.8
+Comunitat Valenciana	Bibliotecas que ofrecen zona wifi %	2020	79.9
+Comunitat Valenciana	Bibliotecas que ofrecen zona wifi %	2018	81.3
+Comunitat Valenciana	Bibliotecas con acceso libre %	2024	88.3
+Comunitat Valenciana	Bibliotecas con acceso libre %	2022	88.3
+Comunitat Valenciana	Bibliotecas con acceso libre %	2020	86.7
+Comunitat Valenciana	Bibliotecas con acceso libre %	2018	88.2
+Comunitat Valenciana	Bibliotecas con acceso libre en sala %	2024	83.6
+Comunitat Valenciana	Bibliotecas con acceso libre en sala %	2022	83.2
+Comunitat Valenciana	Bibliotecas con acceso libre en sala %	2020	81.7
+Comunitat Valenciana	Bibliotecas con acceso libre en sala %	2018	84.3
+Comunitat Valenciana	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	69.5
+Comunitat Valenciana	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	67.4
+Comunitat Valenciana	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	64.3
+Comunitat Valenciana	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	55.9
+Comunitat Valenciana	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	74.7
+Comunitat Valenciana	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	73.3
+Comunitat Valenciana	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	68.4
+Comunitat Valenciana	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	59.4
+Extremadura	Número de bibliotecas	2024	448.0
+Extremadura	Número de bibliotecas	2022	457.0
+Extremadura	Número de bibliotecas	2020	433.0
+Extremadura	Número de bibliotecas	2018	481.0
+Extremadura	Número medio de puntos de servicio por biblioteca	2024	1.0
+Extremadura	Número medio de puntos de servicio por biblioteca	2022	1.0
+Extremadura	Número medio de puntos de servicio por biblioteca	2020	1.0
+Extremadura	Número medio de puntos de servicio por biblioteca	2018	1.1
+Extremadura	Titularidad pública %	2024	94.2
+Extremadura	Titularidad pública %	2022	94.7
+Extremadura	Titularidad pública %	2020	94.2
+Extremadura	Titularidad pública %	2018	94.6
+Extremadura	Titularidad privada %	2024	4.2
+Extremadura	Titularidad privada %	2022	4.2
+Extremadura	Titularidad privada %	2020	3.9
+Extremadura	Titularidad privada %	2018	3.3
+Extremadura	Otra titularidad %	2024	1.6
+Extremadura	Otra titularidad %	2022	1.1
+Extremadura	Otra titularidad %	2020	1.8
+Extremadura	Otra titularidad %	2018	2.1
+Extremadura	Usuarios inscritos por biblioteca	2024	1253.0
+Extremadura	Usuarios inscritos por biblioteca	2022	1198.0
+Extremadura	Usuarios inscritos por biblioteca	2020	1218.0
+Extremadura	Usuarios inscritos por biblioteca	2018	1051.0
+Extremadura	Visitas en sala por biblioteca	2024	5307.0
+Extremadura	Visitas en sala por biblioteca	2022	4222.0
+Extremadura	Visitas en sala por biblioteca	2020	3334.0
+Extremadura	Visitas en sala por biblioteca	2018	9746.0
+Extremadura	Libros y folletos impresos por biblioteca	2024	11099.0
+Extremadura	Libros y folletos impresos por biblioteca	2022	10539.0
+Extremadura	Libros y folletos impresos por biblioteca	2020	10808.0
+Extremadura	Libros y folletos impresos por biblioteca	2018	9553.0
+Extremadura	Préstamos domiciliarios de libros impresos por biblioteca	2024	1560.0
+Extremadura	Préstamos domiciliarios de libros impresos por biblioteca	2022	1449.0
+Extremadura	Préstamos domiciliarios de libros impresos por biblioteca	2020	1097.0
+Extremadura	Préstamos domiciliarios de libros impresos por biblioteca	2018	1690.0
+Extremadura	Número medio de dias de cierre provisional por COVID-19	2024	
+Extremadura	Número medio de dias de cierre provisional por COVID-19	2022	
+Extremadura	Número medio de dias de cierre provisional por COVID-19	2020	84.0
+Extremadura	Número medio de dias de cierre provisional por COVID-19	2018	
+Extremadura	Personal en plantilla por biblioteca	2024	1.9
+Extremadura	Personal en plantilla por biblioteca	2022	1.9
+Extremadura	Personal en plantilla por biblioteca	2020	2.0
+Extremadura	Personal en plantilla por biblioteca	2018	1.9
+Extremadura	Bibliotecas que disponen de ordenador %	2024	99.3
+Extremadura	Bibliotecas que disponen de ordenador %	2022	98.7
+Extremadura	Bibliotecas que disponen de ordenador %	2020	99.1
+Extremadura	Bibliotecas que disponen de ordenador %	2018	96.5
+Extremadura	Bibliotecas con acceso a internet en sala %	2024	96.7
+Extremadura	Bibliotecas con acceso a internet en sala %	2022	97.2
+Extremadura	Bibliotecas con acceso a internet en sala %	2020	95.2
+Extremadura	Bibliotecas con acceso a internet en sala %	2018	95.4
+Extremadura	Bibliotecas que ofrecen zona wifi %	2024	80.6
+Extremadura	Bibliotecas que ofrecen zona wifi %	2022	80.7
+Extremadura	Bibliotecas que ofrecen zona wifi %	2020	78.3
+Extremadura	Bibliotecas que ofrecen zona wifi %	2018	82.1
+Extremadura	Bibliotecas con acceso libre %	2024	94.6
+Extremadura	Bibliotecas con acceso libre %	2022	94.1
+Extremadura	Bibliotecas con acceso libre %	2020	93.8
+Extremadura	Bibliotecas con acceso libre %	2018	95.0
+Extremadura	Bibliotecas con acceso libre en sala %	2024	93.5
+Extremadura	Bibliotecas con acceso libre en sala %	2022	93.2
+Extremadura	Bibliotecas con acceso libre en sala %	2020	92.8
+Extremadura	Bibliotecas con acceso libre en sala %	2018	93.8
+Extremadura	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	20.5
+Extremadura	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	16.2
+Extremadura	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	15.0
+Extremadura	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	18.5
+Extremadura	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	22.1
+Extremadura	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	17.7
+Extremadura	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	16.9
+Extremadura	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	17.9
+Galicia	Número de bibliotecas	2024	388.0
+Galicia	Número de bibliotecas	2022	391.0
+Galicia	Número de bibliotecas	2020	395.0
+Galicia	Número de bibliotecas	2018	476.0
+Galicia	Número medio de puntos de servicio por biblioteca	2024	1.3
+Galicia	Número medio de puntos de servicio por biblioteca	2022	1.3
+Galicia	Número medio de puntos de servicio por biblioteca	2020	1.3
+Galicia	Número medio de puntos de servicio por biblioteca	2018	1.3
+Galicia	Titularidad pública %	2024	75.0
+Galicia	Titularidad pública %	2022	74.7
+Galicia	Titularidad pública %	2020	75.4
+Galicia	Titularidad pública %	2018	74.6
+Galicia	Titularidad privada %	2024	22.4
+Galicia	Titularidad privada %	2022	22.8
+Galicia	Titularidad privada %	2020	18.5
+Galicia	Titularidad privada %	2018	19.3
+Galicia	Otra titularidad %	2024	2.6
+Galicia	Otra titularidad %	2022	2.6
+Galicia	Otra titularidad %	2020	6.1
+Galicia	Otra titularidad %	2018	6.1
+Galicia	Usuarios inscritos por biblioteca	2024	2759.0
+Galicia	Usuarios inscritos por biblioteca	2022	2493.0
+Galicia	Usuarios inscritos por biblioteca	2020	2409.0
+Galicia	Usuarios inscritos por biblioteca	2018	2089.0
+Galicia	Visitas en sala por biblioteca	2024	15189.0
+Galicia	Visitas en sala por biblioteca	2022	10420.0
+Galicia	Visitas en sala por biblioteca	2020	6891.0
+Galicia	Visitas en sala por biblioteca	2018	18933.0
+Galicia	Libros y folletos impresos por biblioteca	2024	28945.0
+Galicia	Libros y folletos impresos por biblioteca	2022	28322.0
+Galicia	Libros y folletos impresos por biblioteca	2020	26977.0
+Galicia	Libros y folletos impresos por biblioteca	2018	23563.0
+Galicia	Préstamos domiciliarios de libros impresos por biblioteca	2024	6541.0
+Galicia	Préstamos domiciliarios de libros impresos por biblioteca	2022	5829.0
+Galicia	Préstamos domiciliarios de libros impresos por biblioteca	2020	3827.0
+Galicia	Préstamos domiciliarios de libros impresos por biblioteca	2018	5404.0
+Galicia	Número medio de dias de cierre provisional por COVID-19	2024	
+Galicia	Número medio de dias de cierre provisional por COVID-19	2022	
+Galicia	Número medio de dias de cierre provisional por COVID-19	2020	91.0
+Galicia	Número medio de dias de cierre provisional por COVID-19	2018	
+Galicia	Personal en plantilla por biblioteca	2024	3.3
+Galicia	Personal en plantilla por biblioteca	2022	3.4
+Galicia	Personal en plantilla por biblioteca	2020	3.4
+Galicia	Personal en plantilla por biblioteca	2018	3.3
+Galicia	Bibliotecas que disponen de ordenador %	2024	96.6
+Galicia	Bibliotecas que disponen de ordenador %	2022	95.4
+Galicia	Bibliotecas que disponen de ordenador %	2020	95.9
+Galicia	Bibliotecas que disponen de ordenador %	2018	93.5
+Galicia	Bibliotecas con acceso a internet en sala %	2024	92.3
+Galicia	Bibliotecas con acceso a internet en sala %	2022	91.0
+Galicia	Bibliotecas con acceso a internet en sala %	2020	88.9
+Galicia	Bibliotecas con acceso a internet en sala %	2018	87.8
+Galicia	Bibliotecas que ofrecen zona wifi %	2024	85.1
+Galicia	Bibliotecas que ofrecen zona wifi %	2022	80.3
+Galicia	Bibliotecas que ofrecen zona wifi %	2020	75.9
+Galicia	Bibliotecas que ofrecen zona wifi %	2018	73.9
+Galicia	Bibliotecas con acceso libre %	2024	85.3
+Galicia	Bibliotecas con acceso libre %	2022	83.4
+Galicia	Bibliotecas con acceso libre %	2020	83.0
+Galicia	Bibliotecas con acceso libre %	2018	82.6
+Galicia	Bibliotecas con acceso libre en sala %	2024	77.6
+Galicia	Bibliotecas con acceso libre en sala %	2022	75.7
+Galicia	Bibliotecas con acceso libre en sala %	2020	74.9
+Galicia	Bibliotecas con acceso libre en sala %	2018	75.4
+Galicia	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	75.3
+Galicia	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	73.7
+Galicia	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	70.1
+Galicia	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	60.5
+Galicia	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	82.7
+Galicia	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	80.6
+Galicia	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	75.7
+Galicia	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	64.1
+Madrid (Comunidad de)	Número de bibliotecas	2024	457.0
+Madrid (Comunidad de)	Número de bibliotecas	2022	480.0
+Madrid (Comunidad de)	Número de bibliotecas	2020	506.0
+Madrid (Comunidad de)	Número de bibliotecas	2018	534.0
+Madrid (Comunidad de)	Número medio de puntos de servicio por biblioteca	2024	1.6
+Madrid (Comunidad de)	Número medio de puntos de servicio por biblioteca	2022	1.6
+Madrid (Comunidad de)	Número medio de puntos de servicio por biblioteca	2020	1.7
+Madrid (Comunidad de)	Número medio de puntos de servicio por biblioteca	2018	1.7
+Madrid (Comunidad de)	Titularidad pública %	2024	64.1
+Madrid (Comunidad de)	Titularidad pública %	2022	63.8
+Madrid (Comunidad de)	Titularidad pública %	2020	64.8
+Madrid (Comunidad de)	Titularidad pública %	2018	65.7
+Madrid (Comunidad de)	Titularidad privada %	2024	29.5
+Madrid (Comunidad de)	Titularidad privada %	2022	29.8
+Madrid (Comunidad de)	Titularidad privada %	2020	26.7
+Madrid (Comunidad de)	Titularidad privada %	2018	23.8
+Madrid (Comunidad de)	Otra titularidad %	2024	6.3
+Madrid (Comunidad de)	Otra titularidad %	2022	6.5
+Madrid (Comunidad de)	Otra titularidad %	2020	8.5
+Madrid (Comunidad de)	Otra titularidad %	2018	10.5
+Madrid (Comunidad de)	Usuarios inscritos por biblioteca	2024	6848.0
+Madrid (Comunidad de)	Usuarios inscritos por biblioteca	2022	6799.0
+Madrid (Comunidad de)	Usuarios inscritos por biblioteca	2020	6422.0
+Madrid (Comunidad de)	Usuarios inscritos por biblioteca	2018	5462.0
+Madrid (Comunidad de)	Visitas en sala por biblioteca	2024	43205.0
+Madrid (Comunidad de)	Visitas en sala por biblioteca	2022	33628.0
+Madrid (Comunidad de)	Visitas en sala por biblioteca	2020	16951.0
+Madrid (Comunidad de)	Visitas en sala por biblioteca	2018	69434.0
+Madrid (Comunidad de)	Libros y folletos impresos por biblioteca	2024	86344.0
+Madrid (Comunidad de)	Libros y folletos impresos por biblioteca	2022	96457.0
+Madrid (Comunidad de)	Libros y folletos impresos por biblioteca	2020	97166.0
+Madrid (Comunidad de)	Libros y folletos impresos por biblioteca	2018	85033.0
+Madrid (Comunidad de)	Préstamos domiciliarios de libros impresos por biblioteca	2024	14492.0
+Madrid (Comunidad de)	Préstamos domiciliarios de libros impresos por biblioteca	2022	12043.0
+Madrid (Comunidad de)	Préstamos domiciliarios de libros impresos por biblioteca	2020	7878.0
+Madrid (Comunidad de)	Préstamos domiciliarios de libros impresos por biblioteca	2018	12264.0
+Madrid (Comunidad de)	Número medio de dias de cierre provisional por COVID-19	2024	
+Madrid (Comunidad de)	Número medio de dias de cierre provisional por COVID-19	2022	
+Madrid (Comunidad de)	Número medio de dias de cierre provisional por COVID-19	2020	112.0
+Madrid (Comunidad de)	Número medio de dias de cierre provisional por COVID-19	2018	
+Madrid (Comunidad de)	Personal en plantilla por biblioteca	2024	9.0
+Madrid (Comunidad de)	Personal en plantilla por biblioteca	2022	8.8
+Madrid (Comunidad de)	Personal en plantilla por biblioteca	2020	8.4
+Madrid (Comunidad de)	Personal en plantilla por biblioteca	2018	8.5
+Madrid (Comunidad de)	Bibliotecas que disponen de ordenador %	2024	95.8
+Madrid (Comunidad de)	Bibliotecas que disponen de ordenador %	2022	95.0
+Madrid (Comunidad de)	Bibliotecas que disponen de ordenador %	2020	93.3
+Madrid (Comunidad de)	Bibliotecas que disponen de ordenador %	2018	89.1
+Madrid (Comunidad de)	Bibliotecas con acceso a internet en sala %	2024	91.9
+Madrid (Comunidad de)	Bibliotecas con acceso a internet en sala %	2022	91.3
+Madrid (Comunidad de)	Bibliotecas con acceso a internet en sala %	2020	87.4
+Madrid (Comunidad de)	Bibliotecas con acceso a internet en sala %	2018	89.3
+Madrid (Comunidad de)	Bibliotecas que ofrecen zona wifi %	2024	75.5
+Madrid (Comunidad de)	Bibliotecas que ofrecen zona wifi %	2022	69.8
+Madrid (Comunidad de)	Bibliotecas que ofrecen zona wifi %	2020	64.6
+Madrid (Comunidad de)	Bibliotecas que ofrecen zona wifi %	2018	65.5
+Madrid (Comunidad de)	Bibliotecas con acceso libre %	2024	73.1
+Madrid (Comunidad de)	Bibliotecas con acceso libre %	2022	71.5
+Madrid (Comunidad de)	Bibliotecas con acceso libre %	2020	72.3
+Madrid (Comunidad de)	Bibliotecas con acceso libre %	2018	70.6
+Madrid (Comunidad de)	Bibliotecas con acceso libre en sala %	2024	56.0
+Madrid (Comunidad de)	Bibliotecas con acceso libre en sala %	2022	54.0
+Madrid (Comunidad de)	Bibliotecas con acceso libre en sala %	2020	57.1
+Madrid (Comunidad de)	Bibliotecas con acceso libre en sala %	2018	52.1
+Madrid (Comunidad de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	65.2
+Madrid (Comunidad de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	65.0
+Madrid (Comunidad de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	59.5
+Madrid (Comunidad de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	54.9
+Madrid (Comunidad de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	80.7
+Madrid (Comunidad de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	78.3
+Madrid (Comunidad de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	69.6
+Madrid (Comunidad de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	65.9
+Murcia (Región de)	Número de bibliotecas	2024	89.0
+Murcia (Región de)	Número de bibliotecas	2022	91.0
+Murcia (Región de)	Número de bibliotecas	2020	96.0
+Murcia (Región de)	Número de bibliotecas	2018	100.0
+Murcia (Región de)	Número medio de puntos de servicio por biblioteca	2024	1.9
+Murcia (Región de)	Número medio de puntos de servicio por biblioteca	2022	1.8
+Murcia (Región de)	Número medio de puntos de servicio por biblioteca	2020	1.9
+Murcia (Región de)	Número medio de puntos de servicio por biblioteca	2018	2.0
+Murcia (Región de)	Titularidad pública %	2024	76.4
+Murcia (Región de)	Titularidad pública %	2022	75.8
+Murcia (Región de)	Titularidad pública %	2020	79.2
+Murcia (Región de)	Titularidad pública %	2018	78.0
+Murcia (Región de)	Titularidad privada %	2024	20.2
+Murcia (Región de)	Titularidad privada %	2022	20.9
+Murcia (Región de)	Titularidad privada %	2020	15.6
+Murcia (Región de)	Titularidad privada %	2018	17.0
+Murcia (Región de)	Otra titularidad %	2024	3.4
+Murcia (Región de)	Otra titularidad %	2022	3.3
+Murcia (Región de)	Otra titularidad %	2020	5.2
+Murcia (Región de)	Otra titularidad %	2018	5.0
+Murcia (Región de)	Usuarios inscritos por biblioteca	2024	8558.0
+Murcia (Región de)	Usuarios inscritos por biblioteca	2022	7895.0
+Murcia (Región de)	Usuarios inscritos por biblioteca	2020	6918.0
+Murcia (Región de)	Usuarios inscritos por biblioteca	2018	5902.0
+Murcia (Región de)	Visitas en sala por biblioteca	2024	39310.0
+Murcia (Región de)	Visitas en sala por biblioteca	2022	34297.0
+Murcia (Región de)	Visitas en sala por biblioteca	2020	19377.0
+Murcia (Región de)	Visitas en sala por biblioteca	2018	56924.0
+Murcia (Región de)	Libros y folletos impresos por biblioteca	2024	39281.0
+Murcia (Región de)	Libros y folletos impresos por biblioteca	2022	38257.0
+Murcia (Región de)	Libros y folletos impresos por biblioteca	2020	30249.0
+Murcia (Región de)	Libros y folletos impresos por biblioteca	2018	33063.0
+Murcia (Región de)	Préstamos domiciliarios de libros impresos por biblioteca	2024	10324.0
+Murcia (Región de)	Préstamos domiciliarios de libros impresos por biblioteca	2022	9678.0
+Murcia (Región de)	Préstamos domiciliarios de libros impresos por biblioteca	2020	5302.0
+Murcia (Región de)	Préstamos domiciliarios de libros impresos por biblioteca	2018	9956.0
+Murcia (Región de)	Número medio de dias de cierre provisional por COVID-19	2024	
+Murcia (Región de)	Número medio de dias de cierre provisional por COVID-19	2022	
+Murcia (Región de)	Número medio de dias de cierre provisional por COVID-19	2020	78.0
+Murcia (Región de)	Número medio de dias de cierre provisional por COVID-19	2018	
+Murcia (Región de)	Personal en plantilla por biblioteca	2024	6.0
+Murcia (Región de)	Personal en plantilla por biblioteca	2022	6.0
+Murcia (Región de)	Personal en plantilla por biblioteca	2020	6.0
+Murcia (Región de)	Personal en plantilla por biblioteca	2018	5.8
+Murcia (Región de)	Bibliotecas que disponen de ordenador %	2024	97.8
+Murcia (Región de)	Bibliotecas que disponen de ordenador %	2022	95.6
+Murcia (Región de)	Bibliotecas que disponen de ordenador %	2020	92.7
+Murcia (Región de)	Bibliotecas que disponen de ordenador %	2018	92.0
+Murcia (Región de)	Bibliotecas con acceso a internet en sala %	2024	91.0
+Murcia (Región de)	Bibliotecas con acceso a internet en sala %	2022	90.1
+Murcia (Región de)	Bibliotecas con acceso a internet en sala %	2020	86.5
+Murcia (Región de)	Bibliotecas con acceso a internet en sala %	2018	93.0
+Murcia (Región de)	Bibliotecas que ofrecen zona wifi %	2024	88.8
+Murcia (Región de)	Bibliotecas que ofrecen zona wifi %	2022	78.0
+Murcia (Región de)	Bibliotecas que ofrecen zona wifi %	2020	71.9
+Murcia (Región de)	Bibliotecas que ofrecen zona wifi %	2018	76.0
+Murcia (Región de)	Bibliotecas con acceso libre %	2024	83.1
+Murcia (Región de)	Bibliotecas con acceso libre %	2022	81.3
+Murcia (Región de)	Bibliotecas con acceso libre %	2020	75.0
+Murcia (Región de)	Bibliotecas con acceso libre %	2018	79.0
+Murcia (Región de)	Bibliotecas con acceso libre en sala %	2024	75.3
+Murcia (Región de)	Bibliotecas con acceso libre en sala %	2022	75.8
+Murcia (Región de)	Bibliotecas con acceso libre en sala %	2020	66.7
+Murcia (Región de)	Bibliotecas con acceso libre en sala %	2018	67.0
+Murcia (Región de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	76.4
+Murcia (Región de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	76.9
+Murcia (Región de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	70.8
+Murcia (Región de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	67.0
+Murcia (Región de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	88.8
+Murcia (Región de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	83.5
+Murcia (Región de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	79.2
+Murcia (Región de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	81.0
+Navarra (C. Foral de)	Número de bibliotecas	2024	145.0
+Navarra (C. Foral de)	Número de bibliotecas	2022	143.0
+Navarra (C. Foral de)	Número de bibliotecas	2020	149.0
+Navarra (C. Foral de)	Número de bibliotecas	2018	129.0
+Navarra (C. Foral de)	Número medio de puntos de servicio por biblioteca	2024	1.1
+Navarra (C. Foral de)	Número medio de puntos de servicio por biblioteca	2022	1.1
+Navarra (C. Foral de)	Número medio de puntos de servicio por biblioteca	2020	1.1
+Navarra (C. Foral de)	Número medio de puntos de servicio por biblioteca	2018	1.1
+Navarra (C. Foral de)	Titularidad pública %	2024	81.4
+Navarra (C. Foral de)	Titularidad pública %	2022	79.0
+Navarra (C. Foral de)	Titularidad pública %	2020	79.2
+Navarra (C. Foral de)	Titularidad pública %	2018	80.6
+Navarra (C. Foral de)	Titularidad privada %	2024	15.2
+Navarra (C. Foral de)	Titularidad privada %	2022	17.5
+Navarra (C. Foral de)	Titularidad privada %	2020	17.4
+Navarra (C. Foral de)	Titularidad privada %	2018	14.7
+Navarra (C. Foral de)	Otra titularidad %	2024	3.4
+Navarra (C. Foral de)	Otra titularidad %	2022	3.5
+Navarra (C. Foral de)	Otra titularidad %	2020	3.4
+Navarra (C. Foral de)	Otra titularidad %	2018	4.7
+Navarra (C. Foral de)	Usuarios inscritos por biblioteca	2024	2853.0
+Navarra (C. Foral de)	Usuarios inscritos por biblioteca	2022	2568.0
+Navarra (C. Foral de)	Usuarios inscritos por biblioteca	2020	2477.0
+Navarra (C. Foral de)	Usuarios inscritos por biblioteca	2018	2467.0
+Navarra (C. Foral de)	Visitas en sala por biblioteca	2024	15686.0
+Navarra (C. Foral de)	Visitas en sala por biblioteca	2022	17259.0
+Navarra (C. Foral de)	Visitas en sala por biblioteca	2020	10701.0
+Navarra (C. Foral de)	Visitas en sala por biblioteca	2018	32082.0
+Navarra (C. Foral de)	Libros y folletos impresos por biblioteca	2024	30511.0
+Navarra (C. Foral de)	Libros y folletos impresos por biblioteca	2022	30200.0
+Navarra (C. Foral de)	Libros y folletos impresos por biblioteca	2020	28618.0
+Navarra (C. Foral de)	Libros y folletos impresos por biblioteca	2018	30512.0
+Navarra (C. Foral de)	Préstamos domiciliarios de libros impresos por biblioteca	2024	5748.0
+Navarra (C. Foral de)	Préstamos domiciliarios de libros impresos por biblioteca	2022	5316.0
+Navarra (C. Foral de)	Préstamos domiciliarios de libros impresos por biblioteca	2020	3959.0
+Navarra (C. Foral de)	Préstamos domiciliarios de libros impresos por biblioteca	2018	5886.0
+Navarra (C. Foral de)	Número medio de dias de cierre provisional por COVID-19	2024	
+Navarra (C. Foral de)	Número medio de dias de cierre provisional por COVID-19	2022	
+Navarra (C. Foral de)	Número medio de dias de cierre provisional por COVID-19	2020	92.0
+Navarra (C. Foral de)	Número medio de dias de cierre provisional por COVID-19	2018	
+Navarra (C. Foral de)	Personal en plantilla por biblioteca	2024	2.6
+Navarra (C. Foral de)	Personal en plantilla por biblioteca	2022	2.6
+Navarra (C. Foral de)	Personal en plantilla por biblioteca	2020	2.8
+Navarra (C. Foral de)	Personal en plantilla por biblioteca	2018	3.1
+Navarra (C. Foral de)	Bibliotecas que disponen de ordenador %	2024	98.6
+Navarra (C. Foral de)	Bibliotecas que disponen de ordenador %	2022	98.6
+Navarra (C. Foral de)	Bibliotecas que disponen de ordenador %	2020	97.3
+Navarra (C. Foral de)	Bibliotecas que disponen de ordenador %	2018	92.2
+Navarra (C. Foral de)	Bibliotecas con acceso a internet en sala %	2024	96.6
+Navarra (C. Foral de)	Bibliotecas con acceso a internet en sala %	2022	94.4
+Navarra (C. Foral de)	Bibliotecas con acceso a internet en sala %	2020	91.3
+Navarra (C. Foral de)	Bibliotecas con acceso a internet en sala %	2018	89.9
+Navarra (C. Foral de)	Bibliotecas que ofrecen zona wifi %	2024	84.8
+Navarra (C. Foral de)	Bibliotecas que ofrecen zona wifi %	2022	80.4
+Navarra (C. Foral de)	Bibliotecas que ofrecen zona wifi %	2020	73.2
+Navarra (C. Foral de)	Bibliotecas que ofrecen zona wifi %	2018	67.4
+Navarra (C. Foral de)	Bibliotecas con acceso libre %	2024	93.1
+Navarra (C. Foral de)	Bibliotecas con acceso libre %	2022	90.2
+Navarra (C. Foral de)	Bibliotecas con acceso libre %	2020	88.6
+Navarra (C. Foral de)	Bibliotecas con acceso libre %	2018	88.4
+Navarra (C. Foral de)	Bibliotecas con acceso libre en sala %	2024	87.6
+Navarra (C. Foral de)	Bibliotecas con acceso libre en sala %	2022	85.3
+Navarra (C. Foral de)	Bibliotecas con acceso libre en sala %	2020	82.6
+Navarra (C. Foral de)	Bibliotecas con acceso libre en sala %	2018	84.5
+Navarra (C. Foral de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	77.9
+Navarra (C. Foral de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	77.6
+Navarra (C. Foral de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	73.2
+Navarra (C. Foral de)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	77.5
+Navarra (C. Foral de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	80.0
+Navarra (C. Foral de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	81.8
+Navarra (C. Foral de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	76.5
+Navarra (C. Foral de)	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	77.5
+País Vasco	Número de bibliotecas	2024	293.0
+País Vasco	Número de bibliotecas	2022	294.0
+País Vasco	Número de bibliotecas	2020	288.0
+País Vasco	Número de bibliotecas	2018	312.0
+País Vasco	Número medio de puntos de servicio por biblioteca	2024	1.3
+País Vasco	Número medio de puntos de servicio por biblioteca	2022	1.3
+País Vasco	Número medio de puntos de servicio por biblioteca	2020	1.4
+País Vasco	Número medio de puntos de servicio por biblioteca	2018	1.4
+País Vasco	Titularidad pública %	2024	82.3
+País Vasco	Titularidad pública %	2022	83.0
+País Vasco	Titularidad pública %	2020	82.3
+País Vasco	Titularidad pública %	2018	83.0
+País Vasco	Titularidad privada %	2024	15.4
+País Vasco	Titularidad privada %	2022	14.6
+País Vasco	Titularidad privada %	2020	12.5
+País Vasco	Titularidad privada %	2018	10.6
+País Vasco	Otra titularidad %	2024	2.4
+País Vasco	Otra titularidad %	2022	2.4
+País Vasco	Otra titularidad %	2020	5.2
+País Vasco	Otra titularidad %	2018	6.4
+País Vasco	Usuarios inscritos por biblioteca	2024	3702.0
+País Vasco	Usuarios inscritos por biblioteca	2022	3601.0
+País Vasco	Usuarios inscritos por biblioteca	2020	2632.0
+País Vasco	Usuarios inscritos por biblioteca	2018	3626.0
+País Vasco	Visitas en sala por biblioteca	2024	30091.0
+País Vasco	Visitas en sala por biblioteca	2022	24966.0
+País Vasco	Visitas en sala por biblioteca	2020	14467.0
+País Vasco	Visitas en sala por biblioteca	2018	31854.0
+País Vasco	Libros y folletos impresos por biblioteca	2024	34067.0
+País Vasco	Libros y folletos impresos por biblioteca	2022	33860.0
+País Vasco	Libros y folletos impresos por biblioteca	2020	31772.0
+País Vasco	Libros y folletos impresos por biblioteca	2018	31721.0
+País Vasco	Préstamos domiciliarios de libros impresos por biblioteca	2024	8913.0
+País Vasco	Préstamos domiciliarios de libros impresos por biblioteca	2022	7844.0
+País Vasco	Préstamos domiciliarios de libros impresos por biblioteca	2020	5703.0
+País Vasco	Préstamos domiciliarios de libros impresos por biblioteca	2018	7774.0
+País Vasco	Número medio de dias de cierre provisional por COVID-19	2024	
+País Vasco	Número medio de dias de cierre provisional por COVID-19	2022	
+País Vasco	Número medio de dias de cierre provisional por COVID-19	2020	83.0
+País Vasco	Número medio de dias de cierre provisional por COVID-19	2018	
+País Vasco	Personal en plantilla por biblioteca	2024	3.7
+País Vasco	Personal en plantilla por biblioteca	2022	3.6
+País Vasco	Personal en plantilla por biblioteca	2020	3.5
+País Vasco	Personal en plantilla por biblioteca	2018	4.0
+País Vasco	Bibliotecas que disponen de ordenador %	2024	98.6
+País Vasco	Bibliotecas que disponen de ordenador %	2022	98.0
+País Vasco	Bibliotecas que disponen de ordenador %	2020	96.5
+País Vasco	Bibliotecas que disponen de ordenador %	2018	92.9
+País Vasco	Bibliotecas con acceso a internet en sala %	2024	94.2
+País Vasco	Bibliotecas con acceso a internet en sala %	2022	96.6
+País Vasco	Bibliotecas con acceso a internet en sala %	2020	92.4
+País Vasco	Bibliotecas con acceso a internet en sala %	2018	95.2
+País Vasco	Bibliotecas que ofrecen zona wifi %	2024	86.0
+País Vasco	Bibliotecas que ofrecen zona wifi %	2022	86.4
+País Vasco	Bibliotecas que ofrecen zona wifi %	2020	79.5
+País Vasco	Bibliotecas que ofrecen zona wifi %	2018	78.5
+País Vasco	Bibliotecas con acceso libre %	2024	89.1
+País Vasco	Bibliotecas con acceso libre %	2022	89.1
+País Vasco	Bibliotecas con acceso libre %	2020	88.5
+País Vasco	Bibliotecas con acceso libre %	2018	89.4
+País Vasco	Bibliotecas con acceso libre en sala %	2024	81.6
+País Vasco	Bibliotecas con acceso libre en sala %	2022	83.7
+País Vasco	Bibliotecas con acceso libre en sala %	2020	82.6
+País Vasco	Bibliotecas con acceso libre en sala %	2018	82.1
+País Vasco	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	60.1
+País Vasco	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	61.9
+País Vasco	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	63.5
+País Vasco	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	74.0
+País Vasco	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	64.2
+País Vasco	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	63.6
+País Vasco	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	68.1
+País Vasco	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	82.1
+Rioja (La)	Número de bibliotecas	2024	50.0
+Rioja (La)	Número de bibliotecas	2022	49.0
+Rioja (La)	Número de bibliotecas	2020	51.0
+Rioja (La)	Número de bibliotecas	2018	62.0
+Rioja (La)	Número medio de puntos de servicio por biblioteca	2024	1.0
+Rioja (La)	Número medio de puntos de servicio por biblioteca	2022	1.0
+Rioja (La)	Número medio de puntos de servicio por biblioteca	2020	1.0
+Rioja (La)	Número medio de puntos de servicio por biblioteca	2018	1.0
+Rioja (La)	Titularidad pública %	2024	70.0
+Rioja (La)	Titularidad pública %	2022	71.4
+Rioja (La)	Titularidad pública %	2020	66.7
+Rioja (La)	Titularidad pública %	2018	69.4
+Rioja (La)	Titularidad privada %	2024	26.0
+Rioja (La)	Titularidad privada %	2022	24.5
+Rioja (La)	Titularidad privada %	2020	27.5
+Rioja (La)	Titularidad privada %	2018	24.2
+Rioja (La)	Otra titularidad %	2024	4.0
+Rioja (La)	Otra titularidad %	2022	4.1
+Rioja (La)	Otra titularidad %	2020	5.9
+Rioja (La)	Otra titularidad %	2018	6.5
+Rioja (La)	Usuarios inscritos por biblioteca	2024	2212.0
+Rioja (La)	Usuarios inscritos por biblioteca	2022	2090.0
+Rioja (La)	Usuarios inscritos por biblioteca	2020	1771.0
+Rioja (La)	Usuarios inscritos por biblioteca	2018	1458.0
+Rioja (La)	Visitas en sala por biblioteca	2024	21828.0
+Rioja (La)	Visitas en sala por biblioteca	2022	18222.0
+Rioja (La)	Visitas en sala por biblioteca	2020	11241.0
+Rioja (La)	Visitas en sala por biblioteca	2018	21461.0
+Rioja (La)	Libros y folletos impresos por biblioteca	2024	24990.0
+Rioja (La)	Libros y folletos impresos por biblioteca	2022	24401.0
+Rioja (La)	Libros y folletos impresos por biblioteca	2020	22416.0
+Rioja (La)	Libros y folletos impresos por biblioteca	2018	19362.0
+Rioja (La)	Préstamos domiciliarios de libros impresos por biblioteca	2024	7058.0
+Rioja (La)	Préstamos domiciliarios de libros impresos por biblioteca	2022	6617.0
+Rioja (La)	Préstamos domiciliarios de libros impresos por biblioteca	2020	4598.0
+Rioja (La)	Préstamos domiciliarios de libros impresos por biblioteca	2018	5642.0
+Rioja (La)	Número medio de dias de cierre provisional por COVID-19	2024	
+Rioja (La)	Número medio de dias de cierre provisional por COVID-19	2022	
+Rioja (La)	Número medio de dias de cierre provisional por COVID-19	2020	88.0
+Rioja (La)	Número medio de dias de cierre provisional por COVID-19	2018	
+Rioja (La)	Personal en plantilla por biblioteca	2024	2.9
+Rioja (La)	Personal en plantilla por biblioteca	2022	2.8
+Rioja (La)	Personal en plantilla por biblioteca	2020	2.7
+Rioja (La)	Personal en plantilla por biblioteca	2018	3.1
+Rioja (La)	Bibliotecas que disponen de ordenador %	2024	96.0
+Rioja (La)	Bibliotecas que disponen de ordenador %	2022	98.0
+Rioja (La)	Bibliotecas que disponen de ordenador %	2020	98.0
+Rioja (La)	Bibliotecas que disponen de ordenador %	2018	91.9
+Rioja (La)	Bibliotecas con acceso a internet en sala %	2024	88.0
+Rioja (La)	Bibliotecas con acceso a internet en sala %	2022	95.9
+Rioja (La)	Bibliotecas con acceso a internet en sala %	2020	92.2
+Rioja (La)	Bibliotecas con acceso a internet en sala %	2018	88.7
+Rioja (La)	Bibliotecas que ofrecen zona wifi %	2024	84.0
+Rioja (La)	Bibliotecas que ofrecen zona wifi %	2022	85.7
+Rioja (La)	Bibliotecas que ofrecen zona wifi %	2020	84.3
+Rioja (La)	Bibliotecas que ofrecen zona wifi %	2018	62.9
+Rioja (La)	Bibliotecas con acceso libre %	2024	76.0
+Rioja (La)	Bibliotecas con acceso libre %	2022	77.6
+Rioja (La)	Bibliotecas con acceso libre %	2020	74.5
+Rioja (La)	Bibliotecas con acceso libre %	2018	71.0
+Rioja (La)	Bibliotecas con acceso libre en sala %	2024	70.0
+Rioja (La)	Bibliotecas con acceso libre en sala %	2022	71.4
+Rioja (La)	Bibliotecas con acceso libre en sala %	2020	70.6
+Rioja (La)	Bibliotecas con acceso libre en sala %	2018	69.4
+Rioja (La)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	74.0
+Rioja (La)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	73.5
+Rioja (La)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	68.6
+Rioja (La)	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	61.3
+Rioja (La)	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	76.0
+Rioja (La)	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	75.5
+Rioja (La)	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	68.6
+Rioja (La)	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	66.1
+Ceuta	Número de bibliotecas	2024	6.0
+Ceuta	Número de bibliotecas	2022	6.0
+Ceuta	Número de bibliotecas	2020	12.0
+Ceuta	Número de bibliotecas	2018	11.0
+Ceuta	Número medio de puntos de servicio por biblioteca	2024	1.0
+Ceuta	Número medio de puntos de servicio por biblioteca	2022	1.0
+Ceuta	Número medio de puntos de servicio por biblioteca	2020	1.0
+Ceuta	Número medio de puntos de servicio por biblioteca	2018	1.0
+Ceuta	Titularidad pública %	2024	83.3
+Ceuta	Titularidad pública %	2022	83.3
+Ceuta	Titularidad pública %	2020	91.7
+Ceuta	Titularidad pública %	2018	90.9
+Ceuta	Titularidad privada %	2024	0.0
+Ceuta	Titularidad privada %	2022	0.0
+Ceuta	Titularidad privada %	2020	0.0
+Ceuta	Titularidad privada %	2018	0.0
+Ceuta	Otra titularidad %	2024	16.7
+Ceuta	Otra titularidad %	2022	16.7
+Ceuta	Otra titularidad %	2020	8.3
+Ceuta	Otra titularidad %	2018	9.1
+Ceuta	Usuarios inscritos por biblioteca	2024	2994.0
+Ceuta	Usuarios inscritos por biblioteca	2022	2321.0
+Ceuta	Usuarios inscritos por biblioteca	2020	1698.0
+Ceuta	Usuarios inscritos por biblioteca	2018	1265.0
+Ceuta	Visitas en sala por biblioteca	2024	20305.0
+Ceuta	Visitas en sala por biblioteca	2022	17800.0
+Ceuta	Visitas en sala por biblioteca	2020	4433.0
+Ceuta	Visitas en sala por biblioteca	2018	13854.0
+Ceuta	Libros y folletos impresos por biblioteca	2024	39802.0
+Ceuta	Libros y folletos impresos por biblioteca	2022	37358.0
+Ceuta	Libros y folletos impresos por biblioteca	2020	17787.0
+Ceuta	Libros y folletos impresos por biblioteca	2018	17718.0
+Ceuta	Préstamos domiciliarios de libros impresos por biblioteca	2024	3895.0
+Ceuta	Préstamos domiciliarios de libros impresos por biblioteca	2022	3438.0
+Ceuta	Préstamos domiciliarios de libros impresos por biblioteca	2020	1371.0
+Ceuta	Préstamos domiciliarios de libros impresos por biblioteca	2018	2126.0
+Ceuta	Número medio de dias de cierre provisional por COVID-19	2024	
+Ceuta	Número medio de dias de cierre provisional por COVID-19	2022	
+Ceuta	Número medio de dias de cierre provisional por COVID-19	2020	106.0
+Ceuta	Número medio de dias de cierre provisional por COVID-19	2018	
+Ceuta	Personal en plantilla por biblioteca	2024	5.3
+Ceuta	Personal en plantilla por biblioteca	2022	5.8
+Ceuta	Personal en plantilla por biblioteca	2020	3.5
+Ceuta	Personal en plantilla por biblioteca	2018	3.8
+Ceuta	Bibliotecas que disponen de ordenador %	2024	100.0
+Ceuta	Bibliotecas que disponen de ordenador %	2022	100.0
+Ceuta	Bibliotecas que disponen de ordenador %	2020	66.7
+Ceuta	Bibliotecas que disponen de ordenador %	2018	90.9
+Ceuta	Bibliotecas con acceso a internet en sala %	2024	83.3
+Ceuta	Bibliotecas con acceso a internet en sala %	2022	83.3
+Ceuta	Bibliotecas con acceso a internet en sala %	2020	58.3
+Ceuta	Bibliotecas con acceso a internet en sala %	2018	63.6
+Ceuta	Bibliotecas que ofrecen zona wifi %	2024	66.7
+Ceuta	Bibliotecas que ofrecen zona wifi %	2022	66.7
+Ceuta	Bibliotecas que ofrecen zona wifi %	2020	41.7
+Ceuta	Bibliotecas que ofrecen zona wifi %	2018	54.5
+Ceuta	Bibliotecas con acceso libre %	2024	66.7
+Ceuta	Bibliotecas con acceso libre %	2022	66.7
+Ceuta	Bibliotecas con acceso libre %	2020	58.3
+Ceuta	Bibliotecas con acceso libre %	2018	63.6
+Ceuta	Bibliotecas con acceso libre en sala %	2024	66.7
+Ceuta	Bibliotecas con acceso libre en sala %	2022	66.7
+Ceuta	Bibliotecas con acceso libre en sala %	2020	58.3
+Ceuta	Bibliotecas con acceso libre en sala %	2018	63.6
+Ceuta	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	66.7
+Ceuta	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	66.7
+Ceuta	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	33.3
+Ceuta	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	36.4
+Ceuta	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	83.3
+Ceuta	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	66.7
+Ceuta	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	41.7
+Ceuta	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	36.4
+Melilla	Número de bibliotecas	2024	7.0
+Melilla	Número de bibliotecas	2022	7.0
+Melilla	Número de bibliotecas	2020	8.0
+Melilla	Número de bibliotecas	2018	8.0
+Melilla	Número medio de puntos de servicio por biblioteca	2024	1.0
+Melilla	Número medio de puntos de servicio por biblioteca	2022	1.0
+Melilla	Número medio de puntos de servicio por biblioteca	2020	1.0
+Melilla	Número medio de puntos de servicio por biblioteca	2018	1.0
+Melilla	Titularidad pública %	2024	71.4
+Melilla	Titularidad pública %	2022	71.4
+Melilla	Titularidad pública %	2020	75.0
+Melilla	Titularidad pública %	2018	75.0
+Melilla	Titularidad privada %	2024	14.3
+Melilla	Titularidad privada %	2022	14.3
+Melilla	Titularidad privada %	2020	12.5
+Melilla	Titularidad privada %	2018	12.5
+Melilla	Otra titularidad %	2024	14.3
+Melilla	Otra titularidad %	2022	14.3
+Melilla	Otra titularidad %	2020	12.5
+Melilla	Otra titularidad %	2018	12.5
+Melilla	Usuarios inscritos por biblioteca	2024	4188.0
+Melilla	Usuarios inscritos por biblioteca	2022	3860.0
+Melilla	Usuarios inscritos por biblioteca	2020	3360.0
+Melilla	Usuarios inscritos por biblioteca	2018	3239.0
+Melilla	Visitas en sala por biblioteca	2024	7839.0
+Melilla	Visitas en sala por biblioteca	2022	7807.0
+Melilla	Visitas en sala por biblioteca	2020	7408.0
+Melilla	Visitas en sala por biblioteca	2018	6711.0
+Melilla	Libros y folletos impresos por biblioteca	2024	21249.0
+Melilla	Libros y folletos impresos por biblioteca	2022	21847.0
+Melilla	Libros y folletos impresos por biblioteca	2020	17644.0
+Melilla	Libros y folletos impresos por biblioteca	2018	16012.0
+Melilla	Préstamos domiciliarios de libros impresos por biblioteca	2024	1497.0
+Melilla	Préstamos domiciliarios de libros impresos por biblioteca	2022	1319.0
+Melilla	Préstamos domiciliarios de libros impresos por biblioteca	2020	1071.0
+Melilla	Préstamos domiciliarios de libros impresos por biblioteca	2018	1367.0
+Melilla	Número medio de dias de cierre provisional por COVID-19	2024	
+Melilla	Número medio de dias de cierre provisional por COVID-19	2022	
+Melilla	Número medio de dias de cierre provisional por COVID-19	2020	83.0
+Melilla	Número medio de dias de cierre provisional por COVID-19	2018	
+Melilla	Personal en plantilla por biblioteca	2024	3.4
+Melilla	Personal en plantilla por biblioteca	2022	3.6
+Melilla	Personal en plantilla por biblioteca	2020	3.3
+Melilla	Personal en plantilla por biblioteca	2018	3.1
+Melilla	Bibliotecas que disponen de ordenador %	2024	85.7
+Melilla	Bibliotecas que disponen de ordenador %	2022	100.0
+Melilla	Bibliotecas que disponen de ordenador %	2020	100.0
+Melilla	Bibliotecas que disponen de ordenador %	2018	87.5
+Melilla	Bibliotecas con acceso a internet en sala %	2024	85.7
+Melilla	Bibliotecas con acceso a internet en sala %	2022	85.7
+Melilla	Bibliotecas con acceso a internet en sala %	2020	75.0
+Melilla	Bibliotecas con acceso a internet en sala %	2018	62.5
+Melilla	Bibliotecas que ofrecen zona wifi %	2024	57.1
+Melilla	Bibliotecas que ofrecen zona wifi %	2022	42.9
+Melilla	Bibliotecas que ofrecen zona wifi %	2020	50.0
+Melilla	Bibliotecas que ofrecen zona wifi %	2018	37.5
+Melilla	Bibliotecas con acceso libre %	2024	71.4
+Melilla	Bibliotecas con acceso libre %	2022	71.4
+Melilla	Bibliotecas con acceso libre %	2020	62.5
+Melilla	Bibliotecas con acceso libre %	2018	62.5
+Melilla	Bibliotecas con acceso libre en sala %	2024	71.4
+Melilla	Bibliotecas con acceso libre en sala %	2022	71.4
+Melilla	Bibliotecas con acceso libre en sala %	2020	62.5
+Melilla	Bibliotecas con acceso libre en sala %	2018	50.0
+Melilla	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2024	57.1
+Melilla	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2022	57.1
+Melilla	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2020	50.0
+Melilla	Bibliotecas con acceso libre por internet a sus catálogos/fondos a través de página web %	2018	50.0
+Melilla	Bibliotecas que ofrecen acceso al catálogo por internet %	2024	71.4
+Melilla	Bibliotecas que ofrecen acceso al catálogo por internet %	2022	71.4
+Melilla	Bibliotecas que ofrecen acceso al catálogo por internet %	2020	62.5
+Melilla	Bibliotecas que ofrecen acceso al catálogo por internet %	2018	62.5

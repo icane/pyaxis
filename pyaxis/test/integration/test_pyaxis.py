@@ -1,15 +1,14 @@
 """Integration tests for pyaxis module."""
 
+import pytest
+
+import requests
+
 from pandas import Series
 
 from pkg_resources import resource_filename
 
 from pyaxis import pyaxis
-
-import pytest
-
-import requests
-
 
 data_path = resource_filename('pyaxis', 'test/data/')
 

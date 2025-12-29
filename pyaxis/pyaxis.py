@@ -22,6 +22,7 @@ Example:
 
 import logging
 import re
+import traceback
 
 from numpy import nan
 
@@ -67,23 +68,26 @@ def uri_type(uri):
     return uri_type_result
 
 
-def read(uri, encoding, timeout=10):
+def read(uri, encoding, timeout=10, verify=True):
     """Read a text file from file system or URL.
 
     Args:
         uri (str): file name or URL
         encoding (str): charset encoding
         timeout (int): request timeout; optional
+        verify (bool): verify server TLS certificate or not; optional
 
     Returns:
         raw_pcaxis (str): file contents.
 
     """
     raw_pcaxis = ''
+    headers = {"User-Agent": "Mozilla/5.0"}
 
     if uri_type(uri) == 'URL':
         try:
-            response = requests.get(uri, stream=True, timeout=timeout)
+            response = requests.get(uri, headers=headers,
+                                    stream=True, timeout=timeout, verify=verify)
             response.raise_for_status()
             response.encoding = encoding
             raw_pcaxis = response.text
@@ -104,7 +108,6 @@ def read(uri, encoding, timeout=10):
                          url_error.response.reason)
             raise
         except Exception:
-            import traceback
             logger.error('Generic exception: %s', traceback.format_exc())
             raise
     else:  # file parsing
@@ -115,7 +118,7 @@ def read(uri, encoding, timeout=10):
     return raw_pcaxis
 
 
-def parse(uri, encoding, timeout=10,
+def parse(uri, encoding, timeout=10, verify=True,
           null_values=r'^"\."$', sd_values=r'"\.\."',
           lang=None):
     """Extract metadata and data sections from pc-axis.
@@ -124,6 +127,7 @@ def parse(uri, encoding, timeout=10,
         uri (str): file name or URL
         encoding (str): charset encoding
         timeout (int): request timeout in seconds; optional
+        verify (bool): verify server TLS certificate or not; optional
         null_values(str): regex with the pattern for the null values in the px
                           file. Defaults to '.'.
         sd_values(str): regex with the pattern for the statistical disclosured
@@ -139,9 +143,8 @@ def parse(uri, encoding, timeout=10,
     """
     # get file content or URL stream
     try:
-        pc_axis = read(uri, encoding, timeout)
+        pc_axis = read(uri, encoding, timeout, verify)
     except ValueError:
-        import traceback
         logger.error('Generic exception: %s', traceback.format_exc())
         raise
 
