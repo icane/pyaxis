@@ -1,10 +1,11 @@
 """Pcaxis Parser module parses px files into dataframes.
-
 This module obtains a pandas DataFrame of tabular data from a PC-Axis
 file or URL. Reads data and metadata from PC-Axis [1]_ into a dataframe and
 dictionary. It handles multilingual PX files by letting the user input a language prerequisite. 
 Else the process runs on the default language of the PX file. 
-The output is a dictionary containing three structures: a dictionary of metadata, a dataframe, and a translation dictionary for the metadata fields (which is empty is the PX file is only in 1 language).
+The output is a dictionary containing three structures: a dictionary of metadata, a dataframe, 
+and a translation dictionary for the metadata fields (which is empty if the PX file is only in 
+one language).
 
 Example:
     from pyaxis import pyaxis
@@ -23,8 +24,6 @@ Example:
 import logging
 import re
 import traceback
-
-from numpy import nan
 
 from pandas import Series
 
@@ -68,26 +67,28 @@ def uri_type(uri):
     return uri_type_result
 
 
-def read(uri, encoding, timeout=10, verify=True):
+def read(uri, encoding, timeout=10, verify=True, headers=None):
     """Read a text file from file system or URL.
 
     Args:
         uri (str): file name or URL
         encoding (str): charset encoding
         timeout (int): request timeout; optional
-        verify (bool): verify server TLS certificate or not; optional
-
+        verify (bool, str): verify server TLS certificate or not, or path to cert file; optional
+        headers (str): HTTP headers; optional
     Returns:
         raw_pcaxis (str): file contents.
 
     """
     raw_pcaxis = ''
-    headers = {"User-Agent": "Mozilla/5.0"}
 
     if uri_type(uri) == 'URL':
         try:
-            response = requests.get(uri, headers=headers,
-                                    stream=True, timeout=timeout, verify=verify)
+            if headers:
+                response = requests.get(
+                    uri, stream=True, timeout=timeout, verify=verify, headers=headers)
+            else:
+                response = requests.get(uri, stream=True, timeout=timeout, verify=verify)
             response.raise_for_status()
             response.encoding = encoding
             raw_pcaxis = response.text
@@ -120,30 +121,32 @@ def read(uri, encoding, timeout=10, verify=True):
 
 def parse(uri, encoding, timeout=10, verify=True,
           null_values=r'^"\."$', sd_values=r'"\.\."',
-          lang=None):
+          lang=None, headers=None):
     """Extract metadata and data sections from pc-axis.
 
     Args:
         uri (str): file name or URL
         encoding (str): charset encoding
         timeout (int): request timeout in seconds; optional
-        verify (bool): verify server TLS certificate or not; optional
+        verify (bool, str): verify server TLS certificate or not, or path to cert file; optional
         null_values(str): regex with the pattern for the null values in the px
                           file. Defaults to '.'.
         sd_values(str): regex with the pattern for the statistical disclosured
                         values in the px file. Defaults to '..'.
         lang: language desired for the metadata and the column names of the dataframe
+        headers (str): HTTP headers; optional
 
     Returns:
          pc_axis_dict (dictionary): dictionary of metadata and pandas df.
                                     METADATA: dictionary of metadata
                                     DATA: pandas dataframe
-                                    TRANSLATION: dictionary of translations of the metadata (empty if the px file is monolingual)
+                                    TRANSLATION: dictionary of translations of the metadata 
+                                    (empty if the px file is monolingual)
 
     """
     # get file content or URL stream
     try:
-        pc_axis = read(uri, encoding, timeout, verify)
+        pc_axis = read(uri, encoding, timeout, verify, headers)
     except ValueError:
         logger.error('Generic exception: %s', traceback.format_exc())
         raise
@@ -166,7 +169,7 @@ def parse(uri, encoding, timeout=10, verify=True,
     dimension_names, dimension_members = get_dimensions(metadata)
 
     # build a dataframe
-    df = build_dataframe(
+    d_f = build_dataframe(
         dimension_names,
         dimension_members,
         data_values,
@@ -176,7 +179,7 @@ def parse(uri, encoding, timeout=10, verify=True,
     # dictionary of metadata and data (pandas dataframe)
     parsed_pc_axis = {
         'METADATA': metadata,
-        'DATA': df,
+        'DATA': d_f,
         'TRANSLATION' : translation_dict
     }
     return parsed_pc_axis

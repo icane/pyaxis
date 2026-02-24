@@ -4,8 +4,9 @@ This module contains all the necessary functions to extract the metadata,
 format it, and handle a language choice if the metadata is multilingual.
 """
 
+import logging
 import re
-from pyaxis.helpers_string import *
+from pyaxis.helpers_string import brackets_stripper, make_unique_list, split_ignore_quotation_marks
 
 def metadata_extract(pc_axis):
     r"""Extract metadata and data from pc-axis file contents.
@@ -71,12 +72,13 @@ def metadata_split_to_dict(metadata_elements):
             metadata[name] = re.findall('"[ ]*(.+?)[ ]*"+?', values)
     return metadata
 
-def multilingual_checker(metadata_dict): 
+def multilingual_checker(metadata_dict):
     """ Check if the PX file is multilingual
     Args:
         metadata_dict (dict): dictionary of metadata
     Returns:
-        tuple: (translation, languages) where translation is a boolean and languages is a list of languages
+        tuple: (translation, languages) where translation is a boolean and languages is a 
+        list of languages
     """
     # CHECK MULTILINGUAL
     if 'LANGUAGES' in metadata_dict.keys():
@@ -97,9 +99,10 @@ def language_presence_checker(languages, lang):
     try:
         lang in languages
     except ValueError:
+        logger = logging.getLogger()
         logger.error(
             'The language you are referring to is not present in the PX file. %s',
-            traceback.format_exc())
+            _ExcInfoType=None)
 
 def get_default_lang(metadata_dict, languages):
     """ Get the default language metadata and the default field names of the metadata
@@ -151,7 +154,7 @@ def metadata_dict_maker(metadata_dict, languages, lang):
                 key = brackets_stripper(key)
                 # Add the value only the language requested
                 lang_dict[key] = value
-            else: 
+            else:
                 # condition ensures we skip the keys tied to other languages
                 if not any("["+l+"]" in key for l in languages):
                     # add the key common to all languages
@@ -163,7 +166,7 @@ def metadata_dict_maker(metadata_dict, languages, lang):
                 if key=='LANGUAGES':
                     lang_dict[key] = languages
 
-    else: 
+    else:
         lang_dict = default_lang_dict
     return(lang_dict, default_multilingual_fields)
 
@@ -206,8 +209,9 @@ def translation_dict_maker(
             try:
                 language in lang_key
             except ValueError:
+                logger = logging.getLogger()
                 logger.error('The language fields in the metadata are not subsequent. \
-                             The translation dictionary is invalid. %s', traceback.format_exc())
+                             The translation dictionary is invalid. %s', _ExcInfoType=None)
             field_dict[language] = metadata_dict[lang_key]
         # name the global field in the language requested by the user
          # remove language info from key

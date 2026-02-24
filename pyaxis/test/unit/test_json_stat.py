@@ -1,20 +1,17 @@
 """Unit tests for json_stat module."""
 
 from pkg_resources import resource_filename
-
 from pyaxis import pyaxis, json_stat
-
-import pytest
 
 
 data_path = resource_filename('pyaxis', 'test/data/')
 
 def test_to_json_stat():
     """Should generate a JSON-Stat object."""
-    px = pyaxis.parse(
+    p_x = pyaxis.parse(
         data_path + '14001.px',
         encoding='ISO-8859-15')
-    json_obj = json_stat.to_json_stat(px)
+    json_obj = json_stat.to_json_stat(p_x)
     assert json_obj['id'] == \
         ['Comunidad Autónoma de residencia del matrimonio',
          'edad de los cónyuges', 'sexo',

@@ -21,11 +21,11 @@ import json
 from pyjstat import pyjstat
 
 
-def to_json_stat(px):
+def to_json_stat(p_x):
     """Converts a parsed px object to JSON-Stat format.
 
     Args:
-        px (dict): parsed px object
+        p_x (dict): parsed px object
 
     Returns:
         json_obj (json): 
@@ -34,19 +34,19 @@ def to_json_stat(px):
         'label': 'TITLE',
         'note': 'NOTE',
         'source': 'SOURCE'
-    } 
+    }
 
-    id_vars = px['METADATA']['STUB']
-    id_vars.extend(px['METADATA']['HEADING'])
+    id_vars = p_x['METADATA']['STUB']
+    id_vars.extend(p_x['METADATA']['HEADING'])
     value_vars = ['DATA']
-    df = px['DATA']
-    df = df.melt(
+    d_f = p_x['DATA']
+    d_f = d_f.melt(
         id_vars=id_vars,
         value_vars=value_vars,
         var_name='Variables')
     id_vars.append('Variables')
-    df = df.sort_values(by=id_vars)
-    dataset = pyjstat.Dataset.read(df)
+    d_f = d_f.sort_values(by=id_vars)
+    dataset = pyjstat.Dataset.read(d_f)
     metric = {'metric': ['Variables']}
     dataset.setdefault('role', metric)
     json_str = dataset.write(output='jsonstat')
@@ -54,17 +54,17 @@ def to_json_stat(px):
 
     for key in meta_keys:
         try:
-            json_obj[key] = px['METADATA'][meta_keys[key]]
+            json_obj[key] = p_x['METADATA'][meta_keys[key]]
         except KeyError:
             continue
-    
+
     try:
         json_obj['dimension']['Variables']['category']['unit'] = {
             'DATA': {
-                'decimals': px['METADATA']['DECIMALS'],
-                'label': px['METADATA']['UNITS']}
+                'decimals': p_x['METADATA']['DECIMALS'],
+                'label': p_x['METADATA']['UNITS']}
         }
     except KeyError:
         pass
-    
+
     return json_obj
