@@ -1,15 +1,14 @@
-"""Integration tests for pyaxis module."""
+"""Integration tests for pyaxis module"""
+
+import pytest
+
+import requests
 
 from pandas import Series
 
 from pkg_resources import resource_filename
 
 from pyaxis import pyaxis
-
-import pytest
-
-import requests
-
 
 data_path = resource_filename('pyaxis', 'test/data/')
 
@@ -53,6 +52,7 @@ def test_metadata_split_to_dict():
     metadata = pyaxis.metadata_split_to_dict(metadata_elements)
     assert isinstance(metadata, dict)
     assert len(metadata) == 23
+    assert len(raw_data) > 10000
 
 
 def test_get_dimensions():
@@ -70,6 +70,7 @@ def test_get_dimensions():
     assert len(dimension_members) == 4
     assert dimension_members[0][0] == 'Todas las comunidades'
     assert dimension_members[3][3] == 'Divorciados/as'
+    assert len(raw_data) > 10000
 
 
 def test_build_dataframe():
@@ -84,15 +85,15 @@ def test_build_dataframe():
     metadata = pyaxis.metadata_split_to_dict(metadata_elements)
     dimension_names, dimension_members = pyaxis.get_dimensions(metadata)
     data_values = Series(raw_data.split())
-    df = pyaxis.build_dataframe(
+    d_f = pyaxis.build_dataframe(
         dimension_names,
         dimension_members,
         data_values,
         null_values=null_values,
         sd_values=sd_values)
-    assert df.shape == (8064, 5)
-    assert df['DATA'][7] == '10624.0'
-    assert df['DATA'][159] == '534.0'
+    assert d_f.shape == (8064, 5)
+    assert d_f['DATA'][7] == '10624.0'
+    assert d_f['DATA'][159] == '534.0'
 
 
 def test_parse():
@@ -103,11 +104,11 @@ def test_parse():
         encoding='ISO-8859-15')
     assert parsed_pcaxis['DATA'].dtypes['DATA'] == 'object'
     assert len(parsed_pcaxis['DATA']) == 8064
-    assert parsed_pcaxis['METADATA']
-    ['VALUES(Comunidad Autónoma de residencia de los cónyuges)'][0][0] == \
-        'Total'
-    assert parsed_pcaxis['METADATA']
-    ['VALUES(Comunidad Autónoma de residencia de los cónyuges)'][0][20] == \
+    assert parsed_pcaxis['METADATA'][
+        'VALUES(Comunidad Autónoma de residencia de los cónyuges)'][0] == \
+        'Todas las comunidades'
+    assert parsed_pcaxis['METADATA'][
+        'VALUES(Comunidad Autónoma de residencia de los cónyuges)'][20] == \
         'Extranjero'
 
 

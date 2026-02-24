@@ -1,9 +1,9 @@
 """Helpers_string: Helper Functions for Strings
 
-This module contains all the necessary helper functions for processing the textual content of the PX file and its metadata. 
-
+This module contains all the necessary helper functions for processing the textual content 
+of the PX file and its metadata. 
 """
-import re 
+import re
 
 def split_ignore_quotation_marks(string_input, separator, final=False):
     """Split the string_input into a list avoiding quotation marks.
@@ -19,6 +19,7 @@ def split_ignore_quotation_marks(string_input, separator, final=False):
     quotation_mark_start = False
     result = []
     index_from = 0
+    index = 0
 
     for index, element in enumerate(string_input):
         if element == '"' and not quotation_mark_start:
@@ -31,8 +32,7 @@ def split_ignore_quotation_marks(string_input, separator, final=False):
     if len(result) > 0:
         if final:
             return result
-        else:
-            result.append(string_input[index_from:index+1])
+        result.append(string_input[index_from:index+1])
         return result
     return string_input
 
@@ -47,15 +47,15 @@ def make_unique_list(list_duplicates):
  # Small helper function to get unique elements of a list
     # initialize a null list
     unique_list = []
- 
+
     for element in list_duplicates:
         # check if exists in unique_list or not
         if element not in unique_list:
             unique_list.append(element)
-    return(unique_list)
+    return unique_list
 
 
-def brackets_stripper(expression): 
+def brackets_stripper(expression):
     """Remove brackets and everything inside them from a string
     Args:
         expression (str): string to be processed
@@ -64,4 +64,4 @@ def brackets_stripper(expression):
     """
     pattern = r'\[.*?\]'
     expression = re.sub(pattern, '', expression)
-    return(expression)
+    return expression

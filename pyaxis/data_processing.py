@@ -1,7 +1,9 @@
 """Data Processing: Make a dataframe 
 
-This module contains all the necessary functions to extract the DATA field of the PX file and build the structure of the dataframe based on the metadata.
+This module contains all the necessary functions to extract the DATA field 
+of the PX file and build the structure of the dataframe based on the metadata.
 """
+
 import itertools
 from numpy import nan, where
 from pandas import DataFrame
@@ -108,14 +110,14 @@ def build_dataframe(dimension_names, dimension_members, data_values,
     dim_exploded = list(itertools.product(*dimension_members))
 
     # Create DataFrame from the exploded dimensions
-    df = DataFrame(data=dim_exploded, columns=dimension_names)
+    d_f = DataFrame(data=dim_exploded, columns=dimension_names)
 
     # Create a boolean mask for null and statistical disclosure values
     null_mask = data_values.str.match(null_values)
     sd_mask = data_values.str.match(sd_values)
 
     # Use np.where for efficient conditional assignment
-    df['DATA'] = where(null_mask, '', data_values)
-    df['DATA'] = where(sd_mask, nan, df['DATA'])
+    d_f['DATA'] = where(null_mask, '', data_values)
+    d_f['DATA'] = where(sd_mask, nan, d_f['DATA'])
 
-    return df
+    return d_f
