@@ -116,6 +116,7 @@ def get_default_lang(metadata_dict, languages):
     """
     lang_dict = {}
     default_multilingual_fields = []
+    previous_key = None
     #just remove all the metadata for other languages
     for key, value in metadata_dict.items():
         if any("["+l+"]" in key for l in languages):
@@ -141,6 +142,7 @@ def metadata_dict_maker(metadata_dict, languages, lang):
     # get the default lang_dict and the default field names
     default_lang_dict, default_multilingual_fields = get_default_lang(metadata_dict, languages)
     lang_dict = {}
+    previous_key = None
     # Case: Language is not the default language
     if not lang == metadata_dict['LANGUAGE'][0]:
         #for value, key in enumerate(metadata_dict):
